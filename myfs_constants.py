@@ -1,0 +1,51 @@
+"""
+Constants for MyFS volume formatting and operations.
+"""
+
+# --- Configuration Constants ---
+# MyFS.DRI
+MAGIC_NUMBER_DRI = b"MyFSVOL1"  # 8 bytes
+DRI_VERSION = 1  # 4 bytes
+DRI_FLAGS = 0  # 4 bytes
+DRI_MACHINE_NAME_LEN = 64
+DRI_FT_ENTRY_COUNT = 100
+
+# MyFS.DRI File Table Entry
+DRI_FT_FILENAME_HASH_LEN = 32  # SHA-256
+DRI_FT_IV_SALT_PLACEHOLDER_LEN = 32
+DRI_FT_RESERVED_LEN = 23  # To make total entry size 128
+DRI_FT_ENTRY_SIZE = (
+  1  # StatusFlags
+  + DRI_FT_FILENAME_HASH_LEN
+  + 8  # FileSize
+  + 8  # EncryptedDataSize
+  + 8  # FileCreationTimestamp
+  + 8  # FileModificationTimestamp
+  + 8  # DataStartOffsetInVolume
+  + DRI_FT_IV_SALT_PLACEHOLDER_LEN
+  + DRI_FT_RESERVED_LEN
+)  # Total = 128 bytes
+
+# MyFS.KEY
+MAGIC_NUMBER_KEY = b"MyFSKEY1"  # 8 bytes
+KEY_VERSION = 1  # 4 bytes
+KEY_FLAGS = 0  # 4 bytes
+KEY_FILENAME_LEN = 255
+KEY_ORIGINAL_PATH_LEN = 512
+KEY_PER_FILE_PW_VERIFIER_LEN = 32
+KEY_FILE_CONTENT_CHECKSUM_LEN = 32  # SHA-256
+KEY_SUPPLEMENTAL_RESERVED_LEN = 1 # To make total entry size 832
+KEY_SUPPLEMENTAL_ENTRY_SIZE = (
+  KEY_FILENAME_LEN
+  + KEY_ORIGINAL_PATH_LEN
+  + KEY_PER_FILE_PW_VERIFIER_LEN
+  + KEY_FILE_CONTENT_CHECKSUM_LEN
+  + KEY_SUPPLEMENTAL_RESERVED_LEN
+) # Total = 832 bytes
+
+# Cryptography
+SALT_SIZE = 16
+AES_IV_SIZE = 16  # AES block size
+AES_KEY_SIZE = 32  # AES-256
+PBKDF2_ITERATIONS = 100000  # Adjust as needed
+HASH_SIZE = 32  # SHA-256 
