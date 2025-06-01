@@ -155,12 +155,6 @@ class MyFS:
     self.authenticated = True
     self.volume_password = password
     
-    # Create backup after successful authentication if it doesn't exist
-    if not os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".backup", "manifest.json")):
-      print("Creating application backup for integrity protection...")
-      self.security.create_backup()
-      print("Backup created successfully.")
-    
     return True
   
   def change_volume_password(self):

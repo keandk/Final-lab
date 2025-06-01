@@ -1,0 +1,10 @@
+1. create and format volume: ok
+2. change/verify password: ok
+3. list files: ok
+4. set and change file password: ok
+5. encryption: ok
+6. import/export: ok
+7. delete/delete-perm: ok
+8. challenge: ok
+9. check system origin: ok
+10. verify self integrity and recover automatically: need revision

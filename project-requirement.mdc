@@ -32,9 +32,5 @@ tác Export) thì có thể trả lại vào đúng chỗ ban đầu nếu muố
 viễn không thể phục hồi).
 8/ CT khi chạy có hỏi và kiểm tra 1 mật khẩu "động".
 9/ CT có kiểm tra máy đang chạy có phải là máy đã dùng để tạo file MyFS.DRI – nếu không phải thì không chạy.
-
-
-
-
-
 10/ CT có tính năng phát hiện các dấu hiệu bất thường trên chính nó và xử lý phù hợp (ví dụ: thấy nội dung không như ban đầu (bị crack hoặc có virus bám vào) thì tự khôi phục lại.
+

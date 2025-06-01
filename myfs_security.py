@@ -263,18 +263,18 @@ class MyFSSecurity:
     
     # If integrity check failed but backup exists, perform self-repair
     if not is_valid:
-      print("Starting automatic recovery process...")
-      success, repair_message = self.self_repair.perform_self_repair()
-      if success:
-        print("Recovery process completed successfully.")
-        # Re-verify after repair
-        is_valid, integrity_results = self.self_repair.verify_integrity()
-        if is_valid:
-          print("All files now match their original hash values.")
-      else:
-        print(f"Recovery process failed: {repair_message}")
+        print("Starting automatic recovery process...")
+        success, repair_message = self.self_repair.perform_self_repair()
+        if success:
+            print("Recovery process completed successfully.")
+            # Re-verify after repair
+            is_valid, integrity_results = self.self_repair.verify_integrity()
+            if is_valid:
+                print("All files now match their original hash values.")
+        else:
+            print(f"Recovery process failed: {repair_message}")
     else:
-      print("All files match their original hash values.")
+        print("All files match their original hash values.")
     
     return is_valid, integrity_results
   
