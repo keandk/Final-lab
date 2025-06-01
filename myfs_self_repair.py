@@ -2,7 +2,6 @@
 Self-repair module for MyFS.
 Handles backup and restoration of application files to prevent tampering.
 """
-import re
 import os
 import sys
 import json

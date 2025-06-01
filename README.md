@@ -1,172 +1,181 @@
 # MyFS - Secure File Storage System
 
-MyFS is a secure file storage system that stores files in an encrypted volume file (MyFS.DRI) with metadata stored in a separate encrypted file (MyFS.KEY). The system provides strong security features, data integrity checks, and file-level encryption.
+MyFS is a secure file storage system that provides encryption, integrity verification, and automatic recovery capabilities.
 
 ## Features
 
-- **Volume-level password protection**: The entire volume is protected with a master password
-- **File-level encryption**: Individual files can be encrypted with their own passwords
-- **Machine binding**: Volumes can only be accessed from the machine that created them
-- **Dynamic password challenges**: Additional security through dynamic challenges
-- **Secure file deletion**: Options for recoverable or permanent deletion
-- **File integrity checking**: Ensures files remain uncorrupted
-- **Self-integrity verification**: The application can detect tampering attempts
-- **Original path preservation**: Files maintain knowledge of their original locations
+### 1. Volume Management ✅
+- Create and format encrypted volumes
+- Change volume passwords
+- Machine-specific access control
 
-## Requirements
+### 2. File Operations ✅
+- List files (including deleted files)
+- Import files into the volume
+- Export files from the volume
+- Delete files (with recovery option)
+- Permanently delete files
 
-- Python 3.6+
-- PyCryptodome library
+### 3. Security Features ✅
+- Volume-level encryption
+- File-level encryption with individual passwords
+- Dynamic challenge-response authentication
+- Machine ID verification
+- System integrity verification
+- Automatic self-repair capabilities
 
-## Installation
+### 4. Integrity Protection ✅
+- File integrity verification
+- System integrity checks
+- Automatic backup creation
+- Self-repair functionality with options to:
+  - Update backup with current version
+  - Restore from backup
+  - Exit without changes
 
-1. Clone the repository:
-```
-git clone https://github.com/yourusername/myfs.git
-cd myfs
-```
+## Requirements Status
 
-2. Create a virtual environment and install dependencies:
-```
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install pycryptodome
-```
+1. ✅ Create and format volume
+   - Supports volume creation with password protection
+   - Includes metadata file generation
+
+2. ✅ Change/verify password
+   - Volume password change functionality
+   - Password verification with dynamic challenges
+
+3. ✅ List files
+   - Shows file index, name, size, status
+   - Option to include deleted files
+
+4. ✅ Set and change file password
+   - Individual file encryption
+   - Password change/removal options
+
+5. ✅ Encryption
+   - AES encryption for volume
+   - Optional file-level encryption
+   - Secure key management
+
+6. ✅ Import/export
+   - File import with optional encryption
+   - File export with path options
+   - Maintains file integrity
+
+7. ✅ Delete/delete-perm
+   - Soft delete with recovery option
+   - Permanent deletion option
+   - Secure file removal
+
+8. ✅ Challenge
+   - Dynamic challenge-response system
+   - Time-based authentication
+   - Machine verification
+
+9. ✅ Check system origin
+   - Machine ID verification
+   - Hardware-based identification
+   - Access control enforcement
+
+10. ✅ Verify self integrity and recover automatically
+    - System integrity verification
+    - Automatic backup creation
+    - Self-repair with multiple options:
+      - Update backup with current version
+      - Restore from backup
+      - Exit without changes
+    - Integrity verification after changes
 
 ## Usage
 
-### Command Line Interface
+### Basic Commands
 
-MyFS provides a command-line interface with the following commands:
-
-#### Create a new volume
-
-```
+```bash
+# show help 
+python myfs.py -h
+# Create a new volume
 python myfs.py create
-```
 
-#### List files in the volume
-
-```
+# List files
 python myfs.py list
-python myfs.py list --all  # Include deleted files
-```
 
-#### Import a file
+# Import a file
+python myfs.py import <filepath> [-e]
 
-```
-python myfs.py import /path/to/file
-python myfs.py import /path/to/file --encrypt  # With encryption
-```
+# Export a file
+python myfs.py export <index> <exportpath> [-o]
 
-#### Export a file
+# Delete a file
+python myfs.py delete <index> [-p]
 
-```
-python myfs.py export <file_index> /path/to/save
-python myfs.py export <file_index> /path/to/save --original  # To original path
-```
+# Recover a deleted file
+python myfs.py recover <index>
 
-#### Delete a file
+# Set file password
+python myfs.py setpass <index>
 
-```
-python myfs.py delete <file_index>
-python myfs.py delete <file_index> --permanent  # Permanent deletion
-```
+# Verify file integrity
+python myfs.py verify <index>
 
-#### Recover a deleted file
+# Check system integrity
+python myfs.py integrity
 
-```
-python myfs.py recover <file_index>
-```
+# Create/update backup with its own password 
+python myfs.py backup
 
-#### Set/change file password
-
-```
-python myfs.py password <file_index>
-```
-
-#### Change volume password
-
-```
-python myfs.py change-password
-```
-
-#### Verify file integrity
-
-```
-python myfs.py verify <file_index>
-```
-
-#### Interactive mode
-
-```
+# Interactive mode
 python myfs.py interactive
 ```
 
-### Custom Paths
+### Interactive Mode
 
-By default, MyFS uses "MyFS.DRI" and "MyFS.KEY" in the current directory. You can specify custom paths:
-
-```
-python myfs.py --volume /path/to/volume.dri --metadata /path/to/metadata.key <command>
-```
+The interactive mode provides a command-line interface with the following commands:
+- `list` - List all files
+- `list -d` - List all files including deleted
+- `import <path>` - Import a file
+- `import -e <path>` - Import and encrypt a file
+- `export <idx> <path>` - Export a file
+- `export -o <idx> <path>` - Export to original path
+- `delete <idx>` - Delete a file (recoverable)
+- `delete -p <idx>` - Delete a file permanently
+- `recover <idx>` - Recover a deleted file
+- `setpass <idx>` - Set/change file password
+- `verify <idx>` - Verify file integrity
+- `passwd` - Change volume password
+- `integrity` - Verify system integrity
+- `backup` - Create/update system backup with its own password 
+- `exit` - Exit interactive mode
 
 ## Security Features
 
-### Machine Binding
+### Volume Security
+- AES encryption for volume data
+- Password-based access control
+- Machine-specific access restrictions
 
-MyFS volumes are bound to the machine where they were created. This prevents unauthorized access if the volume file is copied to another machine.
+### File Security
+- Optional file-level encryption
+- Individual file passwords
+- Secure file deletion
 
-### Dynamic Password Challenges
+### System Security
+- Integrity verification
+- Automatic backup system
+- Self-repair capabilities
+- Machine ID verification
 
-In addition to the volume password, MyFS requires solving a simple dynamic challenge that changes each time, adding an extra layer of security.
+## Installation
 
-### File-Level Encryption
+1. Clone the repository
+2. Install required packages:
+```bash
+pip install -r requirements.txt
+```
 
-Files can be individually encrypted with different passwords, providing compartmentalized security within the volume.
+## Dependencies
 
-### Self-Integrity Verification
-
-MyFS verifies its own integrity on startup to detect tampering or modification of the application code.
-
-## System Architecture
-
-MyFS follows a modular design with the following components:
-
-- `myfs.py` - Main entry point and CLI interface
-- `myfs_constants.py` - Constants and configuration
-- `myfs_formatter.py` - Volume creation and formatting
-- `myfs_hardware.py` - Machine identification
-- `myfs_utils.py` - Utility functions for cryptography and data handling
-- `myfs_security.py` - Security and authentication functionality
-- `myfs_file_handler.py` - File operations (import, export, delete)
-- `myfs_metadata.py` - Metadata management
-- `myfs_connector.py` - Integration between components
-
-## File Format
-
-### MyFS.DRI (Volume File)
-
-The volume file contains:
-- File header with magic number, machine ID, and other metadata
-- File table with entries for each file
-- Data region containing the actual file contents
-
-### MyFS.KEY (Metadata File)
-
-The metadata file contains:
-- File header with magic number and encryption parameters
-- Encrypted metadata for each file, including:
-  - Original filename
-  - Original path
-  - Password verification data
-  - File checksums
+- Python 3.6+
+- pycryptodome
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgements
-
-- PyCryptodome for cryptographic operations
-- Inspired by secure filesystem designs and cryptographic best practices
