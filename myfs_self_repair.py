@@ -26,7 +26,7 @@ class MyFSSelfRepair:
     self.backup_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".backup")
     self.backup_manifest_path = os.path.join(self.backup_dir, "manifest.json")
     self.backup_archive_path = os.path.join(self.backup_dir, "myfs_backup.enc")
-    self.key_file = os.path.join(os.path.dirname(volume_path), "MyFS.KEY")
+    self.key_file = os.path.join(os.path.dirname(__file__), "myfs", "MyFS.METADATA")
     
     # Create backup directory if it doesn't exist
     if not os.path.exists(self.backup_dir):

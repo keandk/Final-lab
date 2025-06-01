@@ -21,8 +21,8 @@ from myfs_formatter import MyFSFormatter
 from myfs_hardware import get_machine_id_hash
 
 # Default paths
-DEFAULT_VOLUME_PATH = "MyFS.DRI"
-DEFAULT_METADATA_PATH = "MyFS.KEY"
+DEFAULT_VOLUME_PATH = "myfs/MyFS.DRI"
+DEFAULT_METADATA_PATH = "myfs/MyFS.METADATA"
 
 class MyFS:
   def __init__(self, volume_path=DEFAULT_VOLUME_PATH, metadata_path=DEFAULT_METADATA_PATH):

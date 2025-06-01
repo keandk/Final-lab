@@ -1,6 +1,6 @@
 """
 Metadata handling for MyFS.
-Manages the encrypted metadata file and its operations.
+Manages the encrypted metadata file (MyFS.METADATA) and its operations.
 """
 
 import os
