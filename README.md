@@ -5,7 +5,7 @@
 **MyFS** là một hệ thống lưu trữ tập tin an toàn được thiết kế để lưu trữ dữ liệu trong một file MyFS.DRI (tương tự như file .ISO/.ZIP/.RAR) trên cloud disk, với metadata được mã hóa và lưu trữ trong file **MyFS.METADATA** trên removable disk. Hệ thống đảm bảo rằng cả hai disk phải được kết nối để có thể truy cập dữ liệu.
 
 
-<video src="final-lab-demo.mp4" controls></video>
+<video src="https://github.com/keandk/Final-lab/blob/main/final-lab-demo.mp4" controls></video>
 
 ## 2. Tiêu Chí Thiết Kế
 
