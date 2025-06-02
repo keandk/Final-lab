@@ -1,181 +1,135 @@
-# MyFS - Secure File Storage System
+# Báo Cáo Đồ Án MyFS - Hệ Thống Lưu Trữ Tập Tin An Toàn
 
-MyFS is a secure file storage system that provides encryption, integrity verification, and automatic recovery capabilities.
+## **1. Tổng Quan**
 
-## Features
+**MyFS** là một hệ thống lưu trữ tập tin an toàn được thiết kế để lưu trữ dữ liệu trong một file MyFS.DRI (tương tự như file .ISO/.ZIP/.RAR) trên cloud disk, với metadata được mã hóa và lưu trữ trong file **MyFS.METADATA** trên removable disk. Hệ thống đảm bảo rằng cả hai disk phải được kết nối để có thể truy cập dữ liệu.
 
-### 1. Volume Management ✅
-- Create and format encrypted volumes
-- Change volume passwords
-- Machine-specific access control
 
-### 2. File Operations ✅
-- List files (including deleted files)
-- Import files into the volume
-- Export files from the volume
-- Delete files (with recovery option)
-- Permanently delete files
+<video src="final-lab-demo.mp4" controls></video>
 
-### 3. Security Features ✅
-- Volume-level encryption
-- File-level encryption with individual passwords
-- Dynamic challenge-response authentication
-- Machine ID verification
-- System integrity verification
-- Automatic self-repair capabilities
+## 2. Tiêu Chí Thiết Kế
 
-### 4. Integrity Protection ✅
-- File integrity verification
-- System integrity checks
-- Automatic backup creation
-- Self-repair functionality with options to:
-  - Update backup with current version
-  - Restore from backup
-  - Exit without changes
+### 2.1. Bảo Mật Dữ Liệu (Ưu Tiên Cao Nhất)
 
-## Requirements Status
+- Mã hóa **AES-256-CBC** cho toàn bộ volume
+- Mã hóa riêng cho từng tập tin với mật khẩu độc lập
+- Xác thực máy tính thông qua Machine ID (WMI hoặc MAC address)
+- Mật khẩu động (dynamic challenge)
+- Không lưu trữ mật khẩu dưới dạng plaintext
 
-1. ✅ Create and format volume
-   - Supports volume creation with password protection
-   - Includes metadata file generation
+### 2.2. Toàn Vẹn Dữ Liệu
 
-2. ✅ Change/verify password
-   - Volume password change functionality
-   - Password verification with dynamic challenges
+- Kiểm tra hash cho từng tập tin
+- Kiểm tra toàn vẹn hệ thống
+- Tự động sao lưu và khôi phục
+- Xác thực metadata
 
-3. ✅ List files
-   - Shows file index, name, size, status
-   - Option to include deleted files
+### 2.3. Phục Hồi Dữ Liệu
 
-4. ✅ Set and change file password
-   - Individual file encryption
-   - Password change/removal options
+- Khôi phục tập tin đã xóa
+- Tự động sửa chữa khi phát hiện thay đổi
+- Sao lưu tự động với mật khẩu riêng
 
-5. ✅ Encryption
-   - AES encryption for volume
-   - Optional file-level encryption
-   - Secure key management
+### 2.4. Giới Hạn Kỹ Thuật
 
-6. ✅ Import/export
-   - File import with optional encryption
-   - File export with path options
-   - Maintains file integrity
+- Tối đa 100 tập tin trong volume
+- Không hỗ trợ hệ thống thư mục
+- Kích thước tập tin tối đa: 4GB
+- Tập tin > 100MB không yêu cầu bảo mật cao
 
-7. ✅ Delete/delete-perm
-   - Soft delete with recovery option
-   - Permanent deletion option
-   - Secure file removal
+## 3. Kiến Trúc Hệ Thống
 
-8. ✅ Challenge
-   - Dynamic challenge-response system
-   - Time-based authentication
-   - Machine verification
+### 3.1. Các Module Chính
 
-9. ✅ Check system origin
-   - Machine ID verification
-   - Hardware-based identification
-   - Access control enforcement
+1. **myfs.py**: Module chính, xử lý CLI và điều phối
+2. **myfs_formatter.py**: Tạo và định dạng volume
+3. **myfs_security.py**: Xử lý bảo mật và xác thực
+4. **myfs_self_repair.py**: Tự động sửa chữa và sao lưu
+5. **myfs_file_handler.py**: Xử lý tập tin
+6. **myfs_metadata.py**: Quản lý metadata
+7. **myfs_connector.py**: Kết nối các module
+8. **myfs_hardware.py**: Xác định thông tin máy tính
 
-10. ✅ Verify self integrity and recover automatically
-    - System integrity verification
-    - Automatic backup creation
-    - Self-repair with multiple options:
-      - Update backup with current version
-      - Restore from backup
-      - Exit without changes
-    - Integrity verification after changes
+### 3.2. Cấu Trúc Dữ Liệu
 
-## Usage
+- **MyFS.DRI**: File volume chính
+    - Header với thông tin máy tính
+    - Bảng quản lý tập tin
+    - Vùng dữ liệu được mã hóa
+- **MyFS.METADATA**: File metadata
+    - Thông tin xác thực
+    - Metadata của các tập tin
+    - Thông tin sao lưu
 
-### Basic Commands
+## 4. Các Chức Năng Đã Triển Khai
 
-```bash
-# show help 
-python myfs.py -h
-# Create a new volume
-python myfs.py create
+### 4.1. Quản Lý Volume
 
-# List files
-python myfs.py list
+- Tạo và định dạng volume mới
+- Thiết lập, kiểm tra và thay đổi mật khẩu volume
+- Kiểm tra tính toàn vẹn volume
 
-# Import a file
-python myfs.py import <filepath> [-e]
+### 4.2. Quản Lý Tập Tin
 
-# Export a file
-python myfs.py export <index> <exportpath> [-o]
+- Liệt kê tập tin (bao gồm tập tin đã xóa)
+- Import tập tin với metadata
+- Export tập tin với tùy chọn đường dẫn gốc
+- Xóa tập tin (có thể khôi phục)
+- Xóa vĩnh viễn
+- Khôi phục tập tin đã xóa (nếu xóa ở chế độ bình thường)
 
-# Delete a file
-python myfs.py delete <index> [-p]
+### 4.3. Bảo Mật
 
-# Recover a deleted file
-python myfs.py recover <index>
+- Thiết lập mật khẩu và mã hóa AES-256-CBC cho volume
+- Thiết lập và mã hóa riêng cho từng tập tin
+- Xác thực máy tính
+- Mật khẩu động
+- Kiểm tra toàn vẹn hệ thống
 
-# Set file password
-python myfs.py setpass <index>
+### 4.4. Tự Động Sửa Chữa
 
-# Verify file integrity
-python myfs.py verify <index>
+- Phát hiện thay đổi hệ thống
+- Tự động sao lưu
+- Tự động khôi phục từ sao lưu
+- Cập nhật sao lưu với phiên bản hiện tại
 
-# Check system integrity
-python myfs.py integrity
+## 5. Cách Sử Dụng
 
-# Create/update backup with its own password 
-python myfs.py backup
+### 5.1. Các Lệnh Cơ Bản
 
-# Interactive mode
-python myfs.py interactive
-```
+- Hiển thị trợ giúp `python myfs.py -h`
+- Tạo volume mới `python myfs.py create`
+- Liệt kê tập tin `python [myfs.py](http://myfs.py) list` hoặc `python myfs.py list -a`
+- Import tập tin `python myfs.py import <đường_dẫn> [-e]`
+- Export tập tin `python myfs.py export <index> <đường_dẫn> [-o]`
+- Xóa tập tin `python myfs.py delete <index> [-p]`
+- Khôi phục tập tin `python myfs.py recover <index>`
+- Đặt mật khẩu tập tin `python myfs.py setpass <index>`
+- Kiểm tra toàn vẹn `python myfs.py verify <index>`
+- Kiểm tra toàn vẹn hệ thống `python myfs.py integrity`
+- Tạo/cập nhật sao lưu `python myfs.py backup`
+- Chế độ tương tác `python myfs.py interactive`
 
-### Interactive Mode
+### 5.2. Chế Độ Tương Tác
 
-The interactive mode provides a command-line interface with the following commands:
-- `list` - List all files
-- `list -d` - List all files including deleted
-- `import <path>` - Import a file
-- `import -e <path>` - Import and encrypt a file
-- `export <idx> <path>` - Export a file
-- `export -o <idx> <path>` - Export to original path
-- `delete <idx>` - Delete a file (recoverable)
-- `delete -p <idx>` - Delete a file permanently
-- `recover <idx>` - Recover a deleted file
-- `setpass <idx>` - Set/change file password
-- `verify <idx>` - Verify file integrity
-- `passwd` - Change volume password
-- `integrity` - Verify system integrity
-- `backup` - Create/update system backup with its own password 
-- `exit` - Exit interactive mode
+- `list`: Liệt kê tập tin
+- `list -d`: Liệt kê cả tập tin đã xóa
+- `import <đường_dẫn>`: Import tập tin
+- `import -e <đường_dẫn>`: Import và mã hóa
+- `export <index> <đường_dẫn>`: Export tập tin
+- `export -o <index> <đường_dẫn>`: Export về đường dẫn gốc
+- `delete <index>`: Xóa tập tin
+- `delete -p <index>`: Xóa vĩnh viễn
+- `recover <index>`: Khôi phục tập tin
+- `setpass <index>`: Đặt mật khẩu tập tin
+- `verify <index>`: Kiểm tra toàn vẹn
+- `passwd`: Đổi mật khẩu volume
+- `integrity`: Kiểm tra toàn vẹn hệ thống
+- `backup`: Tạo/cập nhật sao lưu
+- `exit`: Thoát
 
-## Security Features
+## 6. Yêu Cầu Hệ Thống
 
-### Volume Security
-- AES encryption for volume data
-- Password-based access control
-- Machine-specific access restrictions
-
-### File Security
-- Optional file-level encryption
-- Individual file passwords
-- Secure file deletion
-
-### System Security
-- Integrity verification
-- Automatic backup system
-- Self-repair capabilities
-- Machine ID verification
-
-## Installation
-
-1. Clone the repository
-2. Install required packages:
-```bash
-pip install -r requirements.txt
-```
-
-## Dependencies
-
-- Python 3.6+
-- pycryptodome
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Python
+- **pycryptodome** library
+- Hệ điều hành: Windows/Linux/MacOS

@@ -4,10 +4,53 @@ GVHD: Thái Hùng Văn
 
 Thành viên nhóm:
 
-| Họ và Tên | MSSV |
-| --- | --- |
+| Họ và Tên            | MSSV     |
+| -------------------- | -------- |
 | Nguyễn Thị Quỳnh Anh | 22520064 |
-| Lưu Trung Kiên | 22520706 |
+| Lưu Trung Kiên       | 22520706 |
+
+---
+
+- [Báo Cáo Đồ Án MyFS - Hệ Thống Lưu Trữ Tập Tin An Toàn](#báo-cáo-đồ-án-myfs---hệ-thống-lưu-trữ-tập-tin-an-toàn)
+  - [**1. Tổng Quan**](#1-tổng-quan)
+  - [**2. Tiêu Chí Thiết Kế**](#2-tiêu-chí-thiết-kế)
+    - [2.1. Bảo Mật Dữ Liệu (Ưu Tiên Cao Nhất)](#21-bảo-mật-dữ-liệu-ưu-tiên-cao-nhất)
+    - [2.2. Toàn Vẹn Dữ Liệu](#22-toàn-vẹn-dữ-liệu)
+    - [2.3. Phục Hồi Dữ Liệu](#23-phục-hồi-dữ-liệu)
+    - [2.4. Giới Hạn Kỹ Thuật](#24-giới-hạn-kỹ-thuật)
+  - [**3. Kiến Trúc Hệ Thống**](#3-kiến-trúc-hệ-thống)
+    - [3.1. Các Module Chính](#31-các-module-chính)
+    - [3.2. Cấu Trúc Dữ Liệu](#32-cấu-trúc-dữ-liệu)
+  - [**4. Các Chức Năng Đã Triển Khai**](#4-các-chức-năng-đã-triển-khai)
+    - [4.1. Quản Lý Volume](#41-quản-lý-volume)
+    - [4.2. Quản Lý Tập Tin](#42-quản-lý-tập-tin)
+    - [4.3. Bảo Mật](#43-bảo-mật)
+    - [4.4. Tự Động Sửa Chữa](#44-tự-động-sửa-chữa)
+  - [**5. Cách Sử Dụng**](#5-cách-sử-dụng)
+    - [5.1. Các Lệnh Cơ Bản](#51-các-lệnh-cơ-bản)
+    - [5.2. Chế Độ Tương Tác](#52-chế-độ-tương-tác)
+  - [**6. Yêu Cầu Hệ Thống**](#6-yêu-cầu-hệ-thống)
+  - [**7. Thuật Toán và Triển Khai**](#7-thuật-toán-và-triển-khai)
+    - [7.1. Mã Hóa và Bảo Mật](#71-mã-hóa-và-bảo-mật)
+      - [7.1.1. Mã Hóa AES](#711-mã-hóa-aes)
+      - [7.1.2. Xác Thực Mật Khẩu Động](#712-xác-thực-mật-khẩu-động)
+    - [7.1.3. Xác thực máy tính](#713-xác-thực-máy-tính)
+    - [7.2. Quản Lý Volume](#72-quản-lý-volume)
+      - [7.2.1. Thiết lập và format volume (với mật khẩu volume)](#721-thiết-lập-và-format-volume-với-mật-khẩu-volume)
+      - [7.2.2. Thay đổi Mật khẩu volume](#722-thay-đổi-mật-khẩu-volume)
+      - [7.2.3. Xác Thực Mật Khẩu](#723-xác-thực-mật-khẩu)
+    - [7.3. Quản Lý Tập Tin](#73-quản-lý-tập-tin)
+      - [7.3.1. Liệt Kê Tập Tin](#731-liệt-kê-tập-tin)
+      - [7.3.2. Import và Export file](#732-import-và-export-file)
+      - [7.3.3. Quản Lý Mật Khẩu Tập Tin](#733-quản-lý-mật-khẩu-tập-tin)
+      - [7.3.4. Xóa và Khôi Phục Tập Tin](#734-xóa-và-khôi-phục-tập-tin)
+    - [7.4. Tự Động Kiểm Tra và Khôi Phục](#74-tự-động-kiểm-tra-và-khôi-phục)
+      - [7.4.1. Kiểm Tra Tính Toàn Vẹn](#741-kiểm-tra-tính-toàn-vẹn)
+      - [7.4.2. Tự Động Sửa Chữa](#742-tự-động-sửa-chữa)
+      - [7.4.3. Sao Lưu và Khôi Phục](#743-sao-lưu-và-khôi-phục)
+      - [7.4.4. Kiểm Tra và Sửa Chữa Metadata](#744-kiểm-tra-và-sửa-chữa-metadata)
+  - [**8. Kết Luận**](#8-kết-luận)
+
 
 ---
 
@@ -15,7 +58,11 @@ Thành viên nhóm:
 
 **MyFS** là một hệ thống lưu trữ tập tin an toàn được thiết kế để lưu trữ dữ liệu trong một file MyFS.DRI (tương tự như file .ISO/.ZIP/.RAR) trên cloud disk, với metadata được mã hóa và lưu trữ trong file **MyFS.METADATA** trên removable disk. Hệ thống đảm bảo rằng cả hai disk phải được kết nối để có thể truy cập dữ liệu.
 
-## 2. Tiêu Chí Thiết Kế
+
+<!-- Import video (final-lab-demo.mp4) -->
+<video src="final-lab-demo.mp4" controls></video>
+
+## **2. Tiêu Chí Thiết Kế**
 
 ### 2.1. Bảo Mật Dữ Liệu (Ưu Tiên Cao Nhất)
 
@@ -45,7 +92,7 @@ Thành viên nhóm:
 - Kích thước tập tin tối đa: 4GB
 - Tập tin > 100MB không yêu cầu bảo mật cao
 
-## 3. Kiến Trúc Hệ Thống
+## **3. Kiến Trúc Hệ Thống**
 
 ### 3.1. Các Module Chính
 
@@ -69,7 +116,7 @@ Thành viên nhóm:
     - Metadata của các tập tin
     - Thông tin sao lưu
 
-## 4. Các Chức Năng Đã Triển Khai
+## **4. Các Chức Năng Đã Triển Khai**
 
 ### 4.1. Quản Lý Volume
 
@@ -101,7 +148,7 @@ Thành viên nhóm:
 - Tự động khôi phục từ sao lưu
 - Cập nhật sao lưu với phiên bản hiện tại
 
-## 5. Cách Sử Dụng
+## **5. Cách Sử Dụng**
 
 ### 5.1. Các Lệnh Cơ Bản
 
@@ -136,17 +183,17 @@ Thành viên nhóm:
 - `backup`: Tạo/cập nhật sao lưu
 - `exit`: Thoát
 
-## 6. Yêu Cầu Hệ Thống
+## **6. Yêu Cầu Hệ Thống**
 
 - Python
 - **pycryptodome** library
 - Hệ điều hành: Windows/Linux/MacOS
 
-## 7. Thuật Toán và Triển Khai
+## **7. Thuật Toán và Triển Khai**
 
 ### 7.1. Mã Hóa và Bảo Mật
 
-### 7.1.1. Mã Hóa AES
+#### 7.1.1. Mã Hóa AES
 
 Hàm `encrypt_aes_cbc` và `decrypt_aes_cbc` trong module `myfs_utils.py` thực hiện việc mã hóa và giải mã dữ liệu sử dụng thuật toán AES-256-CBC với padding PKCS#7. Các hàm này đảm bảo tính bảo mật cao cho dữ liệu được lưu trữ trong volume.
 
@@ -167,7 +214,7 @@ def decrypt_aes_cbc(ciphertext_bytes, key_bytes, iv_bytes):
   return plaintext
 ```
 
-### 7.1.2. Xác Thực Mật Khẩu Động
+#### 7.1.2. Xác Thực Mật Khẩu Động
 
 Hàm `generate_dynamic_password` trong module `myfs_security.py` tạo ra một thử thách động dựa trên thời gian hiện tại và thời gian tạo volume. Thử thách này yêu cầu người dùng thực hiện một phép tính đơn giản với các số ngẫu nhiên, tăng cường bảo mật cho quá trình xác thực.
 
@@ -225,7 +272,7 @@ def verify_machine_id(self):
 
 ### 7.2. Quản Lý Volume
 
-### 7.2.1. Thiết lập và format volume (với mật khẩu volume)
+#### 7.2.1. Thiết lập và format volume (với mật khẩu volume)
 
 Hàm `format_new_volume` trong module `myfs_formatter.py` thực hiện việc tạo và định dạng một volume MyFS mới, bao gồm việc tạo file MyFS.DRI và MyFS.METADATA. Quá trình này bao gồm việc xác thực đầu vào, thu thập thông tin máy tính, tạo các thành phần mã hóa, và ghi dữ liệu vào các file tương ứng.
 
@@ -303,7 +350,7 @@ def format_new_volume(myfs_dri_filepath_str, myfs_metadata_filepath_str, volume_
     return True
 ```
 
-### 7.2.2. Thay đổi Mật khẩu volume
+#### 7.2.2. Thay đổi Mật khẩu volume
 
 Hàm `change_volume_password` trong module `myfs_security.py` cho phép thay đổi mật khẩu của volume, bao gồm việc xác thực mật khẩu cũ, giải mã metadata, tạo salt và IV mới, và mã hóa lại metadata với mật khẩu mới.
 
@@ -388,7 +435,7 @@ def change_volume_password(self, old_password, new_password):
         raise
 ```
 
-### 7.2.3. Xác Thực Mật Khẩu
+#### 7.2.3. Xác Thực Mật Khẩu
 
 Hàm `check_volume_password` trong module `myfs_security.py` thực hiện việc xác thực mật khẩu volume bằng cách giải mã một phần nhỏ của metadata. Hàm này sử dụng salt được lưu trữ trong volume header và thử giải mã dữ liệu test để xác minh tính chính xác của mật khẩu.
 
@@ -441,7 +488,7 @@ def check_volume_password(self, password):
 
 ### 7.3. Quản Lý Tập Tin
 
-### 7.3.1. Liệt Kê Tập Tin
+#### 7.3.1. Liệt Kê Tập Tin
 
 Hàm `list_files` trong module `myfs_connector.py` hiển thị danh sách các tập tin trong volume, bao gồm thông tin về tên, kích thước, trạng thái và tình trạng mã hóa. Hàm này hỗ trợ tùy chọn hiển thị cả các tập tin đã bị xóa.
 
@@ -467,7 +514,7 @@ def list_files(self, include_deleted=False):
     return files
 ```
 
-### 7.3.2. Import và Export file
+#### 7.3.2. Import và Export file
 
 Hàm `import_file` và `export_file` trong module `myfs_connector.py` thực hiện việc nhập và xuất tập tin vào/ra khỏi volume. Các hàm này hỗ trợ mã hóa tùy chọn cho từng tập tin, kiểm tra tính toàn vẹn, và xác thực mật khẩu khi cần thiết.
 
@@ -499,7 +546,7 @@ def export_file(self, file_index, export_path, file_password=None, use_original_
     return exported_path
 ```
 
-### 7.3.3. Quản Lý Mật Khẩu Tập Tin
+#### 7.3.3. Quản Lý Mật Khẩu Tập Tin
 
 Hàm `set_file_password` trong module `myfs_connector.py` cho phép thiết lập hoặc thay đổi mật khẩu cho một tập tin cụ thể. Hàm này xử lý việc giải mã dữ liệu cũ và mã hóa lại với mật khẩu mới, đồng thời cập nhật metadata tương ứng.
 
@@ -519,7 +566,7 @@ def set_file_password(self, file_index, new_file_password, old_file_password=Non
     return True
 ```
 
-### 7.3.4. Xóa và Khôi Phục Tập Tin
+#### 7.3.4. Xóa và Khôi Phục Tập Tin
 
 Hàm `delete_file` và `recover_file` trong module `myfs_connector.py` thực hiện việc xóa và khôi phục tập tin trong volume. Hàm xóa hỗ trợ cả xóa thông thường (có thể khôi phục) và xóa vĩnh viễn, trong khi hàm khôi phục cho phép lấy lại các tập tin đã bị xóa thông thường.
 
@@ -563,7 +610,7 @@ def recover_file(self, file_index):
 
 ### 7.4. Tự Động Kiểm Tra và Khôi Phục
 
-### 7.4.1. Kiểm Tra Tính Toàn Vẹn
+#### 7.4.1. Kiểm Tra Tính Toàn Vẹn
 
 Hàm `verify_self_integrity` trong module `myfs.py` thực hiện việc kiểm tra tính toàn vẹn của ứng dụng và tự động sửa chữa nếu cần thiết. Hàm này kiểm tra các thành phần chính của hệ thống và thực hiện các biện pháp khôi phục khi phát hiện lỗi.
 
@@ -613,7 +660,7 @@ def verify_self_integrity(self):
         return False
 ```
 
-### 7.4.2. Tự Động Sửa Chữa
+#### 7.4.2. Tự Động Sửa Chữa
 
 Hàm `perform_self_repair` trong module `myfs_self_repair.py` thực hiện việc tự động sửa chữa khi phát hiện lỗi trong hệ thống. Hàm này bao gồm các bước kiểm tra và sửa chữa cho từng thành phần của hệ thống.
 
@@ -649,7 +696,7 @@ def perform_self_repair(self):
         return False
 ```
 
-### 7.4.3. Sao Lưu và Khôi Phục
+#### 7.4.3. Sao Lưu và Khôi Phục
 
 Hàm `create_backup` và `restore_from_backup` trong module `myfs_self_repair.py` thực hiện việc tạo sao lưu và khôi phục từ sao lưu khi cần thiết. Các hàm này đảm bảo tính toàn vẹn của dữ liệu trong quá trình sửa chữa.
 
@@ -692,7 +739,7 @@ def restore_from_backup(self, backup_path):
         return False
 ```
 
-### 7.4.4. Kiểm Tra và Sửa Chữa Metadata
+#### 7.4.4. Kiểm Tra và Sửa Chữa Metadata
 
 Hàm `_repair_metadata` trong module `myfs_self_repair.py` thực hiện việc kiểm tra và sửa chữa metadata của hệ thống. Hàm này đảm bảo tính nhất quán của metadata với dữ liệu thực tế trong volume.
 
@@ -728,7 +775,7 @@ def _repair_metadata(self):
         return False
 ```
 
-## 8. Kết Luận
+## **8. Kết Luận**
 
 MyFS đã đáp ứng đầy đủ các yêu cầu về bảo mật, toàn vẹn dữ liệu và khả năng phục hồi. Hệ thống cung cấp một giải pháp lưu trữ an toàn với các tính năng:
 - Mã hóa mạnh mẽ
@@ -736,3 +783,5 @@ MyFS đã đáp ứng đầy đủ các yêu cầu về bảo mật, toàn vẹn
 - Tự động sửa chữa
 - Khôi phục dữ liệu
 - Giao diện CLI dễ sử dụng
+
+***Link repository tại đây: [MyFS](https://github.com/keandk/Final-lab)***
