@@ -72,7 +72,7 @@ def create_dri_header(volume_id_bytes, creation_timestamp, machine_id_hash_bytes
 
 def create_key_header(volume_id_bytes, volume_password_salt_bytes, 
                      encrypted_metadata_iv_bytes, encrypted_metadata_size):
-  """Creates the MyFS.KEY header bytes."""
+  """Creates the MyFS.METADATA header bytes."""
   key_header_buffer = bytearray()
   key_header_buffer.extend(MAGIC_NUMBER_KEY)  # 8 bytes
   key_header_buffer.extend(volume_id_bytes)  # 16 bytes (link to DRI)
@@ -82,7 +82,7 @@ def create_key_header(volume_id_bytes, volume_password_salt_bytes,
     struct.pack("<q", encrypted_metadata_size)
   )  # 8 bytes
 
-  # Calculate HeaderChecksum for MyFS.KEY (on buffer content BEFORE checksum field)
+  # Calculate HeaderChecksum for MyFS.METADATA (on buffer content BEFORE checksum field)
   key_header_checksum = calculate_sha256(bytes(key_header_buffer))
   key_header_buffer.extend(key_header_checksum)  # 32 bytes
   
@@ -98,22 +98,18 @@ def create_empty_supplemental_metadata():
     
   return plaintext_supplemental_metadata_blob_bytes
 
-def format_new_volume(myfs_dri_filepath_str, myfs_key_filepath_str, volume_password_str):
+def format_new_volume(myfs_dri_filepath_str, myfs_metadata_filepath_str, volume_password_str):
   """
-  Creates and formats a new MyFS.DRI volume and its corresponding MyFS.KEY file.
+  Creates and formats a new MyFS.DRI volume and its corresponding MyFS.METADATA file.
   """
   print("Starting MyFS volume formatting...")
 
-  # 1. Validate Inputs (Basic)
+  # Validate inputs
   if not volume_password_str:
     print("Error: Volume password cannot be empty.")
     return False
-  if os.path.exists(myfs_dri_filepath_str) or os.path.exists(
-    myfs_key_filepath_str
-  ):
-    print(
-      "Error: One or both target files already exist. Please remove them or choose different paths."
-    )
+  if os.path.exists(myfs_dri_filepath_str) or os.path.exists(myfs_metadata_filepath_str):
+    print("Error: Target files already exist.")
     return False
 
   # 2. Gather Computer Information
@@ -166,59 +162,52 @@ def format_new_volume(myfs_dri_filepath_str, myfs_key_filepath_str, volume_passw
     print(f"Error writing MyFS.DRI file: {e}")
     return False
 
-  # 5. Prepare and Write MyFS.KEY (Removable Disk File)
-  print(f"  Preparing MyFS.KEY at {myfs_key_filepath_str}...")
+  # 5. Prepare and Write MyFS.METADATA (Removable Disk File)
+  print(f"  Preparing MyFS.METADATA at {myfs_metadata_filepath_str}...")
 
   # Prepare Plaintext Supplemental Metadata Blob (all empty entries)
-  plaintext_supplemental_metadata_blob_bytes = create_empty_supplemental_metadata()
+  plaintext_metadata = create_empty_supplemental_metadata()
 
   # Encrypt Supplemental Metadata Blob
-  encrypted_metadata_iv_bytes = os.urandom(AES_IV_SIZE)
-  encrypted_metadata_blob_bytes = encrypt_aes_cbc(
-    bytes(plaintext_supplemental_metadata_blob_bytes),
+  encrypted_iv = os.urandom(AES_IV_SIZE)
+  encrypted_metadata = encrypt_aes_cbc(
+    bytes(plaintext_metadata),
     kek_metadata_bytes,
-    encrypted_metadata_iv_bytes,
+    encrypted_iv
   )
   print(
-    f"    Plaintext supplemental metadata size: {len(plaintext_supplemental_metadata_blob_bytes)}"
+    f"    Plaintext supplemental metadata size: {len(plaintext_metadata)}"
   )
   print(
-    f"    Encrypted supplemental metadata size: {len(encrypted_metadata_blob_bytes)}"
+    f"    Encrypted supplemental metadata size: {len(encrypted_metadata)}"
   )
 
-  # Construct MyFS.KEY Header
-  key_header_buffer = create_key_header(
+  # Construct MyFS.METADATA Header
+  metadata_header = create_key_header(
     volume_id_bytes, volume_password_salt_bytes,
-    encrypted_metadata_iv_bytes, len(encrypted_metadata_blob_bytes)
+    encrypted_iv, len(encrypted_metadata)
   )
 
-  # Content for overall file checksum = KEY Header + Encrypted Blob
+  # Content for overall file checksum = METADATA Header + Encrypted Blob
   key_content_for_overall_checksum = (
-    key_header_buffer + encrypted_metadata_blob_bytes
+    metadata_header + encrypted_metadata
   )
   key_file_overall_checksum = calculate_sha256(
     key_content_for_overall_checksum
   ) # 32 bytes
 
   try:
-    with open(myfs_key_filepath_str, "wb") as f_key:
-      f_key.write(key_header_buffer)
-      print(f"    MyFS.KEY header written ({len(key_header_buffer)} bytes).")
-      f_key.write(encrypted_metadata_blob_bytes)
-      print(
-        f"    MyFS.KEY encrypted metadata blob written ({len(encrypted_metadata_blob_bytes)} bytes)."
-      )
-      f_key.write(key_file_overall_checksum)
-      print(
-        f"    MyFS.KEY overall file checksum written ({len(key_file_overall_checksum)} bytes)."
-      )
+    with open(myfs_metadata_filepath_str, "wb") as f_metadata:
+      f_metadata.write(metadata_header)
+      f_metadata.write(encrypted_metadata)
+      f_metadata.write(key_file_overall_checksum)
   except IOError as e:
-    print(f"Error writing MyFS.KEY file: {e}")
-    # Consider cleanup: if DRI was created but KEY failed, should DRI be removed?
+    print(f"Error writing MyFS.METADATA: {e}")
+    # Consider cleanup: if DRI was created but METADATA failed, should DRI be removed?
     # For simplicity here, not adding complex cleanup.
     return False
 
-  print("MyFS volume formatting completed successfully!")
+  print("Volume formatting completed successfully!")
   print(f"  MyFS.DRI created at: {myfs_dri_filepath_str}")
-  print(f"  MyFS.KEY created at: {myfs_key_filepath_str}")
+  print(f"  MyFS.METADATA created at: {myfs_metadata_filepath_str}")
   return True 

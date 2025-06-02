@@ -238,7 +238,7 @@ class MyFSSecurity:
     else:  # '*'
       answer = a * b
     
-    return challenge, str(answer)
+    return challenge, str(answer) 
 
   def check_file_integrity(self, file_path):
     """Checks the integrity of a given file."""
