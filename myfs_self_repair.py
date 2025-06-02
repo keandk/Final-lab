@@ -13,7 +13,7 @@ from datetime import datetime
 from pathlib import Path
 import hashlib
 
-from myfs_utils import calculate_sha256
+from myfs_utils import calculate_sha256, decrypt_aes_cbc
 from myfs_constants import HASH_SIZE
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
@@ -291,10 +291,12 @@ class MyFSSelfRepair:
       iv = encrypted_data[:16]
       encrypted_zip = encrypted_data[16:]
       
-      # Decrypt the backup
+      # Decrypt the backup using the improved decrypt function
       key = self._read_key()
-      cipher = AES.new(key, AES.MODE_CBC, iv)
-      zip_data = unpad(cipher.decrypt(encrypted_zip), AES.block_size)
+      try:
+        zip_data = decrypt_aes_cbc(encrypted_zip, key, iv, debug=True)
+      except Exception as e:
+        return False, f"Failed to decrypt backup data: {str(e)}"
       
       # Save to temporary file
       with tempfile.NamedTemporaryFile(delete=False, suffix='.zip') as temp_zip_file:
@@ -303,17 +305,41 @@ class MyFSSelfRepair:
       
       # Extract files
       app_dir = os.path.dirname(os.path.abspath(__file__))
+      restored_files = []
+      
       with zipfile.ZipFile(temp_zip_path, 'r') as zipf:
         if files_to_restore is None:
           # Restore all files
           zipf.extractall(app_dir)
+          restored_files = zipf.namelist()
         else:
           # Restore only specified files
           for file_path in files_to_restore:
             try:
               zipf.extract(file_path, app_dir)
+              restored_files.append(file_path)
             except KeyError:
               pass  # File not in backup
+      
+      # Update manifest with new modification times for restored files
+      if restored_files and os.path.exists(self.backup_manifest_path):
+        try:
+          with open(self.backup_manifest_path, "r") as f:
+            manifest = json.load(f)
+          
+          # Update modification times for restored files
+          for file_path in restored_files:
+            full_path = os.path.join(app_dir, file_path)
+            if os.path.exists(full_path) and file_path in manifest["files"]:
+              file_stat = os.stat(full_path)
+              manifest["files"][file_path]["mod_time"] = file_stat.st_mtime
+          
+          # Save updated manifest
+          with open(self.backup_manifest_path, "w") as f:
+            json.dump(manifest, f, indent=2)
+        except Exception as e:
+          # Don't fail the restore if manifest update fails
+          pass
       
       # Clean up
       os.unlink(temp_zip_path)
