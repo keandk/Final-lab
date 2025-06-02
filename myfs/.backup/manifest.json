@@ -1,0 +1,3385 @@
+{
+  "timestamp": "2025-06-02T14:15:35.502418",
+  "files": {
+    "myfs.py": {
+      "hash": "59d2e02300dedcffeb5554cf0b728c90b052362d06241c11db2e3d4e59a79250",
+      "size": 22915,
+      "mod_time": 1748847715.7789114
+    },
+    "myfs_connector.py": {
+      "hash": "0c59799336ffb07aeef311bed85c59102b0eacaed7b697d98d2b2363964c1072",
+      "size": 6887,
+      "mod_time": 1748847535.4699347
+    },
+    "myfs_constants.py": {
+      "hash": "331a9daa5e5979343bbc42d117dd11f5e17ebbf0be2dc1b83009de5bfd9c5370",
+      "size": 1836,
+      "mod_time": 1748847843.7158697
+    },
+    "myfs_file_handler.py": {
+      "hash": "4d18d8c428401f4384da2ced408456f96b68c7ea0e77fc8d5594c898397dca41",
+      "size": 20749,
+      "mod_time": 1748847535.4699347
+    },
+    "myfs_formatter.py": {
+      "hash": "fd22fb63f8ab2cd25b0cab5353c8b0b7f57ef995736f72b90f9bbcd15b33995f",
+      "size": 7995,
+      "mod_time": 1748847843.7158697
+    },
+    "myfs_hardware.py": {
+      "hash": "b9495f055a03b0eb0ad3ef1b08feff19e4eea5ce240cd05fc76f53cc3d45098e",
+      "size": 2453,
+      "mod_time": 1748847535.4709358
+    },
+    "myfs_metadata.py": {
+      "hash": "35b5dc8a67fcfc974dc3c056d168b01386153fb99e99566361ac86711746bf6d",
+      "size": 10164,
+      "mod_time": 1748848477.470023
+    },
+    "myfs_security.py": {
+      "hash": "e5b0a17934e5aa2d10909f4529a3cc81d865df4ca69d179ae3c06521f806eadf",
+      "size": 9047,
+      "mod_time": 1748848505.284379
+    },
+    "myfs_self_repair.py": {
+      "hash": "02901e63ebff2c1ca4e0b11cf52002ac170770de4d1b4cfeb8ee0076a346edde",
+      "size": 17296,
+      "mod_time": 1748847625.2944233
+    },
+    "myfs_utils.py": {
+      "hash": "32b2b78152ccbba0623bbd7145af790f508d452bb88f6baa1833c6dd82d9af1c",
+      "size": 2652,
+      "mod_time": 1748848489.061663
+    },
+    "pass_checker_myfs.py": {
+      "hash": "6b38f63141a38d3bddc0dce5fc11a08d079ac0855da787db31aedc091527632d",
+      "size": 3148,
+      "mod_time": 1748847535.4739358
+    },
+    ".venv\\Lib\\site-packages\\pythoncom.py": {
+      "hash": "8d9352a0222c8d408bb6a68180ad121317b853ece69f50b5a72748b1d9d4f0d4",
+      "size": 143,
+      "mod_time": 1744467675.9278054
+    },
+    ".venv\\Lib\\site-packages\\wmi.py": {
+      "hash": "18a1541ee0f4c62be8eb5b64d072ef250ed8c9077f6bcdf44e9356bedfc04bf7",
+      "size": 55814,
+      "mod_time": 1748705245.2546763
+    },
+    ".venv\\Lib\\site-packages\\_virtualenv.py": {
+      "hash": "6cf30c56faf2a55228914dbbd17f8088ed371ebb08f5e7fa6fd931f913fcaf1d",
+      "size": 4342,
+      "mod_time": 1748704870.7420816
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\adodbapi.py": {
+      "hash": "a4904e34b15298573d756e2d33fb7acbddc5e26123884b7afb17d71e648ea930",
+      "size": 48928,
+      "mod_time": 1744467675.9310346
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\ado_consts.py": {
+      "hash": "b17f32031d4228f7876e5d4f9e42bb6b63c14f0c2cffe0e127f2a1d5ae7cd233",
+      "size": 9873,
+      "mod_time": 1744467675.9300308
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\apibase.py": {
+      "hash": "9e08ccb9553dc250827f99ff04de87eb397ef221ead249e05ecc4498699efbf2",
+      "size": 27130,
+      "mod_time": 1744467675.9320319
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\is64bit.py": {
+      "hash": "28b4c15f34074ac0ec7d2b50bc22fe5f1813830951c49cbb47a9fe7459aabc5a",
+      "size": 1025,
+      "mod_time": 1744467675.9320319
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\process_connect_string.py": {
+      "hash": "96d129297d86875221c7760abec5565423c993a7ce3d472dcd950a0b4ab63058",
+      "size": 5420,
+      "mod_time": 1744467675.933032
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\schema_table.py": {
+      "hash": "c3d5af8608debd02b3fad0a380a688a071afa04c3e545e6333d99ebab63b2c8d",
+      "size": 438,
+      "mod_time": 1744467675.9365456
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\setup.py": {
+      "hash": "d4228716caeeef9b69c11a24b9c584228170a3870797fe61e6bd38dfde0e0c5f",
+      "size": 2194,
+      "mod_time": 1744467675.9390604
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\__init__.py": {
+      "hash": "9061275dbd2aeaae3157f1fb52fb0752b4812d029d85327873dca471640c6767",
+      "size": 2731,
+      "mod_time": 1744467675.9288116
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\examples\\db_print.py": {
+      "hash": "0e603b186edb01e32e51186bc7066e494e72b03d142f8a6dfab08b80e1345146",
+      "size": 2288,
+      "mod_time": 1744467675.9400673
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\examples\\db_table_names.py": {
+      "hash": "2db27c7af547388bb8c34b6adbdb4a2607d8d38d52004a18eb758a86b7de7875",
+      "size": 526,
+      "mod_time": 1744467675.9410672
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\examples\\xls_read.py": {
+      "hash": "5a6f50e3303d1eebdf5177d8c066f4d39d304bd11e2a189205a545f0005d513e",
+      "size": 1131,
+      "mod_time": 1744467675.946068
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\examples\\xls_write.py": {
+      "hash": "89dff1b87d985afc36736dadac22408cfb39812ca67aae055a8bd2ce3a4b92b8",
+      "size": 1463,
+      "mod_time": 1744467675.9485736
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\test\\adodbapitest.py": {
+      "hash": "89da9f6e37f1e13849325c4d76846b2970a135e997422528941f563d49bf7908",
+      "size": 56194,
+      "mod_time": 1744467675.9505873
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\test\\adodbapitestconfig.py": {
+      "hash": "4f2434e53a225316b1bd333fb74e7e0f14c719e7f03043bfad80add191029862",
+      "size": 6517,
+      "mod_time": 1744467675.9515893
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\test\\dbapi20.py": {
+      "hash": "70193da9117a057fdb6f5660001eda922735cafed887434848a07f1e7343ad2e",
+      "size": 33349,
+      "mod_time": 1744467675.9525888
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\test\\is64bit.py": {
+      "hash": "e1c57f6c090638f0a27d16e5e2ac97e90e5882976bab4c9e86d5962c45d98d3f",
+      "size": 1013,
+      "mod_time": 1744467675.953588
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\test\\setuptestframework.py": {
+      "hash": "f4b59bb95c2e1e86816551008ffda9ad20cf1fe492c2d639291fcac30d6914b0",
+      "size": 3017,
+      "mod_time": 1744467676.1954286
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\test\\test_adodbapi_dbapi20.py": {
+      "hash": "254e3c7c6d5a5a9609c372abf54d19e6c83d7d166810748883b2d018175e6d17",
+      "size": 5948,
+      "mod_time": 1744467676.1964228
+    },
+    ".venv\\Lib\\site-packages\\adodbapi\\test\\tryconnection.py": {
+      "hash": "08b1969773cfb6198c780282631b7fbd4a35f5ba91a3892e3b0698d5169274ae",
+      "size": 1027,
+      "mod_time": 1744467676.1964228
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\__init__.py": {
+      "hash": "080587f7e7e526e6a975fade2bb27ca6200a0dd830254fdd0f1c036e16fc857d",
+      "size": 191,
+      "mod_time": 1748705245.3035035
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\AES.py": {
+      "hash": "24af7918b87ca1c3025348200ade01b17a2c8310237ac25d097d266cff577fd6",
+      "size": 9264,
+      "mod_time": 1748705245.3065097
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\ARC2.py": {
+      "hash": "cf808c3951f83d9e86799e02a564661d6c372216656dc5d40fd9e19b21d84a53",
+      "size": 7185,
+      "mod_time": 1748705245.3077898
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\ARC4.py": {
+      "hash": "717b865cc7a4417aeaf0efa70b60ef7c42cbfdae4433bd704eab9ddf75c50486",
+      "size": 5252,
+      "mod_time": 1748705245.3087866
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\Blowfish.py": {
+      "hash": "9e71714f41ad4fc6499b83ff0199d1ff75d73d551a740cffdc077d13ad930edf",
+      "size": 6123,
+      "mod_time": 1748705245.3112948
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\CAST.py": {
+      "hash": "2e59e547baf132e8553fc76e9ae2151b48c0610483e54130b0b6262a03f95903",
+      "size": 6230,
+      "mod_time": 1748705245.3203151
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\ChaCha20.py": {
+      "hash": "ddf406689b55741bc914e9acd426f4a42918f37983367711f5bb4e148a282934",
+      "size": 11130,
+      "mod_time": 1748705245.3263385
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\ChaCha20_Poly1305.py": {
+      "hash": "51a6580a63c4487bcd0df401999a5c4497416cf251e2e935c950dc2a59422271",
+      "size": 11855,
+      "mod_time": 1748705245.3283494
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\DES.py": {
+      "hash": "bae52d7a7d2cd509d466156dc2878d7e4194bb304a8cb555f353ec00108c9186",
+      "size": 6105,
+      "mod_time": 1748705245.3313484
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\DES3.py": {
+      "hash": "70d9b525599d85146924ef8dbdf0980c42a03f4fbb2d01a2cadbf7ed2d43cd93",
+      "size": 7112,
+      "mod_time": 1748705245.3338628
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\PKCS1_OAEP.py": {
+      "hash": "d924170c92be9e1324dedc5b731f92513cdf759a251148df8ecf1a0e6011d77c",
+      "size": 8783,
+      "mod_time": 1748705245.3373747
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\PKCS1_v1_5.py": {
+      "hash": "8bbd80adf2035ded54365eb2076468d32e6bf9a5007c19557afeae19932a685f",
+      "size": 7208,
+      "mod_time": 1748705245.348402
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\Salsa20.py": {
+      "hash": "80a7769de32a81b8fb8cbe362066ff80711d630c0beb39235246e4fd53e11870",
+      "size": 6516,
+      "mod_time": 1748705245.3504014
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_EKSBlowfish.py": {
+      "hash": "26b7450998b5e04410a77486c695457c58dcbc8db24f50cc685651d223f3be8e",
+      "size": 5336,
+      "mod_time": 1748705245.3519065
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_cbc.py": {
+      "hash": "4707cd383304e7b5a84330f45eb3e49c72e905072e825859b54d033c87a0afe7",
+      "size": 11181,
+      "mod_time": 1748705245.3674474
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_ccm.py": {
+      "hash": "2adc50f715b0bf67aab34c48da20af3516699a7fe5b79a743ba583b6590a570b",
+      "size": 25950,
+      "mod_time": 1748705245.369448
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_cfb.py": {
+      "hash": "813d8a9659151c4834b488257c205dbad70bfee9e45ed6c18cfb9b9010bf23da",
+      "size": 11014,
+      "mod_time": 1748705245.3709562
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_ctr.py": {
+      "hash": "2cb2f14bd56381e0db323b2e585a3803a667c37f9a852d407ab2b62e09efbc68",
+      "size": 16205,
+      "mod_time": 1748705245.3729665
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_eax.py": {
+      "hash": "8643c44ab29f164fbc9f76686ce8d8203a8f9e685acfd0f8fc22af9643782e83",
+      "size": 14861,
+      "mod_time": 1748705245.3875093
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_ecb.py": {
+      "hash": "beb1d881c681295ae01316e857a5ab8d289a4a1b30dcf97ed405fea5c694892a",
+      "size": 8529,
+      "mod_time": 1748705245.3920329
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_gcm.py": {
+      "hash": "113176fe53453c3e932e18abfeecf654a0f87e19995da8d84beb0e1a85bc3027",
+      "size": 21917,
+      "mod_time": 1748705245.3950307
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_kw.py": {
+      "hash": "ac337a35b09cb6465e2f2d79ef22a083e27ffc6fabae50eb2ce6ab91c2e40494",
+      "size": 4604,
+      "mod_time": 1748705245.3995495
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_kwp.py": {
+      "hash": "74fe27c77e9c2ad3943c4d09bd0f8f60d2cfddb53a90d36f7384bb183ee87cd4",
+      "size": 4070,
+      "mod_time": 1748705245.4010568
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_ocb.py": {
+      "hash": "3b85f66b106e11abff974d8c0505286d895f7a586770ed65317335cd0eef2fd7",
+      "size": 20467,
+      "mod_time": 1748705245.4020653
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_ofb.py": {
+      "hash": "670b77041005e3e61fa2e3a80e23e454051039fe3f310c8b53a7a8f02a56b986",
+      "size": 10491,
+      "mod_time": 1748705245.405066
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_openpgp.py": {
+      "hash": "3f71e4528bd24f3cc96bdea89bc1cac2fe69fc198c4db07bfd0a1c997827fae4",
+      "size": 7259,
+      "mod_time": 1748705245.4120932
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_mode_siv.py": {
+      "hash": "beb9b03ee0819457c449970767bc7fe3f671a385bed8b7c018bbd3edd2f9c45d",
+      "size": 14369,
+      "mod_time": 1748705245.4160926
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\_pkcs1_oaep_decode.py": {
+      "hash": "9f8950feeb6be54c20fe83b79d18b33c773591e4bfd2f6ed85865e4e12677616",
+      "size": 1865,
+      "mod_time": 1748705245.425637
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Cipher\\__init__.py": {
+      "hash": "d473aba5b1d98b834c34bb3b734e2495055bcddb0d5660f058f73cd759db633f",
+      "size": 3681,
+      "mod_time": 1748705245.3594227
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\BLAKE2b.py": {
+      "hash": "d810141e84abef8948d031c63bbc72d9893090aff62cd21fa89ab64de09cec84",
+      "size": 9670,
+      "mod_time": 1748705245.4889092
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\BLAKE2s.py": {
+      "hash": "19798a2a1d438c0dd3538193b4284c11da04d6fd52f7e58aea9a95af1e8bae68",
+      "size": 9676,
+      "mod_time": 1748705245.4934213
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\CMAC.py": {
+      "hash": "b61e587e5aa8fd5f958f2c3daa7e8f8914c3d33d162a3ee4ccf7dcd8277ab56d",
+      "size": 10810,
+      "mod_time": 1748705245.5054834
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\cSHAKE128.py": {
+      "hash": "25255524b26d401f859a162e6271277370f87f2ad42b94bfa27fa98bf15536b7",
+      "size": 6550,
+      "mod_time": 1748705245.6595511
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\cSHAKE256.py": {
+      "hash": "32810b278fb43848bedbf75d04afc4c081d544bc512feb2ce119ed010301c964",
+      "size": 2258,
+      "mod_time": 1748705245.6610565
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\HMAC.py": {
+      "hash": "bf5bdb55739bc144ffd51be8696df86fddb749efc794105122ba6882062d1f77",
+      "size": 8383,
+      "mod_time": 1748705245.512018
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\KangarooTwelve.py": {
+      "hash": "1f06117b8fb243148da2689a76b39f88797d3a7a797a3363792d3d30d0fe06d0",
+      "size": 7392,
+      "mod_time": 1748705245.5185328
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\keccak.py": {
+      "hash": "e2b3e86d48ca669585e69f0320653e8d7712144bb31548c4d451e957c76b2cb6",
+      "size": 7724,
+      "mod_time": 1748705245.6620636
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\KMAC128.py": {
+      "hash": "2784c94afd4e41e49e3370af0334d1578402e2cf51bfa1e57561d74eafb5d9a4",
+      "size": 6128,
+      "mod_time": 1748705245.5140176
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\KMAC256.py": {
+      "hash": "5df6b48163bbbea77d5b624e1e07b95f25390db1430d45ad5cab902e477a64a4",
+      "size": 2980,
+      "mod_time": 1748705245.515525
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\MD2.py": {
+      "hash": "2b2cb2d01b12395ddbea6ec5d66e3cdc8fd5b99bcb81e112fe127299ee24922c",
+      "size": 6277,
+      "mod_time": 1748705245.5220494
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\MD4.py": {
+      "hash": "26196b146e61c65278c91c066b7460febc3200dc14fb5e842c471e6d56c39783",
+      "size": 6767,
+      "mod_time": 1748705245.5320868
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\MD5.py": {
+      "hash": "5b3966f7457db844be069e442139f2863b2407d9c803edca064ce878bbd263e5",
+      "size": 6802,
+      "mod_time": 1748705245.5330865
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\Poly1305.py": {
+      "hash": "f837e4153ed4e178f518f71a87315c172c3b60cb4f132a6f19f68af9bca336f7",
+      "size": 8291,
+      "mod_time": 1748705245.5356016
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\RIPEMD.py": {
+      "hash": "e811e75c7b6a01cdfaf40c3ef330bdaf01edd45aaf449396a669eb1ff78c8cc6",
+      "size": 1225,
+      "mod_time": 1748705245.539121
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\RIPEMD160.py": {
+      "hash": "cbccb75e5f0647e5c18b743266d00300eea5d15d164e3008acbd934894a4ab43",
+      "size": 6567,
+      "mod_time": 1748705245.54566
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA.py": {
+      "hash": "c86bad9d4affeac58ce3884195e177e1418721c8e3b70684acddc36e74bc943f",
+      "size": 1172,
+      "mod_time": 1748705245.5466664
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA1.py": {
+      "hash": "6c3ce9b0e7b65218814ceb19987644c776d4c36495c2875470fc94149a8a0015",
+      "size": 6875,
+      "mod_time": 1748705245.5476668
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA224.py": {
+      "hash": "d872af137da84299b930fbfd1fc433fc86e0b38e0046e3d5f981f7eed9bb8cb8",
+      "size": 7087,
+      "mod_time": 1748705245.5506835
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA256.py": {
+      "hash": "da3433adaebe699670076abb87b264f30b568692279e535240ee76d65a33a4b9",
+      "size": 7082,
+      "mod_time": 1748705245.5536923
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA384.py": {
+      "hash": "c9264e99e50f4d958a133f2dd00b90384767753a0bc0c8345beba0b22cd46ff0",
+      "size": 7085,
+      "mod_time": 1748705245.5607107
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA3_224.py": {
+      "hash": "26ca1c9f197f6b87e4f727a612ceda108d0a9c56d101efb51bc9295270dfa16c",
+      "size": 6353,
+      "mod_time": 1748705245.5647185
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA3_256.py": {
+      "hash": "5f7bca81167fe52f31335bb83cc924990dae60a7aed2552c248f20f911c234c6",
+      "size": 6353,
+      "mod_time": 1748705245.5662243
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA3_384.py": {
+      "hash": "b804f3ab70381fa5b7140e10f95ab9d95bd62a445bdc7400fcc3db44869b8ae1",
+      "size": 6453,
+      "mod_time": 1748705245.5672321
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA3_512.py": {
+      "hash": "14062988382cae40f806020ce67a33d9726df2d23dee63d00a99c592d3f2ace0",
+      "size": 6305,
+      "mod_time": 1748705245.5707395
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHA512.py": {
+      "hash": "f4346feb42803d175a2b4cb2a45fe82882c426a67a64c12ac1d723268d3e7726",
+      "size": 7924,
+      "mod_time": 1748705245.578264
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHAKE128.py": {
+      "hash": "edf3f0f1c642e93e62a2ecf84826aa26cc3500479bbef56720c2dfe542fbe07e",
+      "size": 5402,
+      "mod_time": 1748705245.5817862
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\SHAKE256.py": {
+      "hash": "b28f44027b2834793942f049b03156f9aa4cd79f29a2664fe46564e6de61cd7f",
+      "size": 5404,
+      "mod_time": 1748705245.582785
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\TupleHash128.py": {
+      "hash": "36051ea4794aa6687e689974f315ce9ce9620ec1f9b1ab4c2f0f9c8099d87bbf",
+      "size": 4888,
+      "mod_time": 1748705245.5857844
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\TupleHash256.py": {
+      "hash": "96bb2970b54cc270de193fb71155affbf54f9acf21310ac4ad968893a478b3df",
+      "size": 2902,
+      "mod_time": 1748705245.5882964
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\TurboSHAKE128.py": {
+      "hash": "512a0d196efedab1e320041d54bffbf7366c4d35ea95d7290732db1fd8a946ea",
+      "size": 3947,
+      "mod_time": 1748705245.5928288
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\TurboSHAKE256.py": {
+      "hash": "ad79e152a2c83ee90ac61ff7245df570673fbe28720d9de8e07e2fddbf0e51db",
+      "size": 779,
+      "mod_time": 1748705245.600363
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Hash\\__init__.py": {
+      "hash": "79aa947f1c29d838adf9fb696fe5efc169fa67c73ccee8abb89fd65985d6b440",
+      "size": 3008,
+      "mod_time": 1748705245.631439
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\IO\\PEM.py": {
+      "hash": "c11901c7937f8e12f54052628c8948cb695e0acb861829b3c23f33d5ee0d1a57",
+      "size": 7228,
+      "mod_time": 1748705245.6630669
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\IO\\PKCS8.py": {
+      "hash": "5c03fd63f09bcda17b6ebaeb4bcb04fb741864a8c702a8b26c9311c3226ac4b8",
+      "size": 8037,
+      "mod_time": 1748705245.6640656
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\IO\\_PBES.py": {
+      "hash": "0f8cc06ca73276e22ea5ae445d936f6b2509b525d018fd4d7a3f5b12d2f70dc2",
+      "size": 20477,
+      "mod_time": 1748705245.6655705
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\IO\\__init__.py": {
+      "hash": "655dbe52f138022ccdaef6db28569eba1d513617d12ad88685d793e40c21f5fa",
+      "size": 1571,
+      "mod_time": 1748705245.6665776
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Math\\Numbers.py": {
+      "hash": "3f57f855c528f661974be4a749955c67877b340ef1bfbf2567e2b6e5bb69e2eb",
+      "size": 2155,
+      "mod_time": 1748705245.667585
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Math\\Primality.py": {
+      "hash": "038b088d41f46e28054bdaa8b87c02cf000373236262ddc9339ea04b00c792d2",
+      "size": 11740,
+      "mod_time": 1748705245.6685853
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Math\\_IntegerBase.py": {
+      "hash": "f51738ef5459c02a5cdd445d2eb46ee410ca625a348fc825d89a374efb86095e",
+      "size": 11681,
+      "mod_time": 1748705245.6695862
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Math\\_IntegerCustom.py": {
+      "hash": "a4ddfdeb17daaaa6c77f417677e01545115dacf477c77e99f2b4e9b69a836a60",
+      "size": 5893,
+      "mod_time": 1748705245.6710894
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Math\\_IntegerGMP.py": {
+      "hash": "3e87c06009852ad3e83268b399c9f61bad4979bcc8e1a389d49235b5a7563429",
+      "size": 28668,
+      "mod_time": 1748705245.6720946
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Math\\_IntegerNative.py": {
+      "hash": "2ee1971faf400609ac9f569bc9f435ff18f0dfc2ecece7bc7f45dd4183a04cff",
+      "size": 11706,
+      "mod_time": 1748705245.6730952
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Math\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1748705245.6730952
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Protocol\\DH.py": {
+      "hash": "6fa8f0be62f07c3b1316140b3152baf31f1d0d4791042c903e6891784ef584df",
+      "size": 5812,
+      "mod_time": 1748705245.674097
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Protocol\\HPKE.py": {
+      "hash": "f885384590283ed46a4cb4a2873903daa1d5f5c830213613e522cd6fb9bebfcd",
+      "size": 17441,
+      "mod_time": 1748705245.6756024
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Protocol\\KDF.py": {
+      "hash": "d0954525e750c1e7924a5bc9f7c7d91ad8d0eefbc3aef968c5a6b517bba37859",
+      "size": 23020,
+      "mod_time": 1748705245.6763356
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Protocol\\SecretSharing.py": {
+      "hash": "5d9bad4b48166bac19330d472dea26045a8accf8b8ee63fe4c2bc31b3e5045fd",
+      "size": 9419,
+      "mod_time": 1748705245.6776075
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Protocol\\__init__.py": {
+      "hash": "5e519ac6fbc45fdc85a460e0ddad070baf48bc16c1ba2906a67168f89e3f0899",
+      "size": 1585,
+      "mod_time": 1748705245.6786072
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\DSA.py": {
+      "hash": "479862d6d569ddff438312af51e1757d6a748abf932507a3c08564f33dff6bd5",
+      "size": 23060,
+      "mod_time": 1748705245.6806092
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\ECC.py": {
+      "hash": "2db9213ea6309b25a57956589f9bf53172a0e6e549b2866fb867523f9e7c4ce8",
+      "size": 49225,
+      "mod_time": 1748705245.6818616
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\ElGamal.py": {
+      "hash": "54f3ab21742989ad8bc1aa56d34505f1601e1dbfaea89a121f981784ff339db5",
+      "size": 8901,
+      "mod_time": 1748705245.68386
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\RSA.py": {
+      "hash": "42bb914ac46fd08435136d6e467e1ec9ce3f111300f2ee87d2765e3559207d15",
+      "size": 31964,
+      "mod_time": 1748705245.68386
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\_curve.py": {
+      "hash": "5ccc3bc94e70a3fcb0d5ed0ea47b1211d3bf4e4ee0286bb8d2c2078b60caa14a",
+      "size": 1849,
+      "mod_time": 1748705245.6863468
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\_edwards.py": {
+      "hash": "1f001ab4ed9b6b7c0bb1b0d04dd4637d547af01406e51ce9d2d381ff71e5beb9",
+      "size": 4779,
+      "mod_time": 1748705245.7003617
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\_montgomery.py": {
+      "hash": "3dd4b003b6471646f2565d0a7444d57f86611bf4891523610d13a0a2b7c60a50",
+      "size": 5379,
+      "mod_time": 1748705245.7016206
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\_nist_ecc.py": {
+      "hash": "85aee37f53183859adfd441979f7a1246850d352d7fce24b706efb3e715365ef",
+      "size": 10407,
+      "mod_time": 1748705245.7026203
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\_openssh.py": {
+      "hash": "b92d60974ef5ff39314516c2fa7adf20886c4201c9aea68ec633f921d4ed4b63",
+      "size": 5261,
+      "mod_time": 1748705245.703623
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\_point.py": {
+      "hash": "e1f92991f05a77592df6209eab67d47e94a15e964db943e67765f5c22992db7a",
+      "size": 16948,
+      "mod_time": 1748705245.7046165
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\PublicKey\\__init__.py": {
+      "hash": "ee62ed1363ae2633b7498b8ae333e525ceba8af94cba9f1c6df4939581c759d8",
+      "size": 3236,
+      "mod_time": 1748705245.6853645
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Random\\random.py": {
+      "hash": "01adbd3f51a22f71edd8b3fb3f45bb849c9d9a46e00a7cfd25c28ea780512e3c",
+      "size": 5372,
+      "mod_time": 1748705245.7063315
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Random\\__init__.py": {
+      "hash": "05e8d3e5d2b18c1731189db337b04cb83e966dc385930836fa22e9ee0f376fb9",
+      "size": 1866,
+      "mod_time": 1748705245.705617
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\loader.py": {
+      "hash": "0adbab2a91e660439c0b0f0baa4c2bf4d56ce69f96bb3ef41202455e4ecb3f25",
+      "size": 8768,
+      "mod_time": 1748705245.70934
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\st_common.py": {
+      "hash": "aa5eb6ddee38bf49097c0af6262c8b90ca0cd366ac0826dd8aae37b63cd8b045",
+      "size": 2000,
+      "mod_time": 1748705245.7103367
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\__init__.py": {
+      "hash": "a5195de8f0fd1855c9fe4170915bc36c9c9f85df5b8e14feaf817c570f9c25f1",
+      "size": 3311,
+      "mod_time": 1748705245.708338
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\__main__.py": {
+      "hash": "165a0ba1e31bec7c6e80633f113d3882cc2ac98e37f51e9224aaae8b3df93d67",
+      "size": 1612,
+      "mod_time": 1748705245.70934
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\common.py": {
+      "hash": "4be599673037e90d439f42b30e06f975f906e92135820b3b14808fee7bf44339",
+      "size": 17826,
+      "mod_time": 1748705245.7108395
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_AES.py": {
+      "hash": "c63e2f372bcc41ec2c4667a8c8036378d920f96e66ea6e74f1061ae18fc2c181",
+      "size": 73082,
+      "mod_time": 1748705245.7118454
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_ARC2.py": {
+      "hash": "82c1fe3f3e2a2056eefe5c7a2ff0db52a8ba12012411ba8692636044b5d47d14",
+      "size": 6621,
+      "mod_time": 1748705245.7128458
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_ARC4.py": {
+      "hash": "4b5535377c5f07e7a2beb41443beae9e340c3f0e0c2cce7770bba489cff57e20",
+      "size": 25450,
+      "mod_time": 1748705245.7128458
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_Blowfish.py": {
+      "hash": "91f26b656b58ba5c73c57da0ae5b48f5a911d82db12738b59ae5c8b82f96270c",
+      "size": 7390,
+      "mod_time": 1748705245.7138448
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_CAST.py": {
+      "hash": "98a16555489559e0b93f6338a7ca46516232df195093859cfaf3efb05b9ab7fa",
+      "size": 3380,
+      "mod_time": 1748705245.7138448
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_CBC.py": {
+      "hash": "c2d96ea70e4ca1a31c148e7e1a3a44f696596df00992d51a4868d96465b2e332",
+      "size": 20758,
+      "mod_time": 1748705245.7148457
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_CCM.py": {
+      "hash": "4693d7061e018fee218f09dba8afd91df49b176a5b061921674d6cf8ce64768a",
+      "size": 39451,
+      "mod_time": 1748705245.7148457
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_CFB.py": {
+      "hash": "9ea26eebf360b5271b9a4ffb3a961cb19114903906d37fb1def604e25bf433eb",
+      "size": 16472,
+      "mod_time": 1748705245.7158449
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_ChaCha20.py": {
+      "hash": "15ec0ccbe86a0910d0416230fac536fc59ae0a86ed59d866e6c584ae1306e23e",
+      "size": 20845,
+      "mod_time": 1748705245.716316
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_ChaCha20_Poly1305.py": {
+      "hash": "15f3b00a1bc049c62c9e26ef3a06d91fdd800028bd4cbe2a82fa521efcab336e",
+      "size": 31490,
+      "mod_time": 1748705245.7169702
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_CTR.py": {
+      "hash": "4a24dab89ed26a137bb8ed94b121623fdfe98b1e1582a1b259d8f8a4c9febffe",
+      "size": 21786,
+      "mod_time": 1748705245.716316
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_DES.py": {
+      "hash": "2ff59ab811c58999da679b0d9f25d666ebae2ff1f1745a1044fc3dbd0e303a4f",
+      "size": 16317,
+      "mod_time": 1748705245.7169702
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_DES3.py": {
+      "hash": "1b98bd98c3d586ff6c16a0c281c5e16ae56f6e6b1d2742cb82d071cf6f54afaa",
+      "size": 6756,
+      "mod_time": 1748705245.7179685
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_EAX.py": {
+      "hash": "dbc39cea208c0a3d8963c29360393e485fedb9a8f66c0a9cad285014c96fdf58",
+      "size": 29594,
+      "mod_time": 1748705245.7179685
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_GCM.py": {
+      "hash": "fbd00f487173d330c461dc53f14cb971bdc708630515bf343864f83a7dd98c1a",
+      "size": 38227,
+      "mod_time": 1748705245.718969
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_KW.py": {
+      "hash": "105854fd4cdc4ba0a521c3dd8f0e0dc37f9c6fec2be4f4f28e8b0253a9c17cf3",
+      "size": 5785,
+      "mod_time": 1748705245.718969
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_OCB.py": {
+      "hash": "05d877e5930ee6784fd584014dc9f96f5022b788b18902907cf8283153fa252d",
+      "size": 33484,
+      "mod_time": 1748705245.718969
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_OFB.py": {
+      "hash": "d6e8220e8f383c767a2eac33a812b5b63962a7bae8ed083c72ea32eb39440bc2",
+      "size": 9605,
+      "mod_time": 1748705245.718969
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_OpenPGP.py": {
+      "hash": "4ab75e51f66dd9c80b9b893c7eb35eee23d93e14a6368099337987e3692d1b2b",
+      "size": 8695,
+      "mod_time": 1748705245.720472
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_pkcs1_15.py": {
+      "hash": "a33f4341d43d86ce8f8c87f2bccc5de1300ca223e2a53279b20348886c17f0c7",
+      "size": 11227,
+      "mod_time": 1748705245.7219994
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_pkcs1_oaep.py": {
+      "hash": "22da3ec31421a2552198ef2ae00e6019df85cbeac74d428a50df9cd6ab7210ca",
+      "size": 22796,
+      "mod_time": 1748705245.7219994
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_Salsa20.py": {
+      "hash": "f99cc569b39f3163a2025a128a4323e3454bc32473624627920287ec0dbb667e",
+      "size": 16958,
+      "mod_time": 1748705245.720472
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\test_SIV.py": {
+      "hash": "ac2b287f231294e23e8037a25773bd7a67a54a72ab1fd6fd4d2652244e985d9a",
+      "size": 20491,
+      "mod_time": 1748705245.720472
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Cipher\\__init__.py": {
+      "hash": "2cba1e7116b373aacf346347f7321bf14a20796c5a93ffe602d473bfaac13ba9",
+      "size": 3774,
+      "mod_time": 1748705245.7108395
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\common.py": {
+      "hash": "6aa885ed7e71f39c2197e822a1867b806660f4cbf4fc8e8197c3a0ed492272f4",
+      "size": 10168,
+      "mod_time": 1748705245.7230048
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_BLAKE2.py": {
+      "hash": "d0770c758f2bd4bbfac6c111050928550d39bb48254e2a9da3934b40937fcd9f",
+      "size": 16796,
+      "mod_time": 1748705245.724005
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_CMAC.py": {
+      "hash": "9158ffbc96e70a527a5d5758a3e9d98d9dc8905818fb747a1a800a294a17d320",
+      "size": 13808,
+      "mod_time": 1748705245.724005
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_cSHAKE.py": {
+      "hash": "aded756fb81f8601c093433f2a8549d91033c2fdc632f5d0a96e82d65bbcabb3",
+      "size": 6970,
+      "mod_time": 1748705245.7318208
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_HMAC.py": {
+      "hash": "1f8ad7d399ce6d2449f3413e26bf73403860c79114807776da866e29e764606a",
+      "size": 20489,
+      "mod_time": 1748705245.724005
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_KangarooTwelve.py": {
+      "hash": "0c889ce5dd48a302e3b9f9319cad868cf7b12361715fd5dd4e37ef26259a50e8",
+      "size": 12085,
+      "mod_time": 1748705245.7255094
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_keccak.py": {
+      "hash": "f75f0ddb0190f6b0177dfcd321931ac8bcf9b0a6bf0539b413d719a3e104656e",
+      "size": 9139,
+      "mod_time": 1748705245.7328215
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_KMAC.py": {
+      "hash": "3bd587ff74064862e669cdfb0afc6ef1489e751c9f67746757f0cc3f4f62d0e3",
+      "size": 12050,
+      "mod_time": 1748705245.724005
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_MD2.py": {
+      "hash": "a909bd63262259ef3e795aa112faaa10fdd71c713948834cace1619818b2dbba",
+      "size": 2386,
+      "mod_time": 1748705245.7255094
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_MD4.py": {
+      "hash": "a2149f6db57f2e73130c7ec05f8895c6df475a46df25c860ec3801d97c630cb0",
+      "size": 2411,
+      "mod_time": 1748705245.726303
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_MD5.py": {
+      "hash": "4cf30101b12752c5921278cc8c04b52b8a603e3bc2736cbf5e7166c38210c805",
+      "size": 3378,
+      "mod_time": 1748705245.726303
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_Poly1305.py": {
+      "hash": "2973b56cfc48f62ba1fec363877340bcce4c99ad7870733389996b2404c454c9",
+      "size": 18839,
+      "mod_time": 1748705245.726303
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_RIPEMD160.py": {
+      "hash": "7349c09c56ba9a32364240ea09f439f0857ca8373ecf0ae72e4b5e352f64a5ab",
+      "size": 2734,
+      "mod_time": 1748705245.7273085
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA1.py": {
+      "hash": "dbd7878b214acc6d24164b67b5161bf6af4edcca3bc498dccb6b27a360d7f3cc",
+      "size": 3010,
+      "mod_time": 1748705245.7273085
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA224.py": {
+      "hash": "ddee3a1a84db48ff22767cf608328da5a29fecaf3200da8ed96dd3742108ec88",
+      "size": 2596,
+      "mod_time": 1748705245.7273085
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA256.py": {
+      "hash": "3f4bebb1db2b687741c27ac9d56e16972660af0a74b21417c4cb50a1a001edfb",
+      "size": 3711,
+      "mod_time": 1748705245.7283077
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA384.py": {
+      "hash": "6c12d0636052ac571f310aecfe96011410c6cdfab71eb8fca5264997f3d03f49",
+      "size": 2775,
+      "mod_time": 1748705245.7283077
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA3_224.py": {
+      "hash": "c50486c345952d8fd5be518f43c618db8d586f374cfdc382c005a38006b4ef29",
+      "size": 2909,
+      "mod_time": 1748705245.7293105
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA3_256.py": {
+      "hash": "872c11a1795c3cf07aaaca69a85f622d045e317d7401efd9194a762dce149e31",
+      "size": 2911,
+      "mod_time": 1748705245.7293105
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA3_384.py": {
+      "hash": "fca402667ae407801ec05e7ee90bfcb43253ce564a9f2748c6c2bb839dc4388f",
+      "size": 2909,
+      "mod_time": 1748705245.7293105
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA3_512.py": {
+      "hash": "c0d24363a1ee4144a234fb31ab7febdf1d99bd16e5859dd90d79d8e1acf045dd",
+      "size": 2910,
+      "mod_time": 1748705245.7293105
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHA512.py": {
+      "hash": "66cc1c34ebbb0775a0ee58206fd09d9cafe4ac46114112340c0a8def95e24e06",
+      "size": 5338,
+      "mod_time": 1748705245.7308142
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_SHAKE.py": {
+      "hash": "0cbe6654dc08e7f2844377a97aae5830db9f1244cf9b4ea9e894adf6d5f07184",
+      "size": 5065,
+      "mod_time": 1748705245.7308142
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_TupleHash.py": {
+      "hash": "996817f0c1ff6be9642c71b0c64fe8b2b783df516dfc289c950e7212db2651e5",
+      "size": 9000,
+      "mod_time": 1748705245.7308142
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\test_TurboSHAKE.py": {
+      "hash": "1ad796b5a7ac7c12aaaeccd151cdf0ab312b28621fd09a047f974f9367a30b7e",
+      "size": 15477,
+      "mod_time": 1748705245.7318208
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Hash\\__init__.py": {
+      "hash": "62225a7df06d003a465c3ba5612f695badb31559152c1492354b5c44a0a63bb5",
+      "size": 3879,
+      "mod_time": 1748705245.7230048
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\IO\\test_PBES.py": {
+      "hash": "ccc8f12ff8ca42c2ff848798c9bae1aa606f088b197d51e301515ddf0df1160c",
+      "size": 4467,
+      "mod_time": 1748705245.7328215
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\IO\\test_PKCS8.py": {
+      "hash": "0f02942929784ab768bdac13a9ff91baf09e949fe9a4e94b72664f86a71e07ee",
+      "size": 19565,
+      "mod_time": 1748705245.7338207
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\IO\\__init__.py": {
+      "hash": "e0feabc0079fd763084043fc5c8be120e43d75e0d12770e73cae0781423b2f20",
+      "size": 2041,
+      "mod_time": 1748705245.7328215
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Math\\test_modexp.py": {
+      "hash": "0fea1e2f8e4285dee62676c7e87d438ef421f948bdb8b412ec453a0d4deca6d5",
+      "size": 8304,
+      "mod_time": 1748705245.7363238
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Math\\test_modmult.py": {
+      "hash": "8b83a8374c7929213ac42bc379dd2e3923b015203bfdab61efcc2ae7e8986c6d",
+      "size": 4980,
+      "mod_time": 1748705245.7363238
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Math\\test_Numbers.py": {
+      "hash": "cfa1e3dfd1f93173dabc32a112c6111138cd62a294e0d3254b6ae1acb1949b48",
+      "size": 33222,
+      "mod_time": 1748705245.7348201
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Math\\test_Primality.py": {
+      "hash": "9e2ba49b922820dfa0ad60532e98747dbbd03796f3df2b3701b0373d1a254f09",
+      "size": 4999,
+      "mod_time": 1748705245.735821
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Math\\__init__.py": {
+      "hash": "73d30940d7505a54b81211bb5bfb364cf389486220f3749a1b3783588ae316c9",
+      "size": 2253,
+      "mod_time": 1748705245.7348201
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Protocol\\test_ecdh.py": {
+      "hash": "afa3a2740773b6e479325d5647d83e3888f8faafe1706744a887ae1bb13ebae4",
+      "size": 31314,
+      "mod_time": 1748705245.73933
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Protocol\\test_HPKE.py": {
+      "hash": "faae0ec9919ae02651e5ef9e51fcff7ba33467fa5c6dfcc0ec58e20e1fb1413b",
+      "size": 18133,
+      "mod_time": 1748705245.737328
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Protocol\\test_KDF.py": {
+      "hash": "fb28e82874103817603f039ee67a36d1813b743b80dda15c98e75a2fa6aef8ef",
+      "size": 37649,
+      "mod_time": 1748705245.738328
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Protocol\\test_rfc1751.py": {
+      "hash": "5ba5cf5c2665263df853e60ce4a6ecfd8e74910c13fa92f7b32841501bf90c59",
+      "size": 2270,
+      "mod_time": 1748705245.73933
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Protocol\\test_SecretSharing.py": {
+      "hash": "d8cec10fc9583bf30bc738a55b3152e89bc77a86d7f3a812efdfb7d3e6b614b6",
+      "size": 10468,
+      "mod_time": 1748705245.73933
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Protocol\\__init__.py": {
+      "hash": "1266861fcb7200c848c3ef4f1f6ee47543c86e4bbc7aa39d0db915932a8da412",
+      "size": 1947,
+      "mod_time": 1748705245.737328
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_DSA.py": {
+      "hash": "60f3faf47612a9df1b4d89b06b38e1b6286d3cf2d77f4493fe7ebaf664a087b1",
+      "size": 9847,
+      "mod_time": 1748705245.7418447
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_ECC_Curve25519.py": {
+      "hash": "116cd515fafda5b113bc50719b431ce5421b0311ceabc6eb62b3cbdf820e4a60",
+      "size": 12270,
+      "mod_time": 1748705245.7431898
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_ECC_Curve448.py": {
+      "hash": "220207d94fb32f20c4caf2fd07d473295b8717802200216847b368fe980c24ce",
+      "size": 10443,
+      "mod_time": 1748705245.7441888
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_ECC_Ed25519.py": {
+      "hash": "98da92985a5646178c2e64e577a1e132deb18e541e47e18121dc4d4c18d58420",
+      "size": 14265,
+      "mod_time": 1748705245.7441888
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_ECC_Ed448.py": {
+      "hash": "e83a7edef10f0a28250a3131b0c2ce8173d25088c94f82faeb5e6b80ad6000a2",
+      "size": 15328,
+      "mod_time": 1748705245.7441888
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_ECC_NIST.py": {
+      "hash": "4a980934b7504f7f745fb27c0d9bf5e58491a84ba24893ef3fc635cf0c83cc41",
+      "size": 53262,
+      "mod_time": 1748705245.7441888
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_ElGamal.py": {
+      "hash": "de68dd99c82d04f99b7a8dc246f9aa626b97aebb0266d237b3f97212ac9a7f2f",
+      "size": 8865,
+      "mod_time": 1748705245.745692
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_import_Curve25519.py": {
+      "hash": "0284c13e2f9d91dea5dcc7aa4fc398f27061441008ffba9c81390270816b13d9",
+      "size": 14749,
+      "mod_time": 1748705245.7462876
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_import_Curve448.py": {
+      "hash": "a6b7e2a16986e114ca6b1c20e1c2fbcbdd54384b7af0763a540a6f38332e5103",
+      "size": 12843,
+      "mod_time": 1748705245.7472916
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_import_DSA.py": {
+      "hash": "ae72ff476a6edf11f5c87833e61c3fa22b636ffd9a40bba216dbe4eaaf375734",
+      "size": 26063,
+      "mod_time": 1748705245.7472916
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_import_ECC.py": {
+      "hash": "203c62a46c1a2bbaf3f783ce92f489e147ac5086d4af6f499ea400ef7347f475",
+      "size": 111929,
+      "mod_time": 1748705245.7482915
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_import_RSA.py": {
+      "hash": "79d977968f538799f13983b1ef0f422c900645b1dd7922d9b12ecf48ffb3634e",
+      "size": 27659,
+      "mod_time": 1748705245.7482915
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\test_RSA.py": {
+      "hash": "c21a130afcc95fe9c7399b96843457360412e2af6f880502b9da6961cff05dd1",
+      "size": 12948,
+      "mod_time": 1748705245.7462876
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\PublicKey\\__init__.py": {
+      "hash": "9318c85c142e6fb74d93058755d17f2ef4fbb1fa86ed0345ae75a978525a90a7",
+      "size": 2743,
+      "mod_time": 1748705245.740839
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Random\\test_random.py": {
+      "hash": "8a94fe4391e4615b8fb5f4115830bd8addabb05cef1e8f74f7bb9ae5f8e367f7",
+      "size": 7157,
+      "mod_time": 1748705245.7492917
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Random\\__init__.py": {
+      "hash": "468cd14e0b72874b146c15413d0aa19b9d1cece91d74924f5b746142ce14ee41",
+      "size": 1581,
+      "mod_time": 1748705245.7492917
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Signature\\test_dss.py": {
+      "hash": "d4c77c4de539c4759000188159d73e22eed3997dc31d9244a6aad476437d95bd",
+      "size": 58459,
+      "mod_time": 1748705245.7523608
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Signature\\test_eddsa.py": {
+      "hash": "8a602b39dfb26903c7cfb22cb9aee25aea9f56d1a9e72b0411fb576dc7ebf9d6",
+      "size": 25646,
+      "mod_time": 1748705245.7523608
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Signature\\test_pkcs1_15.py": {
+      "hash": "30ef738e57068c05379b9e12b435a777b3fc0010935de6befd01fa4c8c0c33e8",
+      "size": 13889,
+      "mod_time": 1748705245.7533662
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Signature\\test_pss.py": {
+      "hash": "42cbeb606342c984b33629aa0c2d0fe9659a9518c8bb502e9ab7e23063dbe8fa",
+      "size": 16188,
+      "mod_time": 1748705245.7543664
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Signature\\__init__.py": {
+      "hash": "ee9d77a0f03e91170605ee5bbc1fdd351030504b68840e5d1ac87c688b2bdaed",
+      "size": 1599,
+      "mod_time": 1748705245.7508068
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Util\\test_asn1.py": {
+      "hash": "33ee3596c53755388dd219d425de8f1d65f3cf64346adfa51a2de46846a5950b",
+      "size": 32107,
+      "mod_time": 1748705245.7563112
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Util\\test_Counter.py": {
+      "hash": "f4dfe661669a43868a44fbdc01a60dfdded11fc5a770e8b2554152dec251f2d3",
+      "size": 2339,
+      "mod_time": 1748705245.7553663
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Util\\test_number.py": {
+      "hash": "948547b6db811911aa4e75e5e336ced60a3be1036d4fd6c5ac68ff86662981af",
+      "size": 8710,
+      "mod_time": 1748705245.7563112
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Util\\test_Padding.py": {
+      "hash": "b538c3ac1decc35d92ee3e0c606a23ea4c35c3c28883cf0bff066be3ad98ecb8",
+      "size": 5930,
+      "mod_time": 1748705245.7553663
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Util\\test_rfc1751.py": {
+      "hash": "4bad1c6f40bb00f3551bcc1f1849e895178b15133e6dfcc0f10657ff1c5367a9",
+      "size": 1151,
+      "mod_time": 1748705245.7573159
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Util\\test_strxor.py": {
+      "hash": "94a8d7005dafc4f46c6dd73d758471e2e13ccaa4666d135c3f64db04ec1e51d0",
+      "size": 10495,
+      "mod_time": 1748705245.7573159
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\SelfTest\\Util\\__init__.py": {
+      "hash": "83ae64e7e2a6d6a1e0cc643404157ad938d8a84ea9a7442f4210e10e9d5fd69e",
+      "size": 2043,
+      "mod_time": 1748705245.7543664
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Signature\\DSS.py": {
+      "hash": "941524d7240961010aa0fdc6460369271f1d08c3bc563940232036fcdeca4d9b",
+      "size": 15707,
+      "mod_time": 1748705245.7593164
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Signature\\eddsa.py": {
+      "hash": "8fbc96392257c1cc367172477915f9aba68153a42715e04f3b9d1604ed81b3a0",
+      "size": 12787,
+      "mod_time": 1748705245.7623453
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Signature\\pkcs1_15.py": {
+      "hash": "2e59c1bb1c7a738f51343213c94f49503cb91bad07d906272fa44bcc1cedd8fa",
+      "size": 9088,
+      "mod_time": 1748705245.76335
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Signature\\PKCS1_PSS.py": {
+      "hash": "b54b24be5330b4eb23a8d0bef242bd785dfb0f1b31dcbaceb87af47b73db5a32",
+      "size": 2154,
+      "mod_time": 1748705245.7593164
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Signature\\PKCS1_v1_5.py": {
+      "hash": "0653be50072749b16247cbb4905bb79fbd877ffc93f51c5b3e59edc5feb48e07",
+      "size": 2042,
+      "mod_time": 1748705245.7608225
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Signature\\pss.py": {
+      "hash": "47736bfbb2762dea089be962e283e1e1155c51a2280c1839f5494b5ba9b72973",
+      "size": 13970,
+      "mod_time": 1748705245.7643554
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Signature\\__init__.py": {
+      "hash": "2567d9dade66c8ce9981c1b3856398708fff5037e6abbf4c0a9d60afbd1e8678",
+      "size": 1731,
+      "mod_time": 1748705245.7623453
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\asn1.py": {
+      "hash": "72206ce1e9e4efdffff7493e9ef9c834d8ff3bfd54dc76dc7825bfab1f0ac721",
+      "size": 37233,
+      "mod_time": 1748705245.7724788
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\Counter.py": {
+      "hash": "3bf557288883a4d778ad2156b5ad5f20f4e111aeae00d26b05b2676fa592e7df",
+      "size": 3292,
+      "mod_time": 1748705245.7663167
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\number.py": {
+      "hash": "af8ce8edd2e062e37973aa8cda5b70bd7ba875155ccc122e6a0b2e4a113b8c5b",
+      "size": 97896,
+      "mod_time": 1748705245.773484
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\Padding.py": {
+      "hash": "2909193fed3f1748b393bbf2797e7b2379ff88e2289ef732e6b000b4b1b65adc",
+      "size": 4467,
+      "mod_time": 1748705245.766867
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\py3compat.py": {
+      "hash": "2cf7955872d7d8a23f12b9340ac867e8e342102fed7b80dba25b6303d7992155",
+      "size": 6010,
+      "mod_time": 1748705245.7744827
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\RFC1751.py": {
+      "hash": "dfdb8cd578e00e485ad2070f24a3cfd7b0e75c972eba73912b0bb59d8d67193b",
+      "size": 21578,
+      "mod_time": 1748705245.767867
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\strxor.py": {
+      "hash": "3e36ae472ce5cfba3b02dbf0cc2a132f868c6da8002f5b8e895c873ddb79a029",
+      "size": 5587,
+      "mod_time": 1748705245.775483
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\_cpu_features.py": {
+      "hash": "38d65295dd3e4506c462350e7766fb7d16635cc7e6a234fe0e4b14c7af6089c6",
+      "size": 2035,
+      "mod_time": 1748705245.7688675
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\_file_system.py": {
+      "hash": "b8ff883aa293f99710ea591a58aa8d0d03feeedd5aa49c560b60a05fd3d413e1",
+      "size": 2225,
+      "mod_time": 1748705245.7698662
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\_raw_api.py": {
+      "hash": "67e1b4e201861f9a86e2db1e548909cdee46892cdce59b3575cd9c7ff755bd54",
+      "size": 10877,
+      "mod_time": 1748705245.7708673
+    },
+    ".venv\\Lib\\site-packages\\Crypto\\Util\\__init__.py": {
+      "hash": "98831540f44ab7137a0de53a8a8c818dec32f0dc9c2731912424aecce04c07fa",
+      "size": 1968,
+      "mod_time": 1748705245.7688675
+    },
+    ".venv\\Lib\\site-packages\\isapi\\install.py": {
+      "hash": "820f72aa43fe8047e29f1a31aed11ed0f43c2788d3806d6791fe3b50bb75561d",
+      "size": 28057,
+      "mod_time": 1744467676.2009335
+    },
+    ".venv\\Lib\\site-packages\\isapi\\isapicon.py": {
+      "hash": "8a80c70bb11567b6a0c0074e641a9f01953588b618bfa21989ea8c2c86d75b31",
+      "size": 4236,
+      "mod_time": 1744467676.2009335
+    },
+    ".venv\\Lib\\site-packages\\isapi\\simple.py": {
+      "hash": "b7da93f03c70b73092e31537e33fffab87ff0cfb4667b345dc6cb1c78388679a",
+      "size": 2566,
+      "mod_time": 1744467676.2019339
+    },
+    ".venv\\Lib\\site-packages\\isapi\\threaded_extension.py": {
+      "hash": "1bc09b78e57042786a97f0fcbcba2066fa37a85b73b7ff5384f65794cdd33449",
+      "size": 7526,
+      "mod_time": 1744467676.203933
+    },
+    ".venv\\Lib\\site-packages\\isapi\\__init__.py": {
+      "hash": "5e1d90116644bf83663a1f9d2ef7c9db95ad30c47384f3fb034da543fa611750",
+      "size": 1267,
+      "mod_time": 1744467676.1999335
+    },
+    ".venv\\Lib\\site-packages\\isapi\\samples\\advanced.py": {
+      "hash": "57c910f35254ba680d13f5d71e8e71f2ceb03ddbff4713e976a177d2882da2dc",
+      "size": 8124,
+      "mod_time": 1744467676.4029157
+    },
+    ".venv\\Lib\\site-packages\\isapi\\samples\\redirector.py": {
+      "hash": "b9f745bbfc5f1d44c14ffe266a5a66d2428b9b0fbda82fbfa1a48ede14ea354e",
+      "size": 4587,
+      "mod_time": 1744467676.4039254
+    },
+    ".venv\\Lib\\site-packages\\isapi\\samples\\redirector_asynch.py": {
+      "hash": "ab3b99ca45c99dc1ce8caf98b4b8e0e1e4817d8a9e343f95644b67fbc77b672c",
+      "size": 2812,
+      "mod_time": 1744467676.404924
+    },
+    ".venv\\Lib\\site-packages\\isapi\\samples\\redirector_with_filter.py": {
+      "hash": "5762b192377e14c5cb75a7e0515ece3110b13cd6da628fa96f1998d9c9be600c",
+      "size": 6574,
+      "mod_time": 1744467676.404924
+    },
+    ".venv\\Lib\\site-packages\\isapi\\samples\\test.py": {
+      "hash": "3522ca0e5064c951dc022769eca4c0b11d5a0f034b6432ac8a2d467674e9b179",
+      "size": 6513,
+      "mod_time": 1744467676.4059248
+    },
+    ".venv\\Lib\\site-packages\\isapi\\test\\extension_simple.py": {
+      "hash": "0cf46b36ca5fa5fc0988d53dc57b45567e50d3db9f431438e3330864e6eac45d",
+      "size": 4339,
+      "mod_time": 1744467676.406926
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\__init__.py": {
+      "hash": "e64e7cff1e405259e0b11f6c1541f93c5c1244eb22540282a3ea2c64d938cc22",
+      "size": 147,
+      "mod_time": 1744467708.5458038
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\debugger\\configui.py": {
+      "hash": "8b7765a1f2e0f162513bb106b7feeef34c2ede56bfda183d36ab3104375c4006",
+      "size": 1211,
+      "mod_time": 1744467708.7018254
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\debugger\\dbgcon.py": {
+      "hash": "014b2dbefa7cd09fa2150394d342aa187d8d682788411a9c575607f6c6e3c449",
+      "size": 860,
+      "mod_time": 1744467708.756187
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\debugger\\dbgpyapp.py": {
+      "hash": "d6cfd7c61d39a09f3fa6b88e49682d068b7e8ae30319e981c69eb0c8bf10874d",
+      "size": 1601,
+      "mod_time": 1744467708.7576914
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\debugger\\debugger.py": {
+      "hash": "9200a149b8a24d8932f691d5a04d6d994a9c5cd6e4f29d0bdb37b24644260389",
+      "size": 38766,
+      "mod_time": 1744467708.7576914
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\debugger\\fail.py": {
+      "hash": "2404b412eddf8278234e1ef91af166ab2db847f6296dce6e3f7226aa0526f73e",
+      "size": 981,
+      "mod_time": 1744467708.758698
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\debugger\\__init__.py": {
+      "hash": "e0e70ca732dbd0c24cf7cdbb7fa5c5da4a38695dc0a7465d7a2d38b1328b0852",
+      "size": 3173,
+      "mod_time": 1744467708.7008257
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\cmdserver.py": {
+      "hash": "1b9f1c695ebc43e19ed1bb76a79fede5d8d9092e3b80d9825f959c4fe19410c7",
+      "size": 3119,
+      "mod_time": 1744467708.5483172
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\createwin.py": {
+      "hash": "45eef6217753ecc212c9bc8a23ebd65a753e5a06f2c54e27b1d579b8be843864",
+      "size": 2621,
+      "mod_time": 1744467708.5483172
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\demoutils.py": {
+      "hash": "5998d616f2c4fd7951216a7bc86a72e4bd390de9e7271342bb4900d29ef1b7f2",
+      "size": 1514,
+      "mod_time": 1744467708.5483172
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\dibdemo.py": {
+      "hash": "f3c0254a2d4fb99c48b6202bffef5a3552b0aaa47834a621ae6c1e6a2649f139",
+      "size": 2364,
+      "mod_time": 1744467708.5493166
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\dlgtest.py": {
+      "hash": "4f4cf6a2a027e012a6ad9588195f3924fcceda0904f18cdb9e558e8a24656f2b",
+      "size": 4709,
+      "mod_time": 1744467708.5504818
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\dyndlg.py": {
+      "hash": "0c7810815abb26263b5d34a67f3c4efdf58915251718a35fca96a3987e3b0734",
+      "size": 2925,
+      "mod_time": 1744467708.5504818
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\fontdemo.py": {
+      "hash": "993ec9766a23c0611156d19dd042e9a62855ae46268cc5512d1cd0295c1783d6",
+      "size": 2851,
+      "mod_time": 1744467708.5514812
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\guidemo.py": {
+      "hash": "afed9d978291157caff77a909187164e052afac70dd144c49019668248160fb9",
+      "size": 1752,
+      "mod_time": 1744467708.5514812
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\hiertest.py": {
+      "hash": "73324de162533f9c693152c9af31f35c96c464f4f0d28085e0fa0830fdb26757",
+      "size": 3904,
+      "mod_time": 1744467708.5554807
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\menutest.py": {
+      "hash": "eabe522d8b925c122ce5caa62ca3e94fbd46b80c0ca970e867b79f139085a90f",
+      "size": 503,
+      "mod_time": 1744467708.5620012
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\objdoc.py": {
+      "hash": "bbb65b817a0e9693e27ee0e2d590acde8f2aeb0a8893a6983d803cc9d5930d33",
+      "size": 1778,
+      "mod_time": 1744467708.5630026
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\openGLDemo.py": {
+      "hash": "34cd0155e5ea77d6495433c20eb242f4f8c2048b13fcb8ec1f1ed0bc4ffb502d",
+      "size": 11200,
+      "mod_time": 1744467708.564003
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\progressbar.py": {
+      "hash": "dfb101a251610026bb1a2956db336e46cc7df8d20593cc24ce39bdcc5943a34c",
+      "size": 2560,
+      "mod_time": 1744467708.5650022
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\sliderdemo.py": {
+      "hash": "9bbcc87fb869b43aac010880151db247b9bbc0934c9c9eeea8f43040a1211638",
+      "size": 2267,
+      "mod_time": 1744467708.5650022
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\splittst.py": {
+      "hash": "ff940b128a30b484721c3ca97c685969d512d58858dffbd6d73cd1bdde96469b",
+      "size": 2924,
+      "mod_time": 1744467708.5660026
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\threadedgui.py": {
+      "hash": "b6d745c815bcbafd746d24c128b79bb1d51591a2cb4469746168c731463573d2",
+      "size": 6433,
+      "mod_time": 1744467708.5680037
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\toolbar.py": {
+      "hash": "028afe3fa9856761c477031f405ba378a8b82e8f455c457965390e42b51b641b",
+      "size": 3256,
+      "mod_time": 1744467708.5715206
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\app\\basictimerapp.py": {
+      "hash": "f8ab6f20de69607e80126a87a4db04e82f37390985fc7e6ea0cf300171dae1ea",
+      "size": 7913,
+      "mod_time": 1744467708.6930802
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\app\\customprint.py": {
+      "hash": "8de4d931506287efdd85415d2ae97d014434964b654d810f1c487ec30c260aff",
+      "size": 6049,
+      "mod_time": 1744467708.6940992
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\app\\demoutils.py": {
+      "hash": "ab1dc095c1ede86f92cdc6ee761ca766de575f5780c93f9db3c341b444fe964b",
+      "size": 1480,
+      "mod_time": 1744467708.6950815
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\app\\dlgappdemo.py": {
+      "hash": "06c07e1f6455e618acceea0f50482231d7696942a17a854f13ac296c9a05c6db",
+      "size": 1429,
+      "mod_time": 1744467708.6950815
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\app\\dojobapp.py": {
+      "hash": "ead14fdd305ab7e50e62f9a887bcd56686b1a80f152c503c58a237305ea48f6d",
+      "size": 1555,
+      "mod_time": 1744467708.6960812
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\app\\helloapp.py": {
+      "hash": "6a9e2c50947319fc69ff627737a63fc48d884f8493cd2b24168b118a1ec1ce47",
+      "size": 1664,
+      "mod_time": 1744467708.6960812
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\ocx\\demoutils.py": {
+      "hash": "ab1dc095c1ede86f92cdc6ee761ca766de575f5780c93f9db3c341b444fe964b",
+      "size": 1480,
+      "mod_time": 1744467708.6960812
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\ocx\\flash.py": {
+      "hash": "1c04fd6a22e408a52626a75abee81ad26008f41cb419bc784411274e979f7fa1",
+      "size": 3085,
+      "mod_time": 1744467708.697586
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\ocx\\msoffice.py": {
+      "hash": "38abcd0810c7d117aeaaf602a7fd884ead1366559dda8a7e400fa1f3ed0b6880",
+      "size": 5488,
+      "mod_time": 1744467708.697586
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\ocx\\ocxserialtest.py": {
+      "hash": "02ca2dbe0345c7590a1a4a81cabe0bfc4fb4d9e697929c2806f3a3b2e21cfbfe",
+      "size": 3718,
+      "mod_time": 1744467708.6985922
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\ocx\\ocxtest.py": {
+      "hash": "b1143b25529ace63ad255170270dd0dddea835bf450d7a1dd4a457ddb6d13469",
+      "size": 6938,
+      "mod_time": 1744467708.6995938
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\Demos\\ocx\\webbrowser.py": {
+      "hash": "e60c357bf686fdd52fb815c0019ae6756da605781c9d8e1b50448f2b384475ce",
+      "size": 2391,
+      "mod_time": 1744467708.6995938
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\dialogs\\ideoptions.py": {
+      "hash": "5cca71c51c87f8ddf9229f0e399a6daf01abd249b2f33c5f5f581248d04c2832",
+      "size": 5181,
+      "mod_time": 1744467708.7596984
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\dialogs\\list.py": {
+      "hash": "f6bd93383211aba1ab50d9c08ea5316edd32dcb022ad2de62a492f25abec619d",
+      "size": 4761,
+      "mod_time": 1744467708.7596984
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\dialogs\\login.py": {
+      "hash": "a8905588adfb53378bc2556951fabcb5e855ab40a7bebbe4ca9c72209c204abd",
+      "size": 4882,
+      "mod_time": 1744467708.7596984
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\dialogs\\status.py": {
+      "hash": "b515c940f3d27dbc391eb0be6268e8a0d10350c1c457cbf7107adb41d4ed70cd",
+      "size": 6862,
+      "mod_time": 1744467708.8460963
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\dialogs\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467708.758698
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\docking\\DockingBar.py": {
+      "hash": "7854bba366f35eb7c687b8d45d1c76ec3cb40d210605b19f91553224a3bc6f70",
+      "size": 24001,
+      "mod_time": 1744467708.847601
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\docking\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467708.847601
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\app.py": {
+      "hash": "97908cfd8709693fd2d3cfddf15d2290af1ca18cbcd1a581f06eee3d42544cb4",
+      "size": 15112,
+      "mod_time": 1744467708.8486054
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\bitmap.py": {
+      "hash": "1c72b0713371e07c1a106b59c783a0f9ad75b6e991c30d426b4fede5a3153d49",
+      "size": 5679,
+      "mod_time": 1744467708.8486054
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\cmdline.py": {
+      "hash": "dfce3e6cc510a9b3d9f4ace56cecf00713faf2921ba03b2c07bae05d56418493",
+      "size": 1508,
+      "mod_time": 1744467708.8496072
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\dbgcommands.py": {
+      "hash": "ad3d6c7d405f95beae2103c2d2b9c6028f69d7d2a0131ea85859c223acf471f6",
+      "size": 6993,
+      "mod_time": 1744467708.8496072
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\dlgappcore.py": {
+      "hash": "1c7183f5be4e1c2a843d74b1312e859fd251435d6a7ed394e8fd6041b04f1ab1",
+      "size": 2222,
+      "mod_time": 1744467708.8506098
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\help.py": {
+      "hash": "db1da9803ed305804a89f5ec4019f3d3d4eae19e81dfd5b5c87edf5cdbfc054a",
+      "size": 5849,
+      "mod_time": 1744467708.8516095
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\interact.py": {
+      "hash": "9c61be86105da8995200304641f440cbb4ce5001301d0937cbf4c63d51fef960",
+      "size": 37302,
+      "mod_time": 1744467708.8526113
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\intpyapp.py": {
+      "hash": "3640297732e6a99d7423180b2f85e55cd8d96966fd330d1bc6c1992bc9a8504d",
+      "size": 20642,
+      "mod_time": 1744467709.1978638
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\intpydde.py": {
+      "hash": "340fbed866bc0e01ff7c7823e8f26d9cf6b873f62adc125ff0e1c3f0dfb27002",
+      "size": 1884,
+      "mod_time": 1744467709.19891
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\scriptutils.py": {
+      "hash": "e89b3576d808cf87a9bed6a8bd0c843fdd661e03f63740bfe2a2e0b557339a1f",
+      "size": 23709,
+      "mod_time": 1744467709.2000666
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\sgrepmdi.py": {
+      "hash": "6b2958ace39cba74ea9fc850e0f96b51ffce78538b1f6a57f53b46bdba49a93b",
+      "size": 25431,
+      "mod_time": 1744467709.2000666
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\startup.py": {
+      "hash": "b67da1b3d6252b665b2ae2e19bbdb43a6ea48917e2b0156413d966a037bbfdcd",
+      "size": 2582,
+      "mod_time": 1744467709.2548928
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\stdin.py": {
+      "hash": "6b47f7d29673f049805eb33525f67269ddf9c9fb3dc3655e52223f1f6aa17137",
+      "size": 6625,
+      "mod_time": 1744467709.2558935
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\toolmenu.py": {
+      "hash": "6a9c0c93da9da985b35fcc5a36d839791c41d5d596eda179c215aa6bdceffd45",
+      "size": 9506,
+      "mod_time": 1744467709.2558935
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\window.py": {
+      "hash": "cee5d921677bb18375ecd0c23462f329740a32e29c440a3798c0cda1f6157f57",
+      "size": 549,
+      "mod_time": 1744467709.2568965
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\winout.py": {
+      "hash": "06e56daf26a111313a95d57b4ef5b45446bb8d1718505e4230fc618ac7d08e7d",
+      "size": 20821,
+      "mod_time": 1744467709.2568965
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467708.847601
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\configui.py": {
+      "hash": "c6392d696c203a417fadee86cd5198d29c380eff76c79f902a472c02f3fc8ee8",
+      "size": 11765,
+      "mod_time": 1744467709.2712016
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\document.py": {
+      "hash": "a3fa34ac2a025d5ff4c0b43b03ef76b6f06b8facd919ec8028a1fdfc34936bd9",
+      "size": 15133,
+      "mod_time": 1744467709.2712016
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\editor.py": {
+      "hash": "3228a5521c6d8bf18be580e44b97e2036668f0dae2d63f5e1dbc048b263b075f",
+      "size": 18776,
+      "mod_time": 1744467709.2722013
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\frame.py": {
+      "hash": "a4bffef1e909119e75a02deb14fce15637c7e2216ff3375ee93f005391bc2bb4",
+      "size": 3162,
+      "mod_time": 1744467709.2732034
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\ModuleBrowser.py": {
+      "hash": "4c20e161aa4f20cd025d406eed9d6c7e68ce3954f032bf16a029f4d74885cef8",
+      "size": 7282,
+      "mod_time": 1744467709.257895
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\template.py": {
+      "hash": "efd8d8ba8a3c65e3e0e7e28ea81f92a50cca5f084954d95d06447139db8687d1",
+      "size": 2127,
+      "mod_time": 1744467709.2732034
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\vss.py": {
+      "hash": "e63d7c5737efbd834c2e7c47a234475732e5379252bc4ca72414eb724e68c36e",
+      "size": 3480,
+      "mod_time": 1744467709.2732034
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\__init__.py": {
+      "hash": "31f3e2bd726210d8296b4143a47d4ad2efc86cd0ab2018c3717c2e4f40e5c1ab",
+      "size": 3109,
+      "mod_time": 1744467709.2702022
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\color\\coloreditor.py": {
+      "hash": "59a44d46132f82df4153a7c8d86444df88e9166b8a06906bfc9d2c908ec1ece5",
+      "size": 26029,
+      "mod_time": 1744467709.275201
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\framework\\editor\\color\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467709.2742012
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\idle\\AutoExpand.py": {
+      "hash": "c9c58cbcf56f5ab6f0677b3a079f682a25cbefe2af4e5cb2e11ee4d619fdb5a5",
+      "size": 2806,
+      "mod_time": 1744467709.276202
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\idle\\AutoIndent.py": {
+      "hash": "1b4adba13285d060065b9da0005acf3ceb35a8eede01eb79580845b0eb548358",
+      "size": 20669,
+      "mod_time": 1744467709.2777073
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\idle\\CallTips.py": {
+      "hash": "55c453df3c681949d6b1c6c881e2e8ee399761dca61f21691460ebab74f085d2",
+      "size": 6493,
+      "mod_time": 1744467709.2777073
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\idle\\FormatParagraph.py": {
+      "hash": "209e9fadaa4be7880717cdd3f7032d0b66d7bfe8d5dd1b8b7a0faeca8204b69d",
+      "size": 5850,
+      "mod_time": 1744467709.2787137
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\idle\\IdleHistory.py": {
+      "hash": "16818091972c10d4314f45c497b47000e007dbb367f480b03ad44f17926825b4",
+      "size": 3138,
+      "mod_time": 1744467709.279714
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\idle\\PyParse.py": {
+      "hash": "e29a2e27c6ea88ddac22fa0161fbb64f0cf18ba4535421116905091c37bcbb59",
+      "size": 18708,
+      "mod_time": 1744467709.2837193
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\idle\\__init__.py": {
+      "hash": "1d73db002f8100c2c6679ae42a5900c542e643f8b9c1238970daac696f4fa9d9",
+      "size": 56,
+      "mod_time": 1744467709.2847226
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\activex.py": {
+      "hash": "f948d1ca1a10ef12b58a5bd715e4719b11eac3ecc38e3eda4538a19ec7e37ede",
+      "size": 2690,
+      "mod_time": 1744467709.2857213
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\afxres.py": {
+      "hash": "216e6007ad310a302610286686ea7ef451aa67042ef74d2b95dfe58ced0a5718",
+      "size": 15595,
+      "mod_time": 1744467709.286721
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\dialog.py": {
+      "hash": "69bb4c152ef83a80866b7902f1efd2031af6ffede96cb575caa7bffd77bac25c",
+      "size": 9086,
+      "mod_time": 1744467709.2882266
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\docview.py": {
+      "hash": "7af75f3477c2dc3d4f782ef33a583fa7e9c8669035e1ae8f24b5b082137a746c",
+      "size": 4240,
+      "mod_time": 1744467709.2902398
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\object.py": {
+      "hash": "b265de247cd4733dd36a2770db57bc238e4a10509744365fbb0a2e7fe5e8f876",
+      "size": 2244,
+      "mod_time": 1744467709.2912388
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\thread.py": {
+      "hash": "0fcb114acea868da73c407c2b252dede24e36ee926560da4d37c015a22f6246e",
+      "size": 613,
+      "mod_time": 1744467709.2932396
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\window.py": {
+      "hash": "108fc48e3653f78e85517b527a2b51fd336d5367d7b5ffb0d525d28706e9eb6a",
+      "size": 1549,
+      "mod_time": 1744467709.2942398
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\mfc\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467709.2857213
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\bindings.py": {
+      "hash": "e1568fbcc336c83e14191311acaf5976c99490ca10edd99c0ad2c0208623f9d8",
+      "size": 6230,
+      "mod_time": 1744467709.2987528
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\config.py": {
+      "hash": "21c5bed85a4c890deb93311354680d89a73ff5e6dec0a4236e1f9c62fc1ae84f",
+      "size": 12708,
+      "mod_time": 1744467709.3007941
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\configui.py": {
+      "hash": "7e8921c1ffc9db8236a622f04d93a298614a61d404b2cd84b5a0f731b4039c62",
+      "size": 11450,
+      "mod_time": 1744467709.3017962
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\control.py": {
+      "hash": "e356bfe98d60a53305a9fdadae972c120fbeaca42f57ea209c124e69e8208989",
+      "size": 20920,
+      "mod_time": 1744467709.3151927
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\document.py": {
+      "hash": "35bbac654d4ac1ef2c33e7bbcb7f9b3a48e731e39fe7a3689ec3ab8a7093aec6",
+      "size": 11730,
+      "mod_time": 1744467709.3161905
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\find.py": {
+      "hash": "924413ceab9c18bda22862bdb1317c33f8bfeb8cd2af42d62e5fdbf1e6dde241",
+      "size": 17302,
+      "mod_time": 1744467709.3161905
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\formatter.py": {
+      "hash": "474bd193f92e264cf5c3762eebda4c6796469be91451c5355e796dbfff8357f3",
+      "size": 27200,
+      "mod_time": 1744467709.3176956
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\IDLEenvironment.py": {
+      "hash": "7dfcf8fbe8731457efdcb4f25f922a072e4d35937c1d55e25c57e4091cee8c33",
+      "size": 20040,
+      "mod_time": 1744467709.2952383
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\keycodes.py": {
+      "hash": "6f4b689b6af2a45635e10ecc30b95bc782ff899afe28352d7500c9f5a5a7a5b7",
+      "size": 5461,
+      "mod_time": 1744467709.354779
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\scintillacon.py": {
+      "hash": "d2b65ba71be62aa81bb259a986ebe18827c24f19bb508a98e078ecf45b58e1b7",
+      "size": 76371,
+      "mod_time": 1744467709.3567884
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\view.py": {
+      "hash": "cf3a1ced74f8c4161448e83b440e19ffd08cfc4af70604ad6a40d390a73d6174",
+      "size": 31767,
+      "mod_time": 1744467709.3567884
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\scintilla\\__init__.py": {
+      "hash": "d99bc6cdd5bb6230ec4c64df4c58719334b0424f1214d1bff16b9d21feb37d65",
+      "size": 17,
+      "mod_time": 1744467709.2977457
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\tools\\browseProjects.py": {
+      "hash": "de3341de72ea48537638b16532ab3f5b33d9d222b6a2aedb9b5313d5e44e4e78",
+      "size": 9819,
+      "mod_time": 1744467709.4687946
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\tools\\browser.py": {
+      "hash": "ffb8f5766eb279f4ecb52aacbd730f7fd05bcffb9eb47df7dd05e47b8f8747b3",
+      "size": 13408,
+      "mod_time": 1744467709.4687946
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\tools\\hierlist.py": {
+      "hash": "56d1593b746a283b9825177da1a1466148072a62d622907b90757dca77762f6f",
+      "size": 12308,
+      "mod_time": 1744467709.4709697
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\tools\\regedit.py": {
+      "hash": "ff403e0e114861c9987a34cc814bce302a7e5e330b55675463548615538fc7b6",
+      "size": 13533,
+      "mod_time": 1744467709.4709697
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\tools\\regpy.py": {
+      "hash": "5bc2580802386742a9140edf7901cca750627002c942bae3d1c2520306abbfd1",
+      "size": 2307,
+      "mod_time": 1744467709.4709697
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\tools\\TraceCollector.py": {
+      "hash": "a2172ceb0afff1e72d804eb06ccff3db6a09ca5e931ad0f608456d98eb54c3a2",
+      "size": 2520,
+      "mod_time": 1744467709.358299
+    },
+    ".venv\\Lib\\site-packages\\pythonwin\\pywin\\tools\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467709.358299
+    },
+    ".venv\\Lib\\site-packages\\win32\\winxpgui.py": {
+      "hash": "fe1bd5dbaaa57d103f01e50dad360b15b4c64e53aa93eb4d4562bf8d84781c5c",
+      "size": 409,
+      "mod_time": 1744467713.4849732
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\BackupRead_BackupWrite.py": {
+      "hash": "cc0d6f24054b5365bc8345aa1e09ef987b38a0ebbb5b61f6eb61bb4194859711",
+      "size": 3829,
+      "mod_time": 1744467713.4859612
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\BackupSeek_streamheaders.py": {
+      "hash": "7360cde9866415bc46bee84148db95a0f85ef223b9462e6d32944326a5e16d70",
+      "size": 4001,
+      "mod_time": 1744467713.4869611
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\CopyFileEx.py": {
+      "hash": "18be272a2a3d90b9585fa7d6de5189bedba93427e7e39c9bf8d820e624ad0d2b",
+      "size": 1300,
+      "mod_time": 1744467713.4869611
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\CreateFileTransacted_MiniVersion.py": {
+      "hash": "8f5deba07537dd80cd4976f3f523df0b089b322a68dfdad68db546a35271d654",
+      "size": 3717,
+      "mod_time": 1744467713.4869611
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\desktopmanager.py": {
+      "hash": "4c150e8a6699fc50126ca4ff9c577198fd30a64214d1a82faa7293eaf367b847",
+      "size": 8363,
+      "mod_time": 1744467713.5789993
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\eventLogDemo.py": {
+      "hash": "c59e65b6284a072c2b74ee83a6c8ef39b4a9fa6964fc8737875df74cd17a0ef5",
+      "size": 4522,
+      "mod_time": 1744467713.5800805
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\EvtFormatMessage.py": {
+      "hash": "812e2185d48e88b079850d2c2e97c454bb6daf01eb945824a9ffe12b902e6c59",
+      "size": 3401,
+      "mod_time": 1744467713.4879606
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\EvtSubscribe_pull.py": {
+      "hash": "43410679bd638f42faa3b88e7f69ed3d763993ab787ec3c8898f0aecd74484b3",
+      "size": 820,
+      "mod_time": 1744467713.4884658
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\EvtSubscribe_push.py": {
+      "hash": "0a63a9dcb145a8853105ffa2652e264bb09e3fe073b9c40f71864d8146d50927",
+      "size": 835,
+      "mod_time": 1744467713.5078168
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\FileSecurityTest.py": {
+      "hash": "61e2d263a0fd1342cc90f68a87e81c22fe5298c55d4f82af5f0d50e89c919d20",
+      "size": 4523,
+      "mod_time": 1744467713.5078168
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\getfilever.py": {
+      "hash": "6003b99ff036baef92ebff7aa529fefb4116f3655d0870e08e17c600a9db8ee0",
+      "size": 1153,
+      "mod_time": 1744467713.5800805
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\GetSaveFileName.py": {
+      "hash": "83cd0bf5e6d96316f7345b5f0a8384681d958c570ab2d927a87e7d3f9dd2f9c6",
+      "size": 1211,
+      "mod_time": 1744467713.5078168
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\mmapfile_demo.py": {
+      "hash": "2b9e06d3c946c223aa9512ea51bb06272df305bb9b404fe1c03b78a7af597b45",
+      "size": 2870,
+      "mod_time": 1744467713.58108
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\NetValidatePasswordPolicy.py": {
+      "hash": "79b719eb033fa710f93438cf29b6522a6358041f81e75149975277e20e426be5",
+      "size": 3635,
+      "mod_time": 1744467713.5088284
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\OpenEncryptedFileRaw.py": {
+      "hash": "091a3ec51c230bbf9cce0d5c6bea5e426810190c1fb6623b69c87aada24f7445",
+      "size": 2024,
+      "mod_time": 1744467713.5098379
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\print_desktop.py": {
+      "hash": "1580ee371b0a28c652af31372bc05dfb1077922a6e45a497f43891df7387ba0b",
+      "size": 2972,
+      "mod_time": 1744467713.58108
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\rastest.py": {
+      "hash": "5540918263f9b94d62a5c7ecf9f0981fda5ff851937bec4bb50f7b0425a0f208",
+      "size": 5237,
+      "mod_time": 1744467713.5820832
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\RegCreateKeyTransacted.py": {
+      "hash": "5cbad2253975756eec2f0b3311ca517783ec97a8cc422902f1ba55be9ac0b6f9",
+      "size": 1972,
+      "mod_time": 1744467713.5098379
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\RegRestoreKey.py": {
+      "hash": "2dacf6d0369b7a5acfbb607e7a5a361ca1d58a526d79a1d1886f3bb72e7556a1",
+      "size": 2134,
+      "mod_time": 1744467713.510835
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\SystemParametersInfo.py": {
+      "hash": "47c37a9bf24b04de18efb9b983ede982b484c753dfe3f55f6a064e2d94c66597",
+      "size": 8162,
+      "mod_time": 1744467713.512836
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\timer_demo.py": {
+      "hash": "7e0645d250e00c3746dace89eca35b2ab513ec970ef7140adf0f8a3d08e6f4ed",
+      "size": 2257,
+      "mod_time": 1744467713.5820832
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32clipboardDemo.py": {
+      "hash": "5197278feb016ebad7f08c5aee2a4a17bfd3343242fec8f596ed6f5c725593ac",
+      "size": 4978,
+      "mod_time": 1744467713.5830839
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32clipboard_bitmapdemo.py": {
+      "hash": "573365782929b7006f424e2725449ae7ba2b33abe8a4c85cd2d5c63266c36fa1",
+      "size": 4022,
+      "mod_time": 1744467713.5830839
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32comport_demo.py": {
+      "hash": "24d90f9dd4ca8eddddce66734976dbc47f7e6fc8fca18f88159561422d914b41",
+      "size": 6202,
+      "mod_time": 1744467713.5840807
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32console_demo.py": {
+      "hash": "92a78c4effae152ca3d79e90d3a70d15b756d6e63856f2a43bc881b5d2fca116",
+      "size": 5205,
+      "mod_time": 1744467713.5840807
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32cred_demo.py": {
+      "hash": "bf26ed648aa62263e0cb2cd2f7a805be0c6982544dfa5ff56ce674fd8de0692a",
+      "size": 2834,
+      "mod_time": 1744467713.585079
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32fileDemo.py": {
+      "hash": "f9ae63fe8c2b705a917d9977c551746e83239138f8a7c1c0a7766b2426e7a055",
+      "size": 1407,
+      "mod_time": 1744467713.5860786
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32gui_demo.py": {
+      "hash": "8170cb618e66e3dc8760a68fd75115a2d2a10330f2ee1ba96ed9c6d60228eca4",
+      "size": 5205,
+      "mod_time": 1744467713.6116364
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32gui_devicenotify.py": {
+      "hash": "6ee94775f4d66052962eaf941cd7ae92d4c0bb6be2443f91c75b66118d735d6f",
+      "size": 3919,
+      "mod_time": 1744467713.6126342
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32gui_dialog.py": {
+      "hash": "1c6f2fb63f885089764c7c7b0648c6f4c42c09c0439027435f7b3c37a39f94e4",
+      "size": 15763,
+      "mod_time": 1744467713.6126342
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32gui_menu.py": {
+      "hash": "918fc10af474f8706e3786e9d0307e7ad9f0d665fa13c676cef54259c6f067ab",
+      "size": 17210,
+      "mod_time": 1744467713.6126342
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32gui_taskbar.py": {
+      "hash": "ded532365686a7045ea1891c229e5294839e2365e7d5aa8ab56c2de4a9eee6d3",
+      "size": 5088,
+      "mod_time": 1744467713.6136348
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32netdemo.py": {
+      "hash": "44ceaf1d672ffb3bcab6d4df3810fea2064d3a6524e4ebd241c969b4bf818a3b",
+      "size": 9192,
+      "mod_time": 1744467713.6257415
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32rcparser_demo.py": {
+      "hash": "ac1b7e938b5c3dcf1da93125f8fd13f283dfddd0fe53d63092e8f2ea150eae24",
+      "size": 2889,
+      "mod_time": 1744467713.6267724
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32servicedemo.py": {
+      "hash": "345e1013483e1ad5fe85643b456e7dc60044b4dee9fb03c3d2ba8890bdfa1f4c",
+      "size": 602,
+      "mod_time": 1744467713.6267724
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32ts_logoff_disconnected.py": {
+      "hash": "506e197a9465382d30c8c66022ade674a946a099615838f4ed93f96de2dec4f3",
+      "size": 1007,
+      "mod_time": 1744467713.6277354
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\winprocess.py": {
+      "hash": "af0a223712562f92cf16e573af7ead15f80b6619fcb0089403b93e2c129a901c",
+      "size": 7588,
+      "mod_time": 1744467713.6282415
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\c_extension\\setup.py": {
+      "hash": "a9e6b472f1d936a08f030c857d2948612f8758f78954299dcc842ed8d21e30bf",
+      "size": 783,
+      "mod_time": 1744467713.6294034
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\dde\\ddeclient.py": {
+      "hash": "387d9c9aa209c80fb333eba73314ecaf660c1fcf787814cd4980082e294024ff",
+      "size": 493,
+      "mod_time": 1744467713.6303988
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\dde\\ddeserver.py": {
+      "hash": "159c2df33b4ddc33b86a59f6ac13f16a48d250ca57acbbe8ffbb5d12b68974a6",
+      "size": 1182,
+      "mod_time": 1744467713.6303988
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\pipes\\cat.py": {
+      "hash": "834489e77c9f618ef0260435b2b767af5cc242ec1c1b5550afaf826fcd0c1c1c",
+      "size": 352,
+      "mod_time": 1744467713.6323957
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\pipes\\runproc.py": {
+      "hash": "6b54de64f7c13b6f020db0f4921566881bbc162a6c0081a5aa5a5e7e531db815",
+      "size": 4137,
+      "mod_time": 1744467713.6333983
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\account_rights.py": {
+      "hash": "70709bb8a244122b7b836ff492ed0a2d54e5515b1d44d2ad0476272ee7fc665c",
+      "size": 1555,
+      "mod_time": 1744467713.6399195
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\explicit_entries.py": {
+      "hash": "01e8a1e6fe4d8b0453abf3c2539fa3fe5cd879b8833c0a499e6b03ba71e6d972",
+      "size": 5135,
+      "mod_time": 1744467713.6409209
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\GetTokenInformation.py": {
+      "hash": "de8401cbd78afe4f062be7c99519ddd200787554da1fb6b67705529cbdb19d23",
+      "size": 3823,
+      "mod_time": 1744467713.638912
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\get_policy_info.py": {
+      "hash": "b4555d6e04548fc4ff68571f08b6046bc6396f7b7d2a825f2b9c084693c93dd6",
+      "size": 1227,
+      "mod_time": 1744467713.6419184
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\list_rights.py": {
+      "hash": "5328768b3ad93ed325250208925c992d03a05c89120e6513c84d20153084884a",
+      "size": 1082,
+      "mod_time": 1744467713.6429224
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\localized_names.py": {
+      "hash": "f125573a6f18db20c5334e8299f3674d69937368cbe8827c5bc62f68085f723c",
+      "size": 2215,
+      "mod_time": 1744467713.6429224
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\lsaregevent.py": {
+      "hash": "a9b6978b82ee1374df82185a039c0dc9c0fdf4f39fb432fb1e5fb57e8f88458c",
+      "size": 546,
+      "mod_time": 1744467713.6439188
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\lsastore.py": {
+      "hash": "b01e5112df7a7ee7d9e64ed27126a049afe16bf9d76b5ecdeae1a0f106231036",
+      "size": 484,
+      "mod_time": 1744467713.6449196
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\query_information.py": {
+      "hash": "22aad0cb1cdc502677aec556fbc3dfd6fcec9beb19ba52cd8320e43622eec55d",
+      "size": 837,
+      "mod_time": 1744467713.6449196
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\regsave_sa.py": {
+      "hash": "515f756ff4cbe6e7012e4f7c0b1ac59809b49064720b06c24ad1490470c95081",
+      "size": 1751,
+      "mod_time": 1744467713.6459186
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\regsecurity.py": {
+      "hash": "c288dfd44959e4ac7cc6d0bf3370d48bbcbbd3f78693b6f60356d7ae8b6fa723",
+      "size": 1157,
+      "mod_time": 1744467713.652435
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\sa_inherit.py": {
+      "hash": "c644fd1c5a8dbcbc1d0531cc98f744b638dfd7db6cadf97c94ea89872b1cbe68",
+      "size": 289,
+      "mod_time": 1744467713.6534362
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\security_enums.py": {
+      "hash": "1dcf85687cad60b3be1e6524c396409129414a172ffc6528b03d305b22e5fe18",
+      "size": 9776,
+      "mod_time": 1744467713.6544392
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\setkernelobjectsecurity.py": {
+      "hash": "784afe47d2c477593e89740e64736015c3683214f3a2d90c6121b6db1562687c",
+      "size": 5027,
+      "mod_time": 1744467713.6797056
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\setnamedsecurityinfo.py": {
+      "hash": "abf04ea8d12f8e105a93fdfe251eb357b724d3764334440a699ca6ac47992cf1",
+      "size": 4519,
+      "mod_time": 1744467713.6797056
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\setsecurityinfo.py": {
+      "hash": "efbfc40525d3a161fbbc13f3f02ed7fe0e8aea9628440c3ea3f4ea724799dbcc",
+      "size": 4648,
+      "mod_time": 1744467713.6807084
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\setuserobjectsecurity.py": {
+      "hash": "20806a04e689895fd69ede5558108647eaf58cbe400e49844b171d5a238590e8",
+      "size": 3468,
+      "mod_time": 1744467713.681708
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\set_file_audit.py": {
+      "hash": "952eda74b391f1d42d34a9280efc1291ec6b82e7ae49c9788110a51b40255284",
+      "size": 3460,
+      "mod_time": 1744467713.6544392
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\set_file_owner.py": {
+      "hash": "47aae808b9f6691d102ff792378e1a1028375b259657d4f5539e5d58216cae31",
+      "size": 2314,
+      "mod_time": 1744467713.655439
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\set_policy_info.py": {
+      "hash": "1db17c0382bf190d7e9546633303431e48254166f081d9de245650ab7f1be84c",
+      "size": 936,
+      "mod_time": 1744467713.6564374
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\sspi\\fetch_url.py": {
+      "hash": "84cae9b00e020b4dabeb4b070349fe1c8cbf38dfcdc732a6a4fce5439e179425",
+      "size": 5555,
+      "mod_time": 1744467713.681708
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\sspi\\simple_auth.py": {
+      "hash": "35fd9a86644cda6eaa44d418082e2e1d48c065dc4de07f38573ecc2514050646",
+      "size": 2917,
+      "mod_time": 1744467713.6827064
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\sspi\\socket_server.py": {
+      "hash": "cb4d623dcf943e520cdc30093416ccade4acfea32e44002398a877dc87a1fed8",
+      "size": 6535,
+      "mod_time": 1744467713.6827064
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\security\\sspi\\validate_password.py": {
+      "hash": "91c6d0676b752a9455bac1ceaadc508a8f9e6e1372b9efb56b1825fbdfdaa1c8",
+      "size": 1164,
+      "mod_time": 1744467713.683707
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\service\\nativePipeTestService.py": {
+      "hash": "5b1ce3552935392a699d2cd19d6ae4d9a6a38e8d2130a1ca316b44f54701339c",
+      "size": 2198,
+      "mod_time": 1744467713.6847093
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\service\\pipeTestService.py": {
+      "hash": "fd1ce43709f5913717fb954d5ecd269747641d64211d1e9902eecadbe2f642fd",
+      "size": 7136,
+      "mod_time": 1744467713.6857078
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\service\\pipeTestServiceClient.py": {
+      "hash": "dcc6b36a1d9a633da83a0c273ab340310c202f6131bf1db1bc9db9e14014214e",
+      "size": 4785,
+      "mod_time": 1744467713.686709
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\service\\serviceEvents.py": {
+      "hash": "b96253bd293aab8b6ffa8101523ad7292bd78e376e6b3acdd232a3e0aaa3be4b",
+      "size": 4157,
+      "mod_time": 1744467713.6882112
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32wnet\\testwnet.py": {
+      "hash": "0df61aa361d07967446e5a7b5d905e2c1666d486d4751453963f0415fc53a666",
+      "size": 4405,
+      "mod_time": 1744467713.712682
+    },
+    ".venv\\Lib\\site-packages\\win32\\Demos\\win32wnet\\winnetwk.py": {
+      "hash": "07fee2cd99574c7de4b0f960127c3d53b874a53d9a6f830450336f3913396938",
+      "size": 3293,
+      "mod_time": 1744467713.7136853
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\afxres.py": {
+      "hash": "82d7b3ba4a73c0610b32bb8cb5af2e4a8e2bf29ecd3abd16ae8b5c963e229554",
+      "size": 206,
+      "mod_time": 1744467713.7156818
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\commctrl.py": {
+      "hash": "28e5d8b7698aa67d885808fcd1bbb4be32e674bd372e1b7621d2324583eb87e4",
+      "size": 47709,
+      "mod_time": 1744467713.7348883
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\mmsystem.py": {
+      "hash": "48556ff02d8208dc44af3ecd845128a22d2a47d690f21a21a6e882e321203c84",
+      "size": 31230,
+      "mod_time": 1744467713.7358906
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\netbios.py": {
+      "hash": "8bb70c46899a57ee55920057c6bea29796eb91b64f0845bab91c4a967bf91c44",
+      "size": 6895,
+      "mod_time": 1744467713.736894
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\ntsecuritycon.py": {
+      "hash": "3a2cc89db698bb625bf4b006c3e4fca1269f11b1a6dfddc96f403dc2426647eb",
+      "size": 23075,
+      "mod_time": 1744467713.736894
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\pywin32_bootstrap.py": {
+      "hash": "fd31f27bc85a6b9c974670838b6eefafb32991be4a9f840f96a4f5524df3b3c3",
+      "size": 772,
+      "mod_time": 1744467713.736894
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\pywin32_testutil.py": {
+      "hash": "3a229f61420d450d6d59de704e72c136c8c7aac18d41cf983cb9aad1e6b346a3",
+      "size": 10876,
+      "mod_time": 1744467713.7977924
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\pywintypes.py": {
+      "hash": "375709b90af48a29f9a18a68010cc010759c1991d30913f3ee42906e9d17180e",
+      "size": 6034,
+      "mod_time": 1744467713.7988217
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\rasutil.py": {
+      "hash": "5f002cd66da43927768a6f606bb8fb33b4a63ebedc82689cde814d5ecdb1c190",
+      "size": 1764,
+      "mod_time": 1744467713.7998369
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\regcheck.py": {
+      "hash": "28cef135173f09ff8878538cc3130b9a0d8321ddf934144527651ce016746d5a",
+      "size": 4602,
+      "mod_time": 1744467713.7998369
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\regutil.py": {
+      "hash": "a7ffdec09bf0436fe0e5494f5739c7bfbd74489843a074ec81b84d8b921fede2",
+      "size": 12695,
+      "mod_time": 1744467713.8009796
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\sspi.py": {
+      "hash": "f533400f148c1c0f544295c40db03022308ebbe3822a9a3e6232602a9f41c5d5",
+      "size": 16036,
+      "mod_time": 1744467713.8009796
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\sspicon.py": {
+      "hash": "f197157f53188f7498f60807580e12f0faa8ff7bdacb2a0ec60a49508949d8f1",
+      "size": 16174,
+      "mod_time": 1744467713.8302763
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win2kras.py": {
+      "hash": "4400759ca5ba15bd7af99d0608918c73173c2899cc1346468b56e2371e9f388b",
+      "size": 446,
+      "mod_time": 1744467713.831299
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32con.py": {
+      "hash": "1a34d587b8625220f3327f692135349ddce70e3ac6ff9533f088b455385ac552",
+      "size": 121632,
+      "mod_time": 1744467713.8549912
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32cryptcon.py": {
+      "hash": "29baa10e29a148a8ff5cb973674caca7d960d4dddf5cb2d2159da213646e8b5b",
+      "size": 74342,
+      "mod_time": 1744467713.91391
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32evtlogutil.py": {
+      "hash": "fcb4d12bc8d9f060dac78c6fecab18d3d6e076e883ed3a799701f390d4cce7c5",
+      "size": 7827,
+      "mod_time": 1744467713.914924
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32gui_struct.py": {
+      "hash": "b2116b4c6f3b0a13b70a24a0490d9b4c3f29be85bfa0428cc8b35d2d7ed67511",
+      "size": 29901,
+      "mod_time": 1744467713.914924
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32inetcon.py": {
+      "hash": "5d08d1208e96b6ab80786673b8b5238a8e4b139eecd1118b99fd3fc5a95d5cc9",
+      "size": 44303,
+      "mod_time": 1744467713.957791
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32netcon.py": {
+      "hash": "ea00857b02100ce991ce620fa6438c6569136f642e844fc742dfa6f6b4e1e0d9",
+      "size": 19159,
+      "mod_time": 1744467713.9588747
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32pdhquery.py": {
+      "hash": "5cdcff001c700ac6fddcc1bd6539487e4abeec649c4d44e0a3800e31bdadde0a",
+      "size": 24089,
+      "mod_time": 1744467713.9661012
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32pdhutil.py": {
+      "hash": "462b7ee35cb8d0921add88e5d9f09fbab6c3f15287bba168f99ea40bfc0e982c",
+      "size": 7828,
+      "mod_time": 1744467713.9661012
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32rcparser.py": {
+      "hash": "c80a97d4a5ce02b9bab85faa9cb608cbc49653943cf3406ed1259542128b159c",
+      "size": 22333,
+      "mod_time": 1744467713.9676063
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32serviceutil.py": {
+      "hash": "afb74ed0f1118f45fc36039e458f4993d409ad198f88e1867aec799ae7d31f92",
+      "size": 39076,
+      "mod_time": 1744467713.968611
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32timezone.py": {
+      "hash": "98b00674a75fa505053be30e580397e2fce5160914ed7b9ef92b8f6f1d575fa3",
+      "size": 42439,
+      "mod_time": 1744467714.0340505
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32traceutil.py": {
+      "hash": "7b4d9c029aa6c1adc70aa4e539a7fca9be779ad7dc38e23276bdd817a8bd68ad",
+      "size": 1661,
+      "mod_time": 1744467714.035053
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\win32verstamp.py": {
+      "hash": "b1a18b19c72da5058301502a0e9c2ee98d1d2e4c410ed4738755ceaac9e73a8a",
+      "size": 7210,
+      "mod_time": 1744467714.035053
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\winerror.py": {
+      "hash": "046d6c0ce668d0ce8928e0e6c59aeab99e0e9230d3a84d6ab5c142b5fb900a88",
+      "size": 290166,
+      "mod_time": 1744467714.165117
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\winioctlcon.py": {
+      "hash": "66c3cef032150d1ee31fdfbe33e058580783978a231dfffa36b6ff3060fb9cdd",
+      "size": 36454,
+      "mod_time": 1744467714.196136
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\winnt.py": {
+      "hash": "ab090258fbf84e9156048d1de281f78ba297680fe242ee744042063687a4c9fd",
+      "size": 38459,
+      "mod_time": 1744467714.1976404
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\winperf.py": {
+      "hash": "5e41b0870d34c18a120de859dc3bf87d734133b2decac16e1a28e21d8d096f27",
+      "size": 6147,
+      "mod_time": 1744467714.1986454
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\winxptheme.py": {
+      "hash": "019536e74a7198ed12b6957524dfe0b2a2bfd4c9ac3219dd755e215c0a073c08",
+      "size": 282,
+      "mod_time": 1744467714.1996462
+    },
+    ".venv\\Lib\\site-packages\\win32\\lib\\_win32verstamp_pywin32ctypes.py": {
+      "hash": "5ea72aeefc0aa68b6f7aacb715013fe6e3c16dfb30d67d3cd77b0e5a9a897d40",
+      "size": 4668,
+      "mod_time": 1744467713.714684
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\backupEventLog.py": {
+      "hash": "94eb0abf791c853e0a8717f4adf0b511eca5562d5998a84a45e69069b91826a4",
+      "size": 1288,
+      "mod_time": 1744467714.216261
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\ControlService.py": {
+      "hash": "3196c1fa331837c88869788cf834e3bb91be1147ef99fe6b0ad2e1d08a4fb713",
+      "size": 18634,
+      "mod_time": 1744467714.216261
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\h2py.py": {
+      "hash": "c6b34441bf09d38b534859355dc9c0302c3b0ed04d462fd38402c08a25f91d3d",
+      "size": 6620,
+      "mod_time": 1744467714.2177658
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\killProcName.py": {
+      "hash": "e6f856e144cd64aa08d7d12b08714875678b3b770e81a0eeeab8ba9c3093264b",
+      "size": 2050,
+      "mod_time": 1744467714.2187722
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\pywin32_postinstall.py": {
+      "hash": "9b1e16569d610fff31824497b6d36db68d4154310264e7371420a5ad1d528c53",
+      "size": 25736,
+      "mod_time": 1744467714.2187722
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\pywin32_testall.py": {
+      "hash": "87218b30a20b9f7fd6d2af8c70fd552673455bfcf9ca4fe07ac4cc403954a1c3",
+      "size": 3847,
+      "mod_time": 1744467714.2187722
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\rasutil.py": {
+      "hash": "e77cb45397f50c71cba008d37bb52265820f68775aaebc0b494a3dd6f2ca361e",
+      "size": 2821,
+      "mod_time": 1744467714.219946
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\regsetup.py": {
+      "hash": "c20cd55fd5b2d4c3e9306e0a6ec8dd9f3d6df9199babf39100a3f865d5cb68fb",
+      "size": 21043,
+      "mod_time": 1744467714.3002198
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\setup_d.py": {
+      "hash": "16408ccb8609d3131c88b4a62e663a91d5abd905b5d4d0713506eb1d3dd38711",
+      "size": 3639,
+      "mod_time": 1744467714.3002198
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\VersionStamp\\BrandProject.py": {
+      "hash": "6252c0b499fb514cc94b495a7123c31b57710a60b5027a14d5525ef6d3f47f8f",
+      "size": 2873,
+      "mod_time": 1744467714.3012166
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\VersionStamp\\bulkstamp.py": {
+      "hash": "1b96362da8fed571c11fc93928719427a4c2bdbc5047168f16c7fc7f2b4dbcf0",
+      "size": 4823,
+      "mod_time": 1744467714.3022137
+    },
+    ".venv\\Lib\\site-packages\\win32\\scripts\\VersionStamp\\vssutil.py": {
+      "hash": "b900209c145a95674cde2fbe95ee2f676df42934c3d6a02c7c8631e2d70e21fa",
+      "size": 5818,
+      "mod_time": 1744467714.3022137
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\handles.py": {
+      "hash": "5b8f45f31f8c75c143e896ce8c1a1de4d90713f186363d4d8daacba46320ece8",
+      "size": 5630,
+      "mod_time": 1744467714.3032146
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\testall.py": {
+      "hash": "0573ecbb4855f249da1990ab09cb3d73367103732e69467d203e30815adddda1",
+      "size": 7257,
+      "mod_time": 1744467714.3877144
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_clipboard.py": {
+      "hash": "93c2cd3354726681a7d97480bb1908fdcddfb5129bf014806e7d46a7ee403b8b",
+      "size": 4409,
+      "mod_time": 1744467714.3052132
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_exceptions.py": {
+      "hash": "42bc8a7dcacbfb3927be243b59fa10e50fae2297f25d11348ac91088e2e28651",
+      "size": 8227,
+      "mod_time": 1744467714.3052132
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_odbc.py": {
+      "hash": "5a245490f49f2a65ea8d5abacda9efa3a10a2d7d9a31c5e1c6d4b52be4176140",
+      "size": 8613,
+      "mod_time": 1744467714.3447895
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_pywintypes.py": {
+      "hash": "113dd57572b58c191cb2bb0230dd16795fdb2e996b41caffa2c8112d85db9317",
+      "size": 4139,
+      "mod_time": 1744467714.3447895
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_security.py": {
+      "hash": "7dd6f016e8074ff6f74428b1da6a068ae819fada8deb8f719e15c58616397502",
+      "size": 6222,
+      "mod_time": 1744467714.345797
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_sspi.py": {
+      "hash": "a98b9393bc2b9057e3bb57e9bceea0440ad06e79be51ef2d273a38b437da7321",
+      "size": 8379,
+      "mod_time": 1744467714.345797
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32api.py": {
+      "hash": "4b49a153ee50ce869d9604b6c675667c88d1685ec2d4021b80406bada5287747",
+      "size": 10013,
+      "mod_time": 1744467714.3467896
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32clipboard.py": {
+      "hash": "6cf993d3d485d21a662c47005a237f6116c1629c29368982e513d79136a7705b",
+      "size": 2013,
+      "mod_time": 1744467714.3467896
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32cred.py": {
+      "hash": "7cdb611ff1f681f1a4c45da6bfc9a736626035582e0450b3b86ecf50c7a55391",
+      "size": 3239,
+      "mod_time": 1744467714.347791
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32crypt.py": {
+      "hash": "45b13d0437370b43ab7faf1267fe48da74bc17d2aad4c152b8296f70f431c161",
+      "size": 4907,
+      "mod_time": 1744467714.347791
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32event.py": {
+      "hash": "9664dc1aeecf1dc7300b5f2338dad2ecc764ec344a58598c8b17981965eafa2a",
+      "size": 4487,
+      "mod_time": 1744467714.3482978
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32file.py": {
+      "hash": "5ab20e1a75307bdd71c289fc585e9f10c3cc6e57933836fac7e7df713c119df8",
+      "size": 42783,
+      "mod_time": 1744467714.373196
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32gui.py": {
+      "hash": "cab3a798fb290b69d10c4f9dee744e65dc0ef64d56bce1f5b9995f1d9ae77b9c",
+      "size": 7943,
+      "mod_time": 1744467714.3742008
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32guistruct.py": {
+      "hash": "b09485b004a1161172161b2aa7be74367fbca1571bc14deb817fa809d2d11008",
+      "size": 9610,
+      "mod_time": 1744467714.3742008
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32inet.py": {
+      "hash": "18c49c5355f5273a9cd211509269d3dc839f2643f7f5647998a64ce156627ad5",
+      "size": 3517,
+      "mod_time": 1744467714.3751974
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32net.py": {
+      "hash": "7dcee41f7390ed2bfe8900bc4adf1ec0aed55c70348df5b1d9906ab910d16f38",
+      "size": 658,
+      "mod_time": 1744467714.3751974
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32pipe.py": {
+      "hash": "5a07959c02ac804a3ba21b2ccb30b8040f1367e172edc768a1f557dbb195f1cc",
+      "size": 4945,
+      "mod_time": 1744467714.3762004
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32print.py": {
+      "hash": "c6f842c62e7b8b811f3955f71a7ffd98b8e6225abf3bbf9880cd23a286bbac4c",
+      "size": 705,
+      "mod_time": 1744467714.3762004
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32profile.py": {
+      "hash": "bda9b91ee8bd1b8f0a86eb742bc68c7fab05625efbbaef506bb755e3eee158b2",
+      "size": 433,
+      "mod_time": 1744467714.3777063
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32rcparser.py": {
+      "hash": "e1d9b9885a0d065f49bfbcced451844908355192570d4e9cb62359475db2c135",
+      "size": 2533,
+      "mod_time": 1744467714.3777063
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32timezone.py": {
+      "hash": "de93045e9665cf388cc56fd3953ed67c8d63fbfde819f4b063d4c1f577dff8a4",
+      "size": 327,
+      "mod_time": 1744467714.3787377
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32trace.py": {
+      "hash": "1ddf48bc2cafc0f4e110cf3b90b25e44a4e86bb3e81b143f0938bb856db95961",
+      "size": 11665,
+      "mod_time": 1744467714.379715
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32ts.py": {
+      "hash": "72af46c5caa3422bc8a15707362177dfa71c3d7f8979e3bba8240eda799a8035",
+      "size": 439,
+      "mod_time": 1744467714.382713
+    },
+    ".venv\\Lib\\site-packages\\win32\\test\\test_win32wnet.py": {
+      "hash": "48998c849a0141c5dbb522e8982873d357333bf00a942eb66bf24bdc19008ba9",
+      "size": 5827,
+      "mod_time": 1744467714.3837144
+    },
+    ".venv\\Lib\\site-packages\\win32com\\olectl.py": {
+      "hash": "2ad7f32139e42693f615b33d7381e3435441be843cc3437654c18b0c2bf010d2",
+      "size": 2692,
+      "mod_time": 1744467714.3962345
+    },
+    ".venv\\Lib\\site-packages\\win32com\\storagecon.py": {
+      "hash": "76785263c142a12fb301cb54a6d79589bab415b6253f87115d35be4adf802211",
+      "size": 3174,
+      "mod_time": 1744467714.3987477
+    },
+    ".venv\\Lib\\site-packages\\win32com\\universal.py": {
+      "hash": "024a6ec5a6822d269f7f1ba0fca2b87f33fb784c2b8de216aea0251bd22d6f89",
+      "size": 8761,
+      "mod_time": 1744467714.4513257
+    },
+    ".venv\\Lib\\site-packages\\win32com\\util.py": {
+      "hash": "a5cc6a3d1a9aa661d1cd81885689b4162fb7a5e2009c83246a36242cc9e3c507",
+      "size": 1064,
+      "mod_time": 1744467714.4523365
+    },
+    ".venv\\Lib\\site-packages\\win32com\\__init__.py": {
+      "hash": "4cc726667f88ea68dd5a50df98144cfc0eeeac9c2e7f639ef5e4aebe6c5ec5d4",
+      "size": 5020,
+      "mod_time": 1744467714.3952346
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\build.py": {
+      "hash": "437b6e068882ac9369ebb4fe23ab3d37287a310e52cdc2028757942df7f55a84",
+      "size": 29158,
+      "mod_time": 1744467714.5881875
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\CLSIDToClass.py": {
+      "hash": "7a96e5656314651efe97e00cc92ab48f6710ead93a01b01b6fa4a76bc4b954da",
+      "size": 1871,
+      "mod_time": 1744467714.515648
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\combrowse.py": {
+      "hash": "ffa901795ccf59d0db3d7c93b2c3e857a9da4063f6d8c5e0f906cca1128f6e6d",
+      "size": 20520,
+      "mod_time": 1744467714.5893693
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\connect.py": {
+      "hash": "699fee5476f3464a082873d90295ef1e43b7ab6bb4d498e4052b6b3968938449",
+      "size": 1585,
+      "mod_time": 1744467714.5903702
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\dynamic.py": {
+      "hash": "35eb50dad8f0e61c35d5c3182b0c2757e06cdb809be4d2a9be5ee0c255c5e3e1",
+      "size": 28284,
+      "mod_time": 1744467714.5903702
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\gencache.py": {
+      "hash": "a18c42c1bec7c8be3cce8979026461597a655b7255c671c885d29d3e6fee1ebe",
+      "size": 29645,
+      "mod_time": 1744467714.6200264
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\genpy.py": {
+      "hash": "3f3d88a64d14ca2ee6dfdf13f0faac67c779423756cf55284ec8b7a456b2c037",
+      "size": 54950,
+      "mod_time": 1744467714.661845
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\makepy.py": {
+      "hash": "e060b4b00eb7dca87795dfaa75cb680a30e2d9bf1c0055ddcbe0df1a20589823",
+      "size": 14962,
+      "mod_time": 1744467714.6628454
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\selecttlb.py": {
+      "hash": "9917b95e6bb62d559d3be4ea2e8d9d86cc07fb0eecfe969d2a2049a3ec15e809",
+      "size": 6451,
+      "mod_time": 1744467714.6628454
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\tlbrowse.py": {
+      "hash": "b14c58a1dfd62b4663fcba263451b4ce9cbf806ac8ef50e2b4343be991261c39",
+      "size": 9787,
+      "mod_time": 1744467714.6638505
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\util.py": {
+      "hash": "d53e9e4e752d2fd5803169659e306d53c60224d90d5842ca6bffc13de91d5f5e",
+      "size": 3445,
+      "mod_time": 1744467714.6638505
+    },
+    ".venv\\Lib\\site-packages\\win32com\\client\\__init__.py": {
+      "hash": "61554c113ec09db9bb5de258621bfaabce1641a558a6da5c79655952e0ff0cac",
+      "size": 27152,
+      "mod_time": 1744467714.516647
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\connect.py": {
+      "hash": "9e0ee899af15efd4aaeff012ce6ce9761ff064501b0a62919dc954be9c5aae66",
+      "size": 3854,
+      "mod_time": 1744467714.665849
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\dump_clipboard.py": {
+      "hash": "5c29aa3075b42caf036bba07c35cf294147f3e7efd12ac8bcdb8ef0216871d4f",
+      "size": 3015,
+      "mod_time": 1744467714.665849
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\eventsApartmentThreaded.py": {
+      "hash": "555788d3a4a281482d84f492f0f87be87fae62ea3779d8b6a832bd1756929627",
+      "size": 3764,
+      "mod_time": 1744467714.665849
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\eventsFreeThreaded.py": {
+      "hash": "ec0d75c5ff350edc67fed2119bce15e26fc2d578dfa3fd495a0bcd515e30722f",
+      "size": 3556,
+      "mod_time": 1744467714.6668482
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\excelAddin.py": {
+      "hash": "334499ea27ad8cf364239d7f899a31fe6909d4e73936ec1633e292a14cb35a9e",
+      "size": 6216,
+      "mod_time": 1744467714.6678472
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\excelRTDServer.py": {
+      "hash": "f02e90af323314c8a16df62facf94919a4a5bfca5b96745a47d733fde5a068ab",
+      "size": 16612,
+      "mod_time": 1744467714.6683526
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\iebutton.py": {
+      "hash": "bf80e544c135af58ac86577c7bafa612dfe28f6736bf37788bce6ed169c82be9",
+      "size": 7157,
+      "mod_time": 1744467714.6743655
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\ietoolbar.py": {
+      "hash": "d4a0e15859c050c05e133a0a97e8bbf03439056a9768cf97f4b58fcfba1e37c6",
+      "size": 11148,
+      "mod_time": 1744467714.6763656
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\outlookAddin.py": {
+      "hash": "d32540eaaad0fe472e0e80c92eb42e9e40fe8e875eb78f8359c1b9d64c9114c4",
+      "size": 4746,
+      "mod_time": 1744467714.679604
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\trybag.py": {
+      "hash": "151a5f89c76149288298339f0ec38ce0f72a6818e6f0168cc17318b1a25ed91d",
+      "size": 2185,
+      "mod_time": 1744467714.679604
+    },
+    ".venv\\Lib\\site-packages\\win32com\\demos\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467714.6648493
+    },
+    ".venv\\Lib\\site-packages\\win32com\\makegw\\makegw.py": {
+      "hash": "2407861577e20dc6893a7f08158e3a8d51aff1ff5d62fb6f14136773b3d84191",
+      "size": 22299,
+      "mod_time": 1744467714.7617168
+    },
+    ".venv\\Lib\\site-packages\\win32com\\makegw\\makegwenum.py": {
+      "hash": "4d7e4accc4c77a411396bc45dcb785634c7b733ae97160a9225d38426479b985",
+      "size": 10803,
+      "mod_time": 1744467714.7617168
+    },
+    ".venv\\Lib\\site-packages\\win32com\\makegw\\makegwparse.py": {
+      "hash": "c38b63d220ef28fe853a8c9c05e74a5c49c0571d120f4b550c7c81696926ac7d",
+      "size": 36307,
+      "mod_time": 1744467714.7627172
+    },
+    ".venv\\Lib\\site-packages\\win32com\\makegw\\__init__.py": {
+      "hash": "218f6875730028fe5101ecf050505c5509db1b768b4beaf5a2b5b4dc7ba9042a",
+      "size": 31,
+      "mod_time": 1744467714.7607236
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\connect.py": {
+      "hash": "48435df295d21d69d3eeddb8084c549bd4af351479a03fe8901ce73fe9ce7491",
+      "size": 2859,
+      "mod_time": 1744467714.7647212
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\dispatcher.py": {
+      "hash": "e61b367b1ba5bd636494e675a59a020098c6cbd59350176298962c9cd20c0dc6",
+      "size": 8278,
+      "mod_time": 1744467714.7647212
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\exception.py": {
+      "hash": "078e6e06a83688e7dd6b8f9051364c5aa84da443fa4cda40a049c174a903fd5a",
+      "size": 3500,
+      "mod_time": 1744467714.7657177
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\factory.py": {
+      "hash": "aa37eff0ddb4b1a3fe413f632679e79a2600f45d9574b08395da0852b4479edf",
+      "size": 876,
+      "mod_time": 1744467714.9121652
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\localserver.py": {
+      "hash": "f9ab14b5fe3c5f249840826f0fee39f3538026a935c476ada349a8ea90b9edcf",
+      "size": 1247,
+      "mod_time": 1744467714.9131646
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\policy.py": {
+      "hash": "2ecb7c0ad735f72e5088797fb8a182a689b9ddb7d661aa76669443325b0ebac3",
+      "size": 33223,
+      "mod_time": 1744467714.9141674
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\register.py": {
+      "hash": "a78d995a69773e508eb29513adc0b1ff12c1239b2917e8136c3838a493807e3b",
+      "size": 25863,
+      "mod_time": 1744467714.9151745
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\util.py": {
+      "hash": "213f1867833eb17798bb6e56687608c7b72769f959cf23e575bc4c1cf0931a94",
+      "size": 6930,
+      "mod_time": 1744467714.9151745
+    },
+    ".venv\\Lib\\site-packages\\win32com\\server\\__init__.py": {
+      "hash": "75902884cc04c097236105de63e2c6364e0cae5a6e9966d4265f6e26f136a851",
+      "size": 51,
+      "mod_time": 1744467714.763721
+    },
+    ".venv\\Lib\\site-packages\\win32com\\servers\\dictionary.py": {
+      "hash": "af304f6244c6de7e36b0abae50bc1a932739f94d6b73f9a19da46a1f311ce0ce",
+      "size": 4500,
+      "mod_time": 1744467714.917678
+    },
+    ".venv\\Lib\\site-packages\\win32com\\servers\\interp.py": {
+      "hash": "a0bb533f1020ebfdf77321ff3aa2548a4c5f37478dd4149551420d08a3b3324a",
+      "size": 1794,
+      "mod_time": 1744467714.917678
+    },
+    ".venv\\Lib\\site-packages\\win32com\\servers\\perfmon.py": {
+      "hash": "8e8840a85c373108c4a6dba855cee5f60f2c2ce424eb6e15780575099d939c2d",
+      "size": 1233,
+      "mod_time": 1744467714.9186852
+    },
+    ".venv\\Lib\\site-packages\\win32com\\servers\\PythonTools.py": {
+      "hash": "44dfb38353d60a8c991dfe73878672066bd2a4ad8b2cd666a8c30a9d60760aba",
+      "size": 1224,
+      "mod_time": 1744467714.9161706
+    },
+    ".venv\\Lib\\site-packages\\win32com\\servers\\test_pycomtest.py": {
+      "hash": "bb0ecfd89440e2fd647ce31563511e8a9d818f52637c9eb900d2ff9ed53ec2f0",
+      "size": 5255,
+      "mod_time": 1744467714.9199672
+    },
+    ".venv\\Lib\\site-packages\\win32com\\servers\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467714.9161706
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\daodump.py": {
+      "hash": "3350b8c5288d066d94806c954e5b640a9762c013ae0ff896fd03ccb59883f623",
+      "size": 2333,
+      "mod_time": 1744467714.925967
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\errorSemantics.py": {
+      "hash": "f9caa9b818a41929eb399c8ac67b7ef2b433b60203258d00790dfab4120b90d6",
+      "size": 8767,
+      "mod_time": 1744467714.9294877
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\GenTestScripts.py": {
+      "hash": "53721570f0d4ebf28d5ebdfdfbd521c7336ea45d83546b6755c8502b4f8c7efd",
+      "size": 2715,
+      "mod_time": 1744467714.921969
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\pippo_server.py": {
+      "hash": "4be5d08b68fdd410c96032af2d3bfc9ff35119280d35aeb93eec665c842ea922",
+      "size": 2726,
+      "mod_time": 1744467714.931495
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\policySemantics.py": {
+      "hash": "5f442544e157bee20b1d57c714a748864347febad1fd7158ff41b73f2729a61f",
+      "size": 3226,
+      "mod_time": 1744467714.9324958
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testAccess.py": {
+      "hash": "8676a604f71a400935ac786869de06d88ac715a6090649db02483d33fad0784b",
+      "size": 5874,
+      "mod_time": 1744467714.9364948
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testADOEvents.py": {
+      "hash": "b8bda3a6996d7979da4344d812d24252aae118fb3c35066bc8cd6bd77b95ad61",
+      "size": 2878,
+      "mod_time": 1744467714.9344954
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testall.py": {
+      "hash": "03a5e98f3a6eb799f142b40957c100360b392c85154fb6dbd8c196ca78beaf6c",
+      "size": 10229,
+      "mod_time": 1744467714.9761302
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testArrays.py": {
+      "hash": "347777f2582f3ee4a664c5e1c706fbca070a02f7115896daa096419f404eb19a",
+      "size": 2165,
+      "mod_time": 1744467714.9364948
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testAXScript.py": {
+      "hash": "4923e38e705d4f321e96a2ec74f98e7cb72607d808104a56d8e6431ef9fd4939",
+      "size": 1388,
+      "mod_time": 1744467714.9354956
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testClipboard.py": {
+      "hash": "8d257e56663a70afd6a8c9597bef4add58365362b4ab081cc6d2df9f8cacfb4a",
+      "size": 5952,
+      "mod_time": 1744467714.9390075
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testCollections.py": {
+      "hash": "52f0f8ffd0e3360635563e04bc35100afc6f05061203ded974f3ee5c808caeb7",
+      "size": 4400,
+      "mod_time": 1744467714.9400141
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testConversionErrors.py": {
+      "hash": "a80afe5eebaa824ee6ba51f9a53c8a1500ab73404d4e08f3642b939c1332fcff",
+      "size": 713,
+      "mod_time": 1744467714.9400141
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testDates.py": {
+      "hash": "6abc1968e58b73522276809bacf161d9888d7dbc5669c7b043a8d78a9fc992d2",
+      "size": 1908,
+      "mod_time": 1744467714.942014
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testDCOM.py": {
+      "hash": "a1e836d88960135eee2b313ba2c5646c9970d0fe62eb5af96d91c985b99d4f35",
+      "size": 1766,
+      "mod_time": 1744467714.9410143
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testDictionary.py": {
+      "hash": "52976f9c87e45635c7a550d0dd07c4227279dc02b47cf6d4b60dc789799b835b",
+      "size": 2862,
+      "mod_time": 1744467714.9440143
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testDynamic.py": {
+      "hash": "7c37b2145228f7f7852b95806065b6e2a05a0663ddfaff895e7b29edd1658edd",
+      "size": 2756,
+      "mod_time": 1744467714.9470158
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testExchange.py": {
+      "hash": "e957ec079057f13ce3011e47c54646ffc106c4b961a4ad3bf6c3621673c550dc",
+      "size": 3361,
+      "mod_time": 1744467714.9470158
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testExplorer.py": {
+      "hash": "95f4129dcf1d2f03bc55e312dd2abe5dfb7de6c33e8030d8c9bf0ed52dc90f16",
+      "size": 4599,
+      "mod_time": 1744467714.948519
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testGatewayAddresses.py": {
+      "hash": "7ec0e68d9bca6db4b287e60049502d32951eab6f2254486b67abe446ff364035",
+      "size": 5342,
+      "mod_time": 1744467714.9535336
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testGIT.py": {
+      "hash": "7aab688b3d994a07d3c49be0e1225a515b9a0ac0745f1cc6ff4b835aba8ab7ab",
+      "size": 4766,
+      "mod_time": 1744467714.950532
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testIterators.py": {
+      "hash": "f29e2961cd794e55fb018230328dc79292c2569a8e75a80d3665ce1536dd5e94",
+      "size": 4769,
+      "mod_time": 1744467714.9555328
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testmakepy.py": {
+      "hash": "d2aad440b934a3369047d594d3e9eba33dfdb56a4dfbd6c176bc22bb2ea5696c",
+      "size": 1929,
+      "mod_time": 1744467714.9776359
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testMarshal.py": {
+      "hash": "ebafcd74be0942e333b2d7bb76d35ceabf1026eebda995044a5fcfdece1b5f68",
+      "size": 6213,
+      "mod_time": 1744467714.9626026
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testMSOffice.py": {
+      "hash": "de8fa0054a8da78701d5b1e8b86824c82078426200e0e30f932a9756706c22e0",
+      "size": 5661,
+      "mod_time": 1744467714.960712
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testMSOfficeEvents.py": {
+      "hash": "6bd6ca1bd47d893f409b71e727b9482a79f1adb2be297ec37a41aa18bcf3ad7b",
+      "size": 4160,
+      "mod_time": 1744467714.960712
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testPersist.py": {
+      "hash": "89c76ae697a4ec68f2782dbb9865166dbc8b07fb746164b0ea0b35175735cdb8",
+      "size": 6465,
+      "mod_time": 1744467714.9636097
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testPippo.py": {
+      "hash": "ecaaf9bd5914b710812c6d90da7f4c42ec3b0bb84239a7146e955aeb6616f53a",
+      "size": 2652,
+      "mod_time": 1744467714.9636097
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testPyComTest.py": {
+      "hash": "f28e80f36a5f1c434f86a0bd3060d1410f8f3066aec6753f0b8b955d1013d80f",
+      "size": 32897,
+      "mod_time": 1744467714.9656105
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testROT.py": {
+      "hash": "26228dbc50cf0f82955f26d138a6b885521a5d7e879c0b7572c544c8aa10b217",
+      "size": 793,
+      "mod_time": 1744467714.9681158
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testServers.py": {
+      "hash": "440f63511b2286fcb1c699bea3588d46138df9fce0f1add9894640c812b6c951",
+      "size": 1401,
+      "mod_time": 1744467714.9691236
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testShell.py": {
+      "hash": "2d5cce567a8cf8e45aae65eeaa109fb5648f56469e613f7e64d3ec0d3532edc0",
+      "size": 9694,
+      "mod_time": 1744467714.9691236
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testStorage.py": {
+      "hash": "acc7f703a48c3446677ee557f1628cc7f016469329f6c771d5cc2ed2d6836c59",
+      "size": 3707,
+      "mod_time": 1744467714.9701312
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testStreams.py": {
+      "hash": "d60c2f8e1d4f3bcddddeda334bf96a698d0130037055d58f3bb91fb6948c3d71",
+      "size": 4336,
+      "mod_time": 1744467714.9711306
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testvb.py": {
+      "hash": "8118959641e8b82d6fc0f8f7eecba748edcf0226b40df84db4175747ed90a84e",
+      "size": 20762,
+      "mod_time": 1744467714.9906545
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testvbscript_regexp.py": {
+      "hash": "099458de8abfb443544d56e7adc21dfa212bd65c26f3a8b6e9a472a0b6e7f943",
+      "size": 1138,
+      "mod_time": 1744467714.9926872
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testWMI.py": {
+      "hash": "0247370919204e0f0ec289134e5dbc7b6479aa6b7be3d9470091346b93603fe0",
+      "size": 486,
+      "mod_time": 1744467714.9751308
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\testxslt.py": {
+      "hash": "63f90a8085a9ae2f46b2f903a1fbc61ddc23aaf2e2e359fbd6d022c1ea57d8f0",
+      "size": 948,
+      "mod_time": 1744467714.9946437
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\util.py": {
+      "hash": "7248b483612584e86831075ba8c54be8a2541e37a4f1047766d601987c8ce840",
+      "size": 8340,
+      "mod_time": 1744467714.9956427
+    },
+    ".venv\\Lib\\site-packages\\win32com\\test\\__init__.py": {
+      "hash": "6abc1eab725d375ebdf16f8d6e863afa0b088b612d1cd2f65fba4719b21887ab",
+      "size": 44,
+      "mod_time": 1744467714.9239695
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\adsi\\adsicon.py": {
+      "hash": "952f0e8962d5329f892f0317abb0128d966ce965b7521b7e771955e26f00405d",
+      "size": 12607,
+      "mod_time": 1744467715.096489
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\adsi\\__init__.py": {
+      "hash": "6dbf717ee9c2e8162cb5df6804c0d71faf8f30f45802cee9ceb233fa13b1c5a7",
+      "size": 3709,
+      "mod_time": 1744467714.9966419
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\adsi\\demos\\objectPicker.py": {
+      "hash": "4c2bcb56aaf042b315ffdefedeebdd3879edae37451fc44d6119c155ea637d71",
+      "size": 2009,
+      "mod_time": 1744467715.0979946
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\adsi\\demos\\scp.py": {
+      "hash": "a75946469cdfac6f1bb2625f01faf41dcf42c8df58b4678564272eaf2067c0ef",
+      "size": 19693,
+      "mod_time": 1744467715.0979946
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\adsi\\demos\\search.py": {
+      "hash": "813bfd07dcd6a9781ae829bd0b6b66824872bdbffe85e6e01e6cce77659be125",
+      "size": 4290,
+      "mod_time": 1744467715.0990028
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\adsi\\demos\\test.py": {
+      "hash": "07ee5b8d0f87e15a95ce35b69a89d30c1441482ce21bec15eeb853955d1e1045",
+      "size": 8649,
+      "mod_time": 1744467715.1109517
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\authorization\\__init__.py": {
+      "hash": "0486114a785d3c74a9940bd828bf4d04bb90599eba7be427269895580fc00f7f",
+      "size": 198,
+      "mod_time": 1744467715.1119602
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\authorization\\demos\\EditSecurity.py": {
+      "hash": "4eb7201751a7f76670e2e551a10ec3008dede5c9211e2925aadd24ff5ecd84a6",
+      "size": 8599,
+      "mod_time": 1744467715.1139548
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\authorization\\demos\\EditServiceSecurity.py": {
+      "hash": "11bb300d1e516071b06a334fb9a173368b01484b3f765016afe2e35a40461bcf",
+      "size": 8241,
+      "mod_time": 1744467715.1661115
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axcontrol\\__init__.py": {
+      "hash": "dd388bf3740ba9de76807a928b7552844018947d3a8555eeaa2cefce7d623d13",
+      "size": 139,
+      "mod_time": 1744467715.167616
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\adb.py": {
+      "hash": "09dd1f00836c2c4b3d4971d3337f3282ab075c8364abc424b30198b2d07d8c8b",
+      "size": 18086,
+      "mod_time": 1744467715.3342493
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\codecontainer.py": {
+      "hash": "30950ce51626c39244cd8647803d008118a7d2132978d537d53dd875606726af",
+      "size": 9314,
+      "mod_time": 1744467715.4906244
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\contexts.py": {
+      "hash": "2d1cce2c30d41506d460e68f62eaf55da6bc86f881e5035c449739943fe25ef9",
+      "size": 2125,
+      "mod_time": 1744467715.4906244
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\debugger.py": {
+      "hash": "f2386501d7cbd6a8438d28d8ff88fade4cdefaae63f9bc83fb510bbd3370bec5",
+      "size": 7244,
+      "mod_time": 1744467715.4906244
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\documents.py": {
+      "hash": "cef232d4696386f49a46f430cbc85022818ab0ec6a64fa6c7bab1739d6258c5d",
+      "size": 4297,
+      "mod_time": 1744467715.4916244
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\dump.py": {
+      "hash": "09032580138a299f8f41f8850e27afe6dfbd60bfeb4faebc12483908ac09baf1",
+      "size": 1807,
+      "mod_time": 1744467715.4916244
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\expressions.py": {
+      "hash": "2e62c5cf24e1a7ef8cf28c12097fdda9bab45d2e57cb43975aa9af64a9dd4455",
+      "size": 6744,
+      "mod_time": 1744467715.527575
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\gateways.py": {
+      "hash": "ec56c9180901ad3751614b9f64564016977899fb58f8eba96d138adce4f5f942",
+      "size": 17951,
+      "mod_time": 1744467715.527575
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\stackframe.py": {
+      "hash": "76af9b36824a1b4403512c5f96f0a0d142c5ef2a4fda20bffe22f30e724c344f",
+      "size": 6032,
+      "mod_time": 1744467715.5285802
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\util.py": {
+      "hash": "ef066d2e1541b79229e4fcba762fc731270608bfc0560b317b1eecdd94c30164",
+      "size": 3218,
+      "mod_time": 1744467715.5285802
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axdebug\\__init__.py": {
+      "hash": "dd388bf3740ba9de76807a928b7552844018947d3a8555eeaa2cefce7d623d13",
+      "size": 139,
+      "mod_time": 1744467715.3332489
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\asputil.py": {
+      "hash": "ed7401d39bd9951c24e37eacff204b55920b15a7f818e78b027e1d1457846791",
+      "size": 262,
+      "mod_time": 1744467715.5295856
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\__init__.py": {
+      "hash": "dd388bf3740ba9de76807a928b7552844018947d3a8555eeaa2cefce7d623d13",
+      "size": 139,
+      "mod_time": 1744467715.5295856
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\debug.py": {
+      "hash": "9178f63ace51b580fddffdd6103728374548b619d107881ff01d60a9fc04488f",
+      "size": 8317,
+      "mod_time": 1744467715.6614769
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\error.py": {
+      "hash": "3af619f4afb5544e0e124a73f9c1430cb6b28557253f093c7eb5cb93cd0b7520",
+      "size": 9264,
+      "mod_time": 1744467715.6624753
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\framework.py": {
+      "hash": "86d7dc0c101fdadd1f4f1ac9f980da15f21ac4d540d322ddad8491e1a53fd194",
+      "size": 47513,
+      "mod_time": 1744467715.6634755
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\pydumper.py": {
+      "hash": "7b5d475a82f460b0c7be2c8003d095ef3db85dc7fe61d7a08f02ce683bea388a",
+      "size": 2231,
+      "mod_time": 1744467715.665475
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\pyscript.py": {
+      "hash": "7daf1fb3651ca3a89e8e2b9779f91d8a976b9af8dad64df20e555bc9a7e3e36f",
+      "size": 15656,
+      "mod_time": 1744467715.6679814
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\pyscript_rexec.py": {
+      "hash": "0f62023bfced616762f4e2dd4388970a7d93881e9c01e7f205d8037bb06cf1a7",
+      "size": 2203,
+      "mod_time": 1744467715.686244
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\scriptdispatch.py": {
+      "hash": "f089bdf4d95d61bac500cb1ffe4826dce934d191833cd295a4bf33ba5a7b8b8c",
+      "size": 3856,
+      "mod_time": 1744467715.686244
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\client\\__init__.py": {
+      "hash": "b92ebcf1b0b40a96b64743bf6449037dc69a78522550e9efef0ec6df833e0c52",
+      "size": 28,
+      "mod_time": 1744467715.660475
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\server\\axsite.py": {
+      "hash": "2451f6ed6abde4463b6d91b2acf54c80df81fe0245e33df52605c589eafe0de2",
+      "size": 4275,
+      "mod_time": 1744467715.688756
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\server\\__init__.py": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mod_time": 1744467715.68775
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\test\\leakTest.py": {
+      "hash": "f0d42c26876bf0a244e093f14634ec60a558bab8f036e7811c3fa81c7c0ad195",
+      "size": 4835,
+      "mod_time": 1744467715.6899078
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\test\\testHost.py": {
+      "hash": "05e9b73d6733fd553b9dfd4ea40c0dae08add89010d43a97ddd4f3b6935d9e52",
+      "size": 7923,
+      "mod_time": 1744467715.6909142
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\axscript\\test\\testHost4Dbg.py": {
+      "hash": "bd8d2ad6e10eb85af06e54f7d9972a212739501844768810ce6d39f1e29a42ef",
+      "size": 2735,
+      "mod_time": 1744467715.6909142
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\bits\\__init__.py": {
+      "hash": "0486114a785d3c74a9940bd828bf4d04bb90599eba7be427269895580fc00f7f",
+      "size": 198,
+      "mod_time": 1744467715.6919148
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\bits\\test\\show_all_jobs.py": {
+      "hash": "8404d0ea12eb455b9e11559616c46182ad91aa26d60afba86802ae363e128f6f",
+      "size": 1567,
+      "mod_time": 1744467715.7606463
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\bits\\test\\test_bits.py": {
+      "hash": "9c741049f2fa6aafbaec38b41ac3eae55e58f0e45ee6f7f46e292986a286068c",
+      "size": 3999,
+      "mod_time": 1744467715.7617884
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\directsound\\__init__.py": {
+      "hash": "dd388bf3740ba9de76807a928b7552844018947d3a8555eeaa2cefce7d623d13",
+      "size": 139,
+      "mod_time": 1744467715.7627962
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\directsound\\test\\ds_record.py": {
+      "hash": "42750daf729f869747a318e15f35eeb6a8a62e487d4524f588d9407c7b96444b",
+      "size": 1463,
+      "mod_time": 1744467715.7957888
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\directsound\\test\\ds_test.py": {
+      "hash": "75e4c45bf75cfa5a731e53d2bc9e3dcc481d9871ae92674ad24a5c6dece88d6c",
+      "size": 13357,
+      "mod_time": 1744467715.7957888
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\directsound\\test\\__init__.py": {
+      "hash": "f6c9f9a9e628a45ddb1a83bded6879e3ca2d57f348fd914526e9ab18ec9fa713",
+      "size": 66,
+      "mod_time": 1744467715.7957888
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\ifilter\\ifiltercon.py": {
+      "hash": "acc904f88dcc07d5253bffe62dd7c9b96741f6199759323ebc440061963d25d4",
+      "size": 3269,
+      "mod_time": 1744467715.8600113
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\ifilter\\__init__.py": {
+      "hash": "cf542d0d22ff2fc2e08cc4b9eee6f65db4db4e46194f36c38e2a76e577141b07",
+      "size": 41,
+      "mod_time": 1744467715.7967892
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\ifilter\\demo\\filterDemo.py": {
+      "hash": "05caa7afa27fcab6c226ee89f45251813209f35887b68fe1347c552988a481ea",
+      "size": 11775,
+      "mod_time": 1744467715.861015
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\internet\\inetcon.py": {
+      "hash": "fd6d5259ab5e0cf4810be4a921bd1dbfe1f2c516eeba5cace8752fa7786f9227",
+      "size": 11879,
+      "mod_time": 1744467715.8620133
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\internet\\__init__.py": {
+      "hash": "dd388bf3740ba9de76807a928b7552844018947d3a8555eeaa2cefce7d623d13",
+      "size": 139,
+      "mod_time": 1744467715.861015
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\mapi\\emsabtags.py": {
+      "hash": "ea30d8b6f581391176677bb173784baa648ed22aaa8c2d290959e566137e5861",
+      "size": 50241,
+      "mod_time": 1744467716.0020552
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\mapi\\mapitags.py": {
+      "hash": "c014300573722f16eccfa6be6c601d3159b5ea0f33299b160af838f35fc76543",
+      "size": 52360,
+      "mod_time": 1744467716.562728
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\mapi\\mapiutil.py": {
+      "hash": "4db9b2aea7ab22618faa25fc4bdb87a1b8e0ace6854b97db3af350ba086800a9",
+      "size": 7180,
+      "mod_time": 1744467716.5637321
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\mapi\\__init__.py": {
+      "hash": "f448fb7b1bd727a16fa1ea3bf71f3b17152d942a366dd7476a2cf56606237cb1",
+      "size": 490,
+      "mod_time": 1744467716.0010548
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\mapi\\demos\\mapisend.py": {
+      "hash": "f8aea34c264e5dd889b1b5efb816819caa3de83bbd764330e690047d70451a04",
+      "size": 3668,
+      "mod_time": 1744467716.5647297
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\propsys\\pscon.py": {
+      "hash": "91df693c7bad56579b9bfb18d549eb1f807496a2d70bd1b934f33ef0c89e24c7",
+      "size": 49460,
+      "mod_time": 1744467717.216534
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\propsys\\__init__.py": {
+      "hash": "3786a8cbf5a76cc32ef205baf592aba87c1c84bd0fe4827b0732b4d73b103dd6",
+      "size": 28,
+      "mod_time": 1744467716.5657299
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\propsys\\test\\testpropsys.py": {
+      "hash": "aad8aec2ea39679a8889bd1223438d3d3490e9d87c65ff376998ca6f7489ba47",
+      "size": 230,
+      "mod_time": 1744467717.218038
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\shellcon.py": {
+      "hash": "23e5dc780430d0eb91935926a39b45a0df33342c660d83eba87884c272e2dc46",
+      "size": 51330,
+      "mod_time": 1744467717.6705415
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\__init__.py": {
+      "hash": "dd388bf3740ba9de76807a928b7552844018947d3a8555eeaa2cefce7d623d13",
+      "size": 139,
+      "mod_time": 1744467717.219049
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\browse_for_folder.py": {
+      "hash": "3ec9718447b577fb173e3e868b34241fbcf460935b2acec8c702db8145a0dca5",
+      "size": 1547,
+      "mod_time": 1744467717.67354
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\create_link.py": {
+      "hash": "f6cb22e616b597eb6ad1b40c5e7eb41d42d63ff87080153feb8f6e6813df96e4",
+      "size": 2409,
+      "mod_time": 1744467717.6745374
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\dump_link.py": {
+      "hash": "46d630283035778bdcb5ff60610a985674505642313bc275055c004ad8c585be",
+      "size": 1746,
+      "mod_time": 1744467717.6755378
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\explorer_browser.py": {
+      "hash": "c4e6a35b7cbb59d195aaacf7c740aba534a87c2dfdf55ae1510a98aa3a64df1b",
+      "size": 5099,
+      "mod_time": 1744467717.6765363
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\IActiveDesktop.py": {
+      "hash": "01c8f2e9dde9b37814c8117a8b9082661c13b614e4878e3f6460fae511e5ade4",
+      "size": 2205,
+      "mod_time": 1744467717.6715398
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\IFileOperationProgressSink.py": {
+      "hash": "c775b89091a93d18efb8c9c895ad55cd894aff5d686a7acb4ba347a9c5267ec0",
+      "size": 5309,
+      "mod_time": 1744467717.6715398
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\IShellLinkDataList.py": {
+      "hash": "5757b27f7f331fd9c9928f46d06cbba2f142701b800e6a7ca0e237e99ecd644a",
+      "size": 1984,
+      "mod_time": 1744467717.6725495
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\ITransferAdviseSink.py": {
+      "hash": "176c1e253848ea5128840c6af15945e212d2edadcaf58e4aa260b5537cd77339",
+      "size": 2629,
+      "mod_time": 1744467717.6725495
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\IUniformResourceLocator.py": {
+      "hash": "e8c0cea7bc177defe5a114fb51af2cfc3dee73d0eafc8764bb89322ced47d923",
+      "size": 1708,
+      "mod_time": 1744467717.67354
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\shellexecuteex.py": {
+      "hash": "c715ca7fd9304a654e1968b1d33d09dd7e323322fe3f43df0a110ece72f796ff",
+      "size": 489,
+      "mod_time": 1744467717.6765363
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\viewstate.py": {
+      "hash": "39bd5cf1900c0e2fd54005c7885ef0155888b07edbd100458e96e6a688cc8296",
+      "size": 2386,
+      "mod_time": 1744467717.6790571
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\walk_shell_folders.py": {
+      "hash": "0410263d8c62cd06024f25f1eed8d56bdb675b2ac79db0e8c1cd5ef7acbe1cd3",
+      "size": 693,
+      "mod_time": 1744467717.6820662
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\servers\\column_provider.py": {
+      "hash": "b23d9040b2bd0e4c1c2e7aa612d65195e0451d4872fcd1cd448e25c54d495861",
+      "size": 3825,
+      "mod_time": 1744467717.6860657
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\servers\\context_menu.py": {
+      "hash": "648fec82960bb6bd6f9b79f3d17c82244c6681ea54688689a2351cdb7ba19807",
+      "size": 4539,
+      "mod_time": 1744467717.6875732
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\servers\\copy_hook.py": {
+      "hash": "667f58a7d24d85f0d1b28d315ddd34a73c5d02e09eac14ad2df0070f01cf0346",
+      "size": 2755,
+      "mod_time": 1744467717.6885822
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\servers\\empty_volume_cache.py": {
+      "hash": "69ec4a8d610b582b8c70ade2e3a2a243b0e4d3a9c5be57fdb1bf6b4f81915637",
+      "size": 7830,
+      "mod_time": 1744467717.689583
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\servers\\folder_view.py": {
+      "hash": "12846d55381fe45d27e22be6e4592ca574bc1b328c488ef040486860000beed8",
+      "size": 30173,
+      "mod_time": 1744467717.695095
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\servers\\icon_handler.py": {
+      "hash": "44444810a1efd1e9b740a02f8bfecbf0bf76a066e5b39f825f5b7ba20aad0d03",
+      "size": 2600,
+      "mod_time": 1744467717.6960962
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\demos\\servers\\shell_view.py": {
+      "hash": "f0fd0f22d1ca85cdc1ed069f070a7a353d96fe825a4e1c46c2ca5bf022c0ab2d",
+      "size": 38140,
+      "mod_time": 1744467717.7429924
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\test\\testShellFolder.py": {
+      "hash": "172fefd2ca27efe8fe03a636dea56d523151dc0a1cf5a8ebb56a0c68a719ef65",
+      "size": 603,
+      "mod_time": 1744467717.7450051
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\test\\testShellItem.py": {
+      "hash": "800104ba787c00913768d1f33e397e715f607cde13dbc36eb78c0787a6695c59",
+      "size": 2960,
+      "mod_time": 1744467717.7450051
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\shell\\test\\testSHFileOperation.py": {
+      "hash": "476132cfb10763e7587b90013a8f2575aa9485e45012671f7522266638d9da49",
+      "size": 2167,
+      "mod_time": 1744467717.743996
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\taskscheduler\\__init__.py": {
+      "hash": "0486114a785d3c74a9940bd828bf4d04bb90599eba7be427269895580fc00f7f",
+      "size": 198,
+      "mod_time": 1744467717.7459948
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\taskscheduler\\test\\test_addtask.py": {
+      "hash": "1e6b352a5fb035fdbb31fe65cf5ce3661b22d145287f01cd9e7f6a859bcbcb2c",
+      "size": 2278,
+      "mod_time": 1744467717.769808
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\taskscheduler\\test\\test_addtask_1.py": {
+      "hash": "3ab9c3b4fc7ff12c86d2ed3feda83a7a65dad61946158bdaec7a1f8b07b2eafa",
+      "size": 2160,
+      "mod_time": 1744467717.7708073
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\taskscheduler\\test\\test_addtask_2.py": {
+      "hash": "4147098f7eccea0f1c09fc8a5d555bc27c38c752cc0658d1af75e9582043341e",
+      "size": 1659,
+      "mod_time": 1744467717.7708073
+    },
+    ".venv\\Lib\\site-packages\\win32comext\\taskscheduler\\test\\test_localsystem.py": {
+      "hash": "d3ca23012e3c5ba44bb146d10f8e63d1226183f6363451d94faaa34f856b8a0d",
+      "size": 75,
+      "mod_time": 1744467717.7718098
+    },
+    ".venv\\Scripts\\activate_this.py": {
+      "hash": "75da2c3b35285e5c10225a06221e6d16dbf1802bc0696de509c5038713ca76be",
+      "size": 2387,
+      "mod_time": 1748704870.7395694
+    },
+    ".venv\\Scripts\\pywin32_postinstall.py": {
+      "hash": "9b1e16569d610fff31824497b6d36db68d4154310264e7371420a5ad1d528c53",
+      "size": 25736,
+      "mod_time": 1744467709.509823
+    },
+    ".venv\\Scripts\\pywin32_testall.py": {
+      "hash": "87218b30a20b9f7fd6d2af8c70fd552673455bfcf9ca4fe07ac4cc403954a1c3",
+      "size": 3847,
+      "mod_time": 1744467709.5108242
+    },
+    ".venv\\Scripts\\wmitest.py": {
+      "hash": "aa8f2e720a0e6c6967add59a1b166388307892d75954c0241b309ea6cde16950",
+      "size": 29356,
+      "mod_time": 1748705245.2747664
+    },
+    ".venv\\Scripts\\wmiweb.py": {
+      "hash": "cf54b2db79d1c9f6553eec15a8fdd1db65f4e38cddb9114a28f766feef63e779",
+      "size": 8500,
+      "mod_time": 1748705245.2757685
+    }
+  },
+  "is_initial_backup": false,
+  "password_hash": {
+    "hash": "9fe2e7ee06134b7caff9cd28151d34f4b96b75ff571274124918a038f78fe1c7",
+    "salt": "1qqoHlN6bvUyXTFtanJVkQ=="
+  }
+}

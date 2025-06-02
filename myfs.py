@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 
 from myfs_constants import (
-  MAGIC_NUMBER_DRI, MAGIC_NUMBER_KEY
+  MAGIC_NUMBER_DRI, MAGIC_NUMBER_METADATA
 )
 from myfs_formatter import format_new_volume
 from myfs_security import MyFSSecurity

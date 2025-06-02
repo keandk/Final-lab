@@ -10,7 +10,7 @@ from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 
 from myfs_constants import (
-  MAGIC_NUMBER_KEY, KEY_SUPPLEMENTAL_ENTRY_SIZE,
+  MAGIC_NUMBER_METADATA, KEY_SUPPLEMENTAL_ENTRY_SIZE,
   SALT_SIZE, AES_IV_SIZE, HASH_SIZE
 )
 from myfs_utils import (
@@ -28,7 +28,7 @@ class MyFSMetadata:
     with open(self.metadata_path, "rb") as f:
       # Check magic number
       magic = f.read(8)
-      if magic != MAGIC_NUMBER_KEY:
+      if magic != MAGIC_NUMBER_METADATA:
         raise ValueError("Invalid MyFS metadata file.")
       
       # Read volume ID
@@ -65,13 +65,19 @@ class MyFSMetadata:
     
     # Read header data for checksum verification
     with open(self.metadata_path, "rb") as f:
-      header_data_for_checksum = f.read(8 + 16 + 16 + 16 + 8)  # Magic + Volume ID + Salt + IV + Size
+      # Read the header data: Magic (8) + Volume ID (16) + Salt (16) + IV (16) + Size (8)
+      header_data_for_checksum = f.read(8 + 16 + 16 + 16 + 8)
+      # Read the stored checksum
+      stored_checksum = f.read(32)
     
     # Calculate checksum
     calculated_checksum = calculate_sha256(header_data_for_checksum)
     
     # Compare with stored checksum
-    return calculated_checksum == self.header_data["header_checksum"]
+    if calculated_checksum != stored_checksum:
+      print(f"Header checksum mismatch: calculated {calculated_checksum.hex()}, stored {stored_checksum.hex()}")
+    
+    return calculated_checksum == stored_checksum
   
   def _verify_file_integrity(self):
     """Verifies the integrity of the entire metadata file."""
@@ -166,6 +172,12 @@ class MyFSMetadata:
       
       return self.metadata
     except Exception as e:
+      import traceback
+      print(f"Decryption error details: {str(e)}")
+      print(f"Salt: {self.header_data['salt'].hex()}")
+      print(f"IV: {self.header_data['iv'].hex()}")
+      print(f"Metadata size: {self.header_data['metadata_size']}")
+      traceback.print_exc()
       raise ValueError(f"Failed to decrypt metadata: {str(e)}")
 
   def save(self, password):
@@ -231,20 +243,20 @@ class MyFSMetadata:
     # Update header with new size
     self.header_data["metadata_size"] = len(encrypted_metadata)
     
-    # Create new header
+    # Create header data
     header_data = bytearray()
-    header_data.extend(MAGIC_NUMBER_KEY)  # 8 bytes
+    header_data.extend(MAGIC_NUMBER_METADATA)  # 8 bytes
     header_data.extend(self.header_data["volume_id"])  # 16 bytes
     header_data.extend(self.header_data["salt"])  # 16 bytes
     header_data.extend(self.header_data["iv"])  # 16 bytes
     header_data.extend(struct.pack("<q", len(encrypted_metadata)))  # 8 bytes
     
     # Calculate header checksum
-    header_checksum = calculate_sha256(bytes(header_data))
+    header_checksum = calculate_sha256(header_data)
     
     # Write to file
     with open(self.metadata_path, "wb") as f:
-      # Write header
+      # Write header and header checksum
       f.write(header_data)
       f.write(header_checksum)
       

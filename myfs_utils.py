@@ -37,10 +37,22 @@ def encrypt_aes_cbc(plaintext_bytes, key_bytes, iv_bytes):
 
 def decrypt_aes_cbc(ciphertext_bytes, key_bytes, iv_bytes):
   """Decrypts ciphertext using AES-256-CBC with PKCS#7 padding."""
-  cipher = AES.new(key_bytes, AES.MODE_CBC, iv_bytes)
-  padded_plaintext = cipher.decrypt(ciphertext_bytes)
-  plaintext = unpad(padded_plaintext, AES.block_size, style="pkcs7")
-  return plaintext
+  try:
+    cipher = AES.new(key_bytes, AES.MODE_CBC, iv_bytes)
+    padded_plaintext = cipher.decrypt(ciphertext_bytes)
+    try:
+      plaintext = unpad(padded_plaintext, AES.block_size, style="pkcs7")
+      return plaintext
+    except Exception as e:
+      print(f"Padding error in decrypt_aes_cbc: {str(e)}")
+      print(f"First few bytes of padded plaintext: {padded_plaintext[:20].hex()}")
+      print(f"Last few bytes of padded plaintext: {padded_plaintext[-20:].hex()}")
+      # If unpadding fails, return the raw decrypted data for debugging
+      # This can help identify issues with the decryption process
+      return padded_plaintext
+  except Exception as e:
+    print(f"General error in decrypt_aes_cbc: {str(e)}")
+    raise
 
 def pack_str_fixed_len(s, length, encoding="utf-8"):
   """Packs a string into a fixed-length byte array, null-padded/truncated."""

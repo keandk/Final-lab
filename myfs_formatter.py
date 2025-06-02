@@ -9,7 +9,7 @@ import uuid
 from Crypto.Cipher import AES
 
 from myfs_constants import (
-  MAGIC_NUMBER_DRI, MAGIC_NUMBER_KEY,
+  MAGIC_NUMBER_DRI, MAGIC_NUMBER_METADATA,
   DRI_MACHINE_NAME_LEN, DRI_FT_ENTRY_COUNT, DRI_FT_ENTRY_SIZE,
   KEY_SUPPLEMENTAL_ENTRY_SIZE, SALT_SIZE, AES_IV_SIZE, HASH_SIZE
 )
@@ -74,7 +74,7 @@ def create_key_header(volume_id_bytes, volume_password_salt_bytes,
                      encrypted_metadata_iv_bytes, encrypted_metadata_size):
   """Creates the MyFS.METADATA header bytes."""
   key_header_buffer = bytearray()
-  key_header_buffer.extend(MAGIC_NUMBER_KEY)  # 8 bytes
+  key_header_buffer.extend(MAGIC_NUMBER_METADATA)  # 8 bytes
   key_header_buffer.extend(volume_id_bytes)  # 16 bytes (link to DRI)
   key_header_buffer.extend(volume_password_salt_bytes)  # 16 bytes (same as DRI)
   key_header_buffer.extend(encrypted_metadata_iv_bytes)  # 16 bytes
