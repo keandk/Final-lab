@@ -141,58 +141,69 @@ class MyFSSecurity:
       # Import the metadata class here to avoid circular imports
       from myfs_metadata import MyFSMetadata
       
-      print("Loading metadata with old password...")
-      # Load metadata using the old password
+      # Load metadata using the old password with original salt/IV
       metadata_handler = MyFSMetadata(self.metadata_path)
       try:
         metadata_dict = metadata_handler.load(old_password)
-        print(f"Successfully loaded metadata with {len(metadata_dict)} entries")
       except Exception as e:
         print(f"Error loading metadata: {str(e)}")
         raise
       
-      # Generate new salt and IV
-      new_salt = get_random_bytes(SALT_SIZE)
-      new_iv = get_random_bytes(AES_IV_SIZE)
-      
-      print(f"New salt: {new_salt.hex()}")
-      print(f"New IV: {new_iv.hex()}")
+      # Generate new salt and IV for the volume and metadata
+      new_volume_salt = get_random_bytes(SALT_SIZE)
+      new_metadata_iv = get_random_bytes(AES_IV_SIZE)
       
       # Update volume header with new salt
       with open(self.volume_path, "rb+") as f:
         # Skip to salt position (8 + 16 + 8 + 32 + 64 = 128 bytes)
         f.seek(128)
-        f.write(new_salt)
+        f.write(new_volume_salt)
       
-      # Create a new metadata handler with the updated salt and IV
+      # Create new metadata with the loaded data and new crypto parameters
       new_metadata_handler = MyFSMetadata(self.metadata_path)
-      new_metadata_handler._read_header()
       
-      # Update the new handler's header data
-      new_metadata_handler.header_data["salt"] = new_salt
-      new_metadata_handler.header_data["iv"] = new_iv
+      # Manually set header data for the new metadata handler
+      new_metadata_handler.header_data = {
+        "volume_id": metadata_handler.header_data["volume_id"],
+        "salt": new_volume_salt,  # Use new volume salt for metadata encryption
+        "iv": new_metadata_iv,    # Use new IV for metadata encryption
+        "metadata_size": 0,       # Will be updated during save
+        "header_checksum": b""    # Will be updated during save
+      }
       
       # Copy the metadata dictionary to the new handler
       new_metadata_handler.metadata = dict(metadata_handler.metadata)
       
-      print("Saving metadata with new password...")
-      # Save metadata with the new password
+      # Save metadata with the new password and new crypto parameters
       try:
         new_metadata_handler.save(new_password)
-        print("Successfully saved metadata with new password")
       except Exception as e:
         print(f"Error saving metadata: {str(e)}")
+        # If save fails, restore the old salt in volume header
+        with open(self.volume_path, "rb+") as f:
+          f.seek(128)
+          f.write(self.volume_password_salt)
         raise
       
-      # Update stored data
-      self.volume_password_salt = new_salt
-      self.header_data["volume_password_salt"] = new_salt
+      # Verify the change by trying to load with new password
+      try:
+        verify_handler = MyFSMetadata(self.metadata_path)
+        verify_dict = verify_handler.load(new_password)
+      except Exception as e:
+        print(f"Verification failed: {str(e)}")
+        # If verification fails, restore the old salt in volume header
+        with open(self.volume_path, "rb+") as f:
+          f.seek(128)
+          f.write(self.volume_password_salt)
+        raise Exception("Password change verification failed, changes reverted")
+      
+      # Update stored data only after successful verification
+      self.volume_password_salt = new_volume_salt
+      self.header_data["volume_password_salt"] = new_volume_salt
       
       return True
     except Exception as e:
       print(f"Error in change_volume_password: {str(e)}")
-      import traceback
-      traceback.print_exc()
       raise
 
   def generate_dynamic_password(self):

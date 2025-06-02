@@ -175,8 +175,9 @@ class MyFS:
       self.security.change_volume_password(old_password, new_password)
       self.volume_password = new_password
       
-      # Re-initialize connector with new password
-      self.connector.initialize(new_password)
+      # Update connector password without full re-initialization
+      # The security module already verified the password change works
+      self.connector.volume_password = new_password
       
       print("Volume password changed successfully.")
       return True

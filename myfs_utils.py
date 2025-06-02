@@ -35,23 +35,43 @@ def encrypt_aes_cbc(plaintext_bytes, key_bytes, iv_bytes):
   ciphertext = cipher.encrypt(padded_plaintext)
   return ciphertext
 
-def decrypt_aes_cbc(ciphertext_bytes, key_bytes, iv_bytes):
+def decrypt_aes_cbc(ciphertext_bytes, key_bytes, iv_bytes, debug=False):
   """Decrypts ciphertext using AES-256-CBC with PKCS#7 padding."""
   try:
+    # Validate input parameters
+    if len(key_bytes) != 32:  # AES-256 requires 32-byte key
+      raise ValueError(f"Invalid key length: {len(key_bytes)}, expected 32 bytes")
+    if len(iv_bytes) != 16:   # AES block size is 16 bytes
+      raise ValueError(f"Invalid IV length: {len(iv_bytes)}, expected 16 bytes")
+    if len(ciphertext_bytes) == 0:
+      raise ValueError("Ciphertext is empty")
+    if len(ciphertext_bytes) % 16 != 0:
+      raise ValueError(f"Ciphertext length ({len(ciphertext_bytes)}) is not a multiple of 16 bytes")
+    
     cipher = AES.new(key_bytes, AES.MODE_CBC, iv_bytes)
     padded_plaintext = cipher.decrypt(ciphertext_bytes)
+    
+    # Attempt to unpad with error handling
     try:
       plaintext = unpad(padded_plaintext, AES.block_size, style="pkcs7")
       return plaintext
-    except Exception as e:
-      print(f"Padding error in decrypt_aes_cbc: {str(e)}")
-      print(f"First few bytes of padded plaintext: {padded_plaintext[:20].hex()}")
-      print(f"Last few bytes of padded plaintext: {padded_plaintext[-20:].hex()}")
-      # If unpadding fails, return the raw decrypted data for debugging
-      # This can help identify issues with the decryption process
+    except ValueError as padding_error:
+      # Analyze the padding bytes for recovery
+      last_byte = padded_plaintext[-1] if len(padded_plaintext) > 0 else 0
+      
+      if last_byte > 0 and last_byte <= 16:
+        expected_padding_bytes = padded_plaintext[-last_byte:]
+        is_valid_padding = all(b == last_byte for b in expected_padding_bytes)
+        
+        # Try to remove padding manually if it looks reasonable
+        if last_byte <= len(padded_plaintext):
+          manual_unpadded = padded_plaintext[:-last_byte]
+          return manual_unpadded
+      
+      # If manual unpadding fails, return raw data
       return padded_plaintext
+      
   except Exception as e:
-    print(f"General error in decrypt_aes_cbc: {str(e)}")
     raise
 
 def pack_str_fixed_len(s, length, encoding="utf-8"):

@@ -97,7 +97,7 @@ class MyFSMetadata:
     # Compare with stored checksum
     return calculated_checksum == stored_checksum
   
-  def load(self, password):
+  def load(self, password, debug=False):
     """Loads and decrypts the metadata."""
     if not self.header_data:
       self._read_header()
@@ -122,7 +122,7 @@ class MyFSMetadata:
     # Decrypt metadata
     try:
       decrypted_metadata = decrypt_aes_cbc(
-        encrypted_metadata, key, self.header_data["iv"]
+        encrypted_metadata, key, self.header_data["iv"], debug=debug
       )
       
       # Parse metadata
@@ -174,10 +174,6 @@ class MyFSMetadata:
     except Exception as e:
       import traceback
       print(f"Decryption error details: {str(e)}")
-      print(f"Salt: {self.header_data['salt'].hex()}")
-      print(f"IV: {self.header_data['iv'].hex()}")
-      print(f"Metadata size: {self.header_data['metadata_size']}")
-      traceback.print_exc()
       raise ValueError(f"Failed to decrypt metadata: {str(e)}")
 
   def save(self, password):
